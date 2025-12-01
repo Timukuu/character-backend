@@ -46,6 +46,8 @@ app.get("/health", (req, res) => {
 const PROJECTS_FILE = path.join(__dirname, "data", "projects.json");
 // Karakter verilerini tutmak için dosya yolu
 const CHARACTERS_FILE = path.join(__dirname, "data", "characters.json");
+// Karakter görsellerini tutmak için dosya yolu
+const CHARACTER_IMAGES_FILE = path.join(__dirname, "data", "character-images.json");
 
 // GitHub API yapılandırması (kalıcı veri için)
 const GITHUB_OWNER = process.env.GITHUB_OWNER || "Timukuu";
@@ -420,6 +422,172 @@ app.delete("/api/projects/:projectId/characters/:characterId", async (req, res) 
   } catch (err) {
     console.error("Karakter silinirken hata:", err);
     res.status(500).json({ error: "Karakter silinemedi" });
+  }
+});
+
+// CharacterImage yükle/kaydet fonksiyonları
+async function loadCharacterImages() {
+  // Önce GitHub'dan yüklemeyi dene
+  if (GITHUB_TOKEN) {
+    try {
+      const response = await axios.get(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/character-images.json`,
+        {
+          headers: {
+            Authorization: `token ${GITHUB_TOKEN}`,
+            Accept: "application/vnd.github.v3+json"
+          },
+          params: { ref: GITHUB_BRANCH }
+        }
+      );
+      const content = Buffer.from(response.data.content, "base64").toString("utf8");
+      const images = JSON.parse(content);
+      
+      await fs.mkdir(path.dirname(CHARACTER_IMAGES_FILE), { recursive: true });
+      await fs.writeFile(CHARACTER_IMAGES_FILE, content);
+      
+      return images;
+    } catch (err) {
+      if (err.response?.status !== 404) {
+        console.error("GitHub'dan yüklenirken hata:", err.message);
+      }
+    }
+  }
+
+  try {
+    const data = await fs.readFile(CHARACTER_IMAGES_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (err) {
+    return {}; // characterId -> image array mapping
+  }
+}
+
+async function saveCharacterImages(images) {
+  const content = JSON.stringify(images, null, 2);
+  
+  await fs.mkdir(path.dirname(CHARACTER_IMAGES_FILE), { recursive: true });
+  await fs.writeFile(CHARACTER_IMAGES_FILE, content);
+
+  if (GITHUB_TOKEN) {
+    try {
+      await commitToGitHub("data/character-images.json", content, `Update character images: ${new Date().toISOString()}`);
+    } catch (err) {
+      console.error("GitHub'a kaydedilemedi:", err.message);
+    }
+  }
+}
+
+function generateImageId() {
+  return "img-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8);
+}
+
+// CharacterImage endpoint'leri
+// Karaktere ait tüm görselleri getir
+app.get("/api/characters/:characterId/images", async (req, res) => {
+  try {
+    const { characterId } = req.params;
+    const allImages = await loadCharacterImages();
+    const characterImages = allImages[characterId] || [];
+    res.json(characterImages);
+  } catch (err) {
+    console.error("Görseller yüklenirken hata:", err);
+    res.status(500).json({ error: "Görseller yüklenemedi" });
+  }
+});
+
+// Yeni görsel ekle
+app.post("/api/characters/:characterId/images", async (req, res) => {
+  try {
+    const { characterId } = req.params;
+    const { url, fileName, title, description, tags, createdByUserId } = req.body;
+
+    if (!url || !title) {
+      return res.status(400).json({ error: "URL ve başlık gerekli" });
+    }
+
+    const allImages = await loadCharacterImages();
+    const characterImages = allImages[characterId] || [];
+
+    const newImage = {
+      id: generateImageId(),
+      characterId,
+      url,
+      fileName: fileName || "",
+      title: title.trim(),
+      description: description || "",
+      tags: Array.isArray(tags) ? tags : (tags ? tags.split(",").map(t => t.trim()) : []),
+      createdAt: new Date().toISOString(),
+      createdByUserId: createdByUserId || "system"
+    };
+
+    characterImages.push(newImage);
+    allImages[characterId] = characterImages;
+    await saveCharacterImages(allImages);
+
+    res.json(newImage);
+  } catch (err) {
+    console.error("Görsel oluşturulurken hata:", err);
+    res.status(500).json({ error: "Görsel oluşturulamadı" });
+  }
+});
+
+// Görsel güncelle
+app.put("/api/images/:imageId", async (req, res) => {
+  try {
+    const { imageId } = req.params;
+    const { title, description, tags } = req.body;
+
+    const allImages = await loadCharacterImages();
+    
+    // Tüm karakterlerde ara
+    for (const characterId in allImages) {
+      const images = allImages[characterId];
+      const imageIndex = images.findIndex(img => img.id === imageId);
+      
+      if (imageIndex !== -1) {
+        images[imageIndex] = {
+          ...images[imageIndex],
+          title: title !== undefined ? title.trim() : images[imageIndex].title,
+          description: description !== undefined ? description : images[imageIndex].description,
+          tags: tags !== undefined ? (Array.isArray(tags) ? tags : tags.split(",").map(t => t.trim())) : images[imageIndex].tags,
+          updatedAt: new Date().toISOString()
+        };
+        
+        await saveCharacterImages(allImages);
+        return res.json(images[imageIndex]);
+      }
+    }
+
+    return res.status(404).json({ error: "Görsel bulunamadı" });
+  } catch (err) {
+    console.error("Görsel güncellenirken hata:", err);
+    res.status(500).json({ error: "Görsel güncellenemedi" });
+  }
+});
+
+// Görsel sil
+app.delete("/api/images/:imageId", async (req, res) => {
+  try {
+    const { imageId } = req.params;
+
+    const allImages = await loadCharacterImages();
+    
+    // Tüm karakterlerde ara
+    for (const characterId in allImages) {
+      const images = allImages[characterId];
+      const filteredImages = images.filter(img => img.id !== imageId);
+      
+      if (images.length !== filteredImages.length) {
+        allImages[characterId] = filteredImages;
+        await saveCharacterImages(allImages);
+        return res.json({ success: true, message: "Görsel silindi" });
+      }
+    }
+
+    return res.status(404).json({ error: "Görsel bulunamadı" });
+  } catch (err) {
+    console.error("Görsel silinirken hata:", err);
+    res.status(500).json({ error: "Görsel silinemedi" });
   }
 });
 
