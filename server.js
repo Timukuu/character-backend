@@ -559,7 +559,17 @@ app.get("/api/characters/:characterId/images", async (req, res) => {
   try {
     const { characterId } = req.params;
     const allImages = await loadCharacterImages();
-    const characterImages = allImages[characterId] || [];
+    let characterImages = allImages[characterId] || [];
+    
+    // orderIndex'e göre sırala (yoksa createdAt'e göre)
+    characterImages.sort((a, b) => {
+      const aOrder = a.orderIndex !== undefined ? a.orderIndex : 999999;
+      const bOrder = b.orderIndex !== undefined ? b.orderIndex : 999999;
+      if (aOrder !== bOrder) return aOrder - bOrder;
+      // orderIndex yoksa createdAt'e göre sırala
+      return new Date(a.createdAt || 0) - new Date(b.createdAt || 0);
+    });
+    
     res.json(characterImages);
   } catch (err) {
     console.error("Görseller yüklenirken hata:", err);
@@ -588,6 +598,7 @@ app.post("/api/characters/:characterId/images", async (req, res) => {
       title: title.trim(),
       description: description || "",
       tags: Array.isArray(tags) ? tags : (tags ? tags.split(",").map(t => t.trim()) : []),
+      orderIndex: characterImages.length, // Yeni resim en sona eklenir
       createdAt: new Date().toISOString(),
       createdByUserId: createdByUserId || "system"
     };
@@ -622,6 +633,7 @@ app.put("/api/images/:imageId", async (req, res) => {
           title: title !== undefined ? title.trim() : images[imageIndex].title,
           description: description !== undefined ? description : images[imageIndex].description,
           tags: tags !== undefined ? (Array.isArray(tags) ? tags : tags.split(",").map(t => t.trim())) : images[imageIndex].tags,
+          orderIndex: req.body.orderIndex !== undefined ? req.body.orderIndex : images[imageIndex].orderIndex,
           updatedAt: new Date().toISOString()
         };
         
@@ -634,6 +646,41 @@ app.put("/api/images/:imageId", async (req, res) => {
   } catch (err) {
     console.error("Görsel güncellenirken hata:", err);
     res.status(500).json({ error: "Görsel güncellenemedi" });
+  }
+});
+
+// Resim sıralamasını toplu güncelle (drag & drop için)
+app.patch("/api/characters/:characterId/images/reorder", async (req, res) => {
+  try {
+    const { characterId } = req.params;
+    const { imageIds } = req.body; // Yeni sıralama: [id1, id2, id3, ...]
+
+    if (!Array.isArray(imageIds)) {
+      return res.status(400).json({ error: "imageIds bir array olmalı" });
+    }
+
+    const allImages = await loadCharacterImages();
+    const characterImages = allImages[characterId] || [];
+
+    // Her resmin orderIndex'ini yeni sıraya göre güncelle
+    imageIds.forEach((imageId, index) => {
+      const imageIndex = characterImages.findIndex(img => img.id === imageId);
+      if (imageIndex !== -1) {
+        characterImages[imageIndex].orderIndex = index;
+        characterImages[imageIndex].updatedAt = new Date().toISOString();
+      }
+    });
+
+    // orderIndex'e göre sırala
+    characterImages.sort((a, b) => (a.orderIndex || 0) - (b.orderIndex || 0));
+
+    allImages[characterId] = characterImages;
+    await saveCharacterImages(allImages);
+
+    res.json({ success: true, images: characterImages });
+  } catch (err) {
+    console.error("Resim sıralaması güncellenirken hata:", err);
+    res.status(500).json({ error: "Resim sıralaması güncellenemedi" });
   }
 });
 
