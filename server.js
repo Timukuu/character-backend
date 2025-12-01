@@ -284,7 +284,7 @@ app.post("/api/projects", async (req, res) => {
 app.put("/api/projects/:id", async (req, res) => {
   try {
     const { id } = req.params;
-    const { name } = req.body;
+    const { name, description } = req.body;
 
     if (!name || !name.trim()) {
       return res.status(400).json({ error: "Proje adı gerekli" });
@@ -297,7 +297,12 @@ app.put("/api/projects/:id", async (req, res) => {
       return res.status(404).json({ error: "Proje bulunamadı" });
     }
 
-    projects[projectIndex].name = name.trim();
+    projects[projectIndex] = {
+      ...projects[projectIndex],
+      name: name.trim(),
+      description: description !== undefined ? description.trim() : projects[projectIndex].description,
+      updatedAt: new Date().toISOString()
+    };
     await saveProjects(projects);
 
     res.json(projects[projectIndex]);
