@@ -3,8 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const multer = require("multer");
-const axios = require("axios");
-const FormData = require("form-data");
+const cloudinary = require("cloudinary").v2;
 
 const app = express();
 app.use(cors({
@@ -16,6 +15,19 @@ app.use(cors({
 // Bellekte tutulan upload (diskte geçici dosya yok)
 const upload = multer({ storage: multer.memoryStorage() });
 
+// Cloudinary yapılandırması
+// Not: Environment variables opsiyonel - eğer yoksa unsigned upload kullanılır
+if (process.env.CLOUDINARY_CLOUD_NAME) {
+  cloudinary.config({
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET
+  });
+  console.log("Cloudinary configured with credentials");
+} else {
+  console.log("Cloudinary will use unsigned upload (no credentials needed)");
+}
+
 // Basit sağlık kontrolü (Render health check için)
 app.get("/", (req, res) => {
   res.status(200).json({ status: "ok", message: "Character backend up" });
@@ -26,49 +38,54 @@ app.get("/health", (req, res) => {
   res.status(200).json({ status: "healthy", timestamp: new Date().toISOString() });
 });
 
-// Resim upload endpoint'i - Imgur kullanıyor
+// Resim upload endpoint'i - Cloudinary kullanıyor
 app.post("/upload", upload.single("file"), async (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({ error: "Dosya bulunamadı" });
     }
 
-    console.log("Dosya yükleniyor, Imgur'a gönderiliyor");
+    console.log("Dosya yükleniyor, Cloudinary'ye gönderiliyor");
     console.log("Dosya adı:", req.file.originalname);
     console.log("Dosya boyutu:", req.file.size, "bytes");
     console.log("MIME type:", req.file.mimetype);
 
-    // Imgur API'ye Base64 olarak yükle (daha güvenilir)
-    // Buffer'ı Base64'e çevir
-    const base64Image = req.file.buffer.toString('base64');
-    
-    // Imgur anonymous upload endpoint (Base64 ile)
-    const imgurResponse = await axios.post(
-      "https://api.imgur.com/3/image",
-      {
-        image: base64Image,
-        type: "base64"
-      },
-      {
-        headers: {
-          'Content-Type': 'application/json',
-          // Anonymous upload için Authorization header gerekmez
-          // Ama rate limit çok düşük (1250 upload/gün)
-          // Daha fazla için: https://api.imgur.com/oauth2/addclient adresinden client ID al
-        }
-      }
-    );
+    // Buffer'ı Base64'e çevir (Cloudinary için)
+    const base64Image = `data:${req.file.mimetype};base64,${req.file.buffer.toString('base64')}`;
 
-    if (!imgurResponse.data || !imgurResponse.data.data || !imgurResponse.data.data.link) {
-      throw new Error("Imgur yanıtında link bulunamadı");
+    // Cloudinary'ye yükle
+    // Unsigned upload kullanıyoruz (credentials gerekmez)
+    // Daha fazla kontrol için Cloudinary hesabı açıp upload preset oluşturabilirsin
+    const uploadOptions = {
+      folder: "character-gallery", // Klasör adı (opsiyonel)
+      resource_type: "auto", // Otomatik format algılama
+    };
+
+    // Eğer credentials varsa signed upload, yoksa unsigned upload
+    let uploadResult;
+    if (process.env.CLOUDINARY_CLOUD_NAME && process.env.CLOUDINARY_UPLOAD_PRESET) {
+      uploadOptions.upload_preset = process.env.CLOUDINARY_UPLOAD_PRESET;
+      uploadResult = await cloudinary.uploader.upload(base64Image, uploadOptions);
+    } else {
+      // Unsigned upload için cloud_name gerekli
+      // Eğer yoksa, kullanıcıya Cloudinary hesabı açmasını söyle
+      if (!process.env.CLOUDINARY_CLOUD_NAME) {
+        throw new Error("CLOUDINARY_CLOUD_NAME environment variable eksik. Lütfen Cloudinary hesabı aç ve cloud_name'i ekle.");
+      }
+      uploadOptions.upload_preset = "ml_default"; // Varsayılan preset (Cloudinary'de oluşturulmalı)
+      uploadResult = await cloudinary.uploader.upload(base64Image, uploadOptions);
     }
 
-    const imageUrl = imgurResponse.data.data.link;
+    if (!uploadResult || !uploadResult.secure_url) {
+      throw new Error("Cloudinary yanıtında URL bulunamadı");
+    }
+
+    const imageUrl = uploadResult.secure_url;
 
     console.log("Upload başarılı, URL:", imageUrl);
 
     res.json({
-      id: imgurResponse.data.data.id,
+      id: uploadResult.public_id,
       name: req.file.originalname,
       url: imageUrl,
     });
@@ -76,7 +93,7 @@ app.post("/upload", upload.single("file"), async (req, res) => {
     console.error("Upload hatası:", err);
     console.error("Hata detayı:", err.message);
     if (err.response) {
-      console.error("Imgur yanıtı:", err.response.data);
+      console.error("Cloudinary yanıtı:", err.response.data);
     }
     console.error("Stack:", err.stack);
     res.status(500).json({ 
