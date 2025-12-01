@@ -618,7 +618,7 @@ app.post("/api/characters/:characterId/images", async (req, res) => {
 app.put("/api/images/:imageId", async (req, res) => {
   try {
     const { imageId } = req.params;
-    const { title, description, tags } = req.body;
+    const { title, description, tags, defaultImageId } = req.body;
 
     const allImages = await loadCharacterImages();
     
@@ -634,6 +634,7 @@ app.put("/api/images/:imageId", async (req, res) => {
           description: description !== undefined ? description : images[imageIndex].description,
           tags: tags !== undefined ? (Array.isArray(tags) ? tags : tags.split(",").map(t => t.trim())) : images[imageIndex].tags,
           orderIndex: req.body.orderIndex !== undefined ? req.body.orderIndex : images[imageIndex].orderIndex,
+          defaultImageId: defaultImageId !== undefined ? defaultImageId : images[imageIndex].defaultImageId,
           updatedAt: new Date().toISOString()
         };
         
