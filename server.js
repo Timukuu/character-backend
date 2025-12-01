@@ -61,9 +61,17 @@ app.post("/upload", upload.single("file"), async (req, res) => {
     }
 
     // Dosya meta bilgileri
+    // ÖNEMLİ: GOOGLE_DRIVE_FOLDER_ID, senin kişisel Google Drive'ındaki bir klasörün ID'si olmalı
+    // Service account bu klasöre "Düzenleyici" olarak paylaşılmış olmalı
+    const folderId = process.env.GOOGLE_DRIVE_FOLDER_ID;
+    
+    if (!folderId) {
+      return res.status(500).json({ error: "GOOGLE_DRIVE_FOLDER_ID environment variable eksik" });
+    }
+
     const fileMetadata = {
       name: req.file.originalname,
-      parents: [process.env.GOOGLE_DRIVE_FOLDER_ID],
+      parents: [folderId],
     };
 
     // Buffer'ı stream'e çevir (Google Drive API stream bekliyor)
