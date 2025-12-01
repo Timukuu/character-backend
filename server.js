@@ -4,6 +4,7 @@ const express = require("express");
 const cors = require("cors");
 const multer = require("multer");
 const { google } = require("googleapis");
+const { Readable } = require("stream");
 
 const app = express();
 app.use(cors({
@@ -60,9 +61,14 @@ app.post("/upload", upload.single("file"), async (req, res) => {
       parents: [process.env.GOOGLE_DRIVE_FOLDER_ID],
     };
 
+    // Buffer'ı stream'e çevir (Google Drive API stream bekliyor)
+    const bufferStream = new Readable();
+    bufferStream.push(req.file.buffer);
+    bufferStream.push(null); // Stream'i sonlandır
+
     const media = {
       mimeType: req.file.mimetype,
-      body: Buffer.from(req.file.buffer),
+      body: bufferStream,
     };
 
     // Drive'a yükle
