@@ -38,24 +38,26 @@ app.post("/upload", upload.single("file"), async (req, res) => {
     console.log("Dosya boyutu:", req.file.size, "bytes");
     console.log("MIME type:", req.file.mimetype);
 
-    // Imgur API'ye yükle
-    // Not: Imgur anonymous upload için client ID gerekmez, ama rate limit var
-    // Daha iyi performans için Imgur'da bir uygulama oluşturup client ID alabilirsin
-    const formData = new FormData();
-    formData.append("image", req.file.buffer, {
-      filename: req.file.originalname,
-      contentType: req.file.mimetype
-    });
-
-    // Imgur anonymous upload endpoint
-    const imgurResponse = await axios.post("https://api.imgur.com/3/image", formData, {
-      headers: {
-        ...formData.getHeaders(),
-        // Anonymous upload için Authorization header gerekmez
-        // Ama rate limit çok düşük (1250 upload/gün)
-        // Daha fazla için: https://api.imgur.com/oauth2/addclient adresinden client ID al
+    // Imgur API'ye Base64 olarak yükle (daha güvenilir)
+    // Buffer'ı Base64'e çevir
+    const base64Image = req.file.buffer.toString('base64');
+    
+    // Imgur anonymous upload endpoint (Base64 ile)
+    const imgurResponse = await axios.post(
+      "https://api.imgur.com/3/image",
+      {
+        image: base64Image,
+        type: "base64"
+      },
+      {
+        headers: {
+          'Content-Type': 'application/json',
+          // Anonymous upload için Authorization header gerekmez
+          // Ama rate limit çok düşük (1250 upload/gün)
+          // Daha fazla için: https://api.imgur.com/oauth2/addclient adresinden client ID al
+        }
       }
-    });
+    );
 
     if (!imgurResponse.data || !imgurResponse.data.data || !imgurResponse.data.data.link) {
       throw new Error("Imgur yanıtında link bulunamadı");
