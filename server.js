@@ -43,6 +43,8 @@ app.get("/health", (req, res) => {
 
 // Proje verilerini tutmak için dosya yolu
 const PROJECTS_FILE = path.join(__dirname, "data", "projects.json");
+// Karakter verilerini tutmak için dosya yolu
+const CHARACTERS_FILE = path.join(__dirname, "data", "characters.json");
 
 // Proje verilerini yükle
 async function loadProjects() {
@@ -71,6 +73,27 @@ async function saveProjects(projects) {
 // ID oluştur
 function generateProjectId() {
   return "proje-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8);
+}
+
+function generateCharacterId() {
+  return "char-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8);
+}
+
+// Karakter verilerini yükle
+async function loadCharacters() {
+  try {
+    const data = await fs.readFile(CHARACTERS_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (err) {
+    // Dosya yoksa boş obje döndür
+    return {};
+  }
+}
+
+// Karakter verilerini kaydet
+async function saveCharacters(characters) {
+  await fs.mkdir(path.dirname(CHARACTERS_FILE), { recursive: true });
+  await fs.writeFile(CHARACTERS_FILE, JSON.stringify(characters, null, 2));
 }
 
 // Proje endpoint'leri
@@ -153,6 +176,103 @@ app.delete("/api/projects/:id", async (req, res) => {
   } catch (err) {
     console.error("Proje silinirken hata:", err);
     res.status(500).json({ error: "Proje silinemedi" });
+  }
+});
+
+// Karakter endpoint'leri
+// Projeye ait karakterleri getir
+app.get("/api/projects/:projectId/characters", async (req, res) => {
+  try {
+    const { projectId } = req.params;
+    const allCharacters = await loadCharacters();
+    const projectCharacters = allCharacters[projectId] || [];
+    res.json(projectCharacters);
+  } catch (err) {
+    console.error("Karakterler yüklenirken hata:", err);
+    res.status(500).json({ error: "Karakterler yüklenemedi" });
+  }
+});
+
+// Yeni karakter oluştur
+app.post("/api/projects/:projectId/characters", async (req, res) => {
+  try {
+    const { projectId } = req.params;
+    const characterData = req.body;
+
+    if (!characterData.firstName || !characterData.lastName) {
+      return res.status(400).json({ error: "İsim ve soyisim gerekli" });
+    }
+
+    const allCharacters = await loadCharacters();
+    const projectCharacters = allCharacters[projectId] || [];
+
+    const newCharacter = {
+      id: generateCharacterId(),
+      ...characterData,
+      createdAt: new Date().toISOString()
+    };
+
+    projectCharacters.push(newCharacter);
+    allCharacters[projectId] = projectCharacters;
+    await saveCharacters(allCharacters);
+
+    res.json(newCharacter);
+  } catch (err) {
+    console.error("Karakter oluşturulurken hata:", err);
+    res.status(500).json({ error: "Karakter oluşturulamadı" });
+  }
+});
+
+// Karakter güncelle
+app.put("/api/projects/:projectId/characters/:characterId", async (req, res) => {
+  try {
+    const { projectId, characterId } = req.params;
+    const characterData = req.body;
+
+    const allCharacters = await loadCharacters();
+    const projectCharacters = allCharacters[projectId] || [];
+    const characterIndex = projectCharacters.findIndex(c => c.id === characterId);
+
+    if (characterIndex === -1) {
+      return res.status(404).json({ error: "Karakter bulunamadı" });
+    }
+
+    projectCharacters[characterIndex] = {
+      ...projectCharacters[characterIndex],
+      ...characterData,
+      id: characterId // ID değiştirilmemeli
+    };
+
+    allCharacters[projectId] = projectCharacters;
+    await saveCharacters(allCharacters);
+
+    res.json(projectCharacters[characterIndex]);
+  } catch (err) {
+    console.error("Karakter güncellenirken hata:", err);
+    res.status(500).json({ error: "Karakter güncellenemedi" });
+  }
+});
+
+// Karakter sil
+app.delete("/api/projects/:projectId/characters/:characterId", async (req, res) => {
+  try {
+    const { projectId, characterId } = req.params;
+
+    const allCharacters = await loadCharacters();
+    const projectCharacters = allCharacters[projectId] || [];
+    const filteredCharacters = projectCharacters.filter(c => c.id !== characterId);
+
+    if (projectCharacters.length === filteredCharacters.length) {
+      return res.status(404).json({ error: "Karakter bulunamadı" });
+    }
+
+    allCharacters[projectId] = filteredCharacters;
+    await saveCharacters(allCharacters);
+
+    res.json({ success: true, message: "Karakter silindi" });
+  } catch (err) {
+    console.error("Karakter silinirken hata:", err);
+    res.status(500).json({ error: "Karakter silinemedi" });
   }
 });
 
