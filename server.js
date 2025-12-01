@@ -6,7 +6,11 @@ const multer = require("multer");
 const { google } = require("googleapis");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "*", // Tüm origin'lere izin ver (production'da spesifik domain'ler belirtebilirsin)
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"]
+}));
 
 // Bellekte tutulan upload (diskte geçici dosya yok)
 const upload = multer({ storage: multer.memoryStorage() });
