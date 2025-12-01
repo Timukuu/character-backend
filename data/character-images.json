@@ -27,6 +27,17 @@
       ],
       "createdAt": "2025-12-01T20:13:13.047Z",
       "createdByUserId": "timuku"
+    },
+    {
+      "id": "img-minlwrtp-z1fsre",
+      "characterId": "mink1xp9-kw9h7x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764621213/character-gallery/nzmxtr5hcfbv1tbxbbgr.png",
+      "fileName": "Yönerge_DenetleyiciSistemler-01 (1).png",
+      "title": "Deneme1",
+      "description": "deneme",
+      "tags": [],
+      "createdAt": "2025-12-01T20:33:35.197Z",
+      "createdByUserId": "timuku"
     }
   ]
 }
