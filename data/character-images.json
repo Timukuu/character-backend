@@ -38,6 +38,19 @@
       "tags": [],
       "createdAt": "2025-12-01T20:33:35.197Z",
       "createdByUserId": "timuku"
+    },
+    {
+      "id": "img-minlxhv9-0x7c5x",
+      "characterId": "mink1xp9-kw9h7x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764621247/character-gallery/xgq9u11c6yikvreqrmpg.png",
+      "fileName": "OsmanAmca.png",
+      "title": "Deneme1",
+      "description": "de",
+      "tags": [
+        "tag"
+      ],
+      "createdAt": "2025-12-01T20:34:08.949Z",
+      "createdByUserId": "timuku"
     }
   ]
 }
