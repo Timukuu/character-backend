@@ -48,6 +48,8 @@ const PROJECTS_FILE = path.join(__dirname, "data", "projects.json");
 const CHARACTERS_FILE = path.join(__dirname, "data", "characters.json");
 // Karakter görsellerini tutmak için dosya yolu
 const CHARACTER_IMAGES_FILE = path.join(__dirname, "data", "character-images.json");
+// Kullanıcı verilerini tutmak için dosya yolu
+const USERS_FILE = path.join(__dirname, "data", "users.json");
 
 // GitHub API yapılandırması (kalıcı veri için)
 const GITHUB_OWNER = process.env.GITHUB_OWNER || "Timukuu";
@@ -486,6 +488,62 @@ function generateImageId() {
   return "img-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8);
 }
 
+function generateUserId() {
+  return "user-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8);
+}
+
+// Kullanıcı yükle/kaydet fonksiyonları
+async function loadUsers() {
+  // Önce GitHub'dan yüklemeyi dene
+  if (GITHUB_TOKEN) {
+    try {
+      const response = await axios.get(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/users.json`,
+        {
+          headers: {
+            Authorization: `token ${GITHUB_TOKEN}`,
+            Accept: "application/vnd.github.v3+json"
+          },
+          params: { ref: GITHUB_BRANCH }
+        }
+      );
+      const content = Buffer.from(response.data.content, "base64").toString("utf8");
+      const users = JSON.parse(content);
+      
+      await fs.mkdir(path.dirname(USERS_FILE), { recursive: true });
+      await fs.writeFile(USERS_FILE, content);
+      
+      return users;
+    } catch (err) {
+      if (err.response?.status !== 404) {
+        console.error("GitHub'dan yüklenirken hata:", err.message);
+      }
+    }
+  }
+
+  try {
+    const data = await fs.readFile(USERS_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (err) {
+    return [];
+  }
+}
+
+async function saveUsers(users) {
+  const content = JSON.stringify(users, null, 2);
+  
+  await fs.mkdir(path.dirname(USERS_FILE), { recursive: true });
+  await fs.writeFile(USERS_FILE, content);
+
+  if (GITHUB_TOKEN) {
+    try {
+      await commitToGitHub("data/users.json", content, `Update users: ${new Date().toISOString()}`);
+    } catch (err) {
+      console.error("GitHub'a kaydedilemedi:", err.message);
+    }
+  }
+}
+
 // CharacterImage endpoint'leri
 // Karaktere ait tüm görselleri getir
 app.get("/api/characters/:characterId/images", async (req, res) => {
@@ -593,6 +651,125 @@ app.delete("/api/images/:imageId", async (req, res) => {
   } catch (err) {
     console.error("Görsel silinirken hata:", err);
     res.status(500).json({ error: "Görsel silinemedi" });
+  }
+});
+
+// Kullanıcı endpoint'leri (admin-only)
+// Tüm kullanıcıları getir
+app.get("/api/users", async (req, res) => {
+  try {
+    // TODO: Auth kontrolü ekle (sadece admin)
+    const users = await loadUsers();
+    // Şifreleri gizle
+    const safeUsers = users.map(u => ({
+      id: u.id,
+      username: u.username,
+      role: u.role,
+      projects: u.projects || []
+    }));
+    res.json(safeUsers);
+  } catch (err) {
+    console.error("Kullanıcılar yüklenirken hata:", err);
+    res.status(500).json({ error: "Kullanıcılar yüklenemedi" });
+  }
+});
+
+// Yeni kullanıcı oluştur
+app.post("/api/users", async (req, res) => {
+  try {
+    // TODO: Auth kontrolü ekle (sadece admin)
+    const { username, password, role, projects } = req.body;
+
+    if (!username || !password || !role) {
+      return res.status(400).json({ error: "Kullanıcı adı, şifre ve rol gerekli" });
+    }
+
+    const users = await loadUsers();
+
+    // Kullanıcı adı kontrolü
+    if (users.find(u => u.username === username)) {
+      return res.status(400).json({ error: "Bu kullanıcı adı zaten kullanılıyor" });
+    }
+
+    const newUser = {
+      id: generateUserId(),
+      username: username.trim(),
+      password: password, // TODO: Hash'le
+      role: role,
+      projects: Array.isArray(projects) ? projects : []
+    };
+
+    users.push(newUser);
+    await saveUsers(users);
+
+    // Şifreyi gizle
+    const { password: _, ...safeUser } = newUser;
+    res.json(safeUser);
+  } catch (err) {
+    console.error("Kullanıcı oluşturulurken hata:", err);
+    res.status(500).json({ error: "Kullanıcı oluşturulamadı" });
+  }
+});
+
+// Kullanıcı güncelle
+app.put("/api/users/:id", async (req, res) => {
+  try {
+    // TODO: Auth kontrolü ekle (sadece admin)
+    const { id } = req.params;
+    const { username, password, role, projects } = req.body;
+
+    const users = await loadUsers();
+    const userIndex = users.findIndex(u => u.id === id);
+
+    if (userIndex === -1) {
+      return res.status(404).json({ error: "Kullanıcı bulunamadı" });
+    }
+
+    // Kullanıcı adı değişiyorsa kontrol et
+    if (username && username !== users[userIndex].username) {
+      if (users.find(u => u.username === username && u.id !== id)) {
+        return res.status(400).json({ error: "Bu kullanıcı adı zaten kullanılıyor" });
+      }
+    }
+
+    users[userIndex] = {
+      ...users[userIndex],
+      username: username !== undefined ? username.trim() : users[userIndex].username,
+      password: password !== undefined ? password : users[userIndex].password, // TODO: Hash'le
+      role: role !== undefined ? role : users[userIndex].role,
+      projects: projects !== undefined ? (Array.isArray(projects) ? projects : []) : users[userIndex].projects
+    };
+
+    await saveUsers(users);
+
+    // Şifreyi gizle
+    const { password: _, ...safeUser } = users[userIndex];
+    res.json(safeUser);
+  } catch (err) {
+    console.error("Kullanıcı güncellenirken hata:", err);
+    res.status(500).json({ error: "Kullanıcı güncellenemedi" });
+  }
+});
+
+// Kullanıcı sil
+app.delete("/api/users/:id", async (req, res) => {
+  try {
+    // TODO: Auth kontrolü ekle (sadece admin)
+    const { id } = req.params;
+
+    const users = await loadUsers();
+    const filteredUsers = users.filter(u => u.id !== id);
+
+    if (users.length === filteredUsers.length) {
+      return res.status(404).json({ error: "Kullanıcı bulunamadı" });
+    }
+
+    await saveUsers(filteredUsers);
+
+    res.json({ success: true, message: "Kullanıcı silindi" });
+  } catch (err) {
+    console.error("Kullanıcı silinirken hata:", err);
+    res.status(500).json({ error: "Kullanıcı silinemedi" });
   }
 });
 
