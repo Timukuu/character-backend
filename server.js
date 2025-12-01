@@ -6,6 +6,7 @@ const multer = require("multer");
 const cloudinary = require("cloudinary").v2;
 const fs = require("fs").promises;
 const path = require("path");
+const axios = require("axios");
 
 const app = express();
 app.use(express.json()); // JSON body parser
@@ -46,8 +47,100 @@ const PROJECTS_FILE = path.join(__dirname, "data", "projects.json");
 // Karakter verilerini tutmak için dosya yolu
 const CHARACTERS_FILE = path.join(__dirname, "data", "characters.json");
 
-// Proje verilerini yükle
+// GitHub API yapılandırması (kalıcı veri için)
+const GITHUB_OWNER = process.env.GITHUB_OWNER || "Timukuu";
+const GITHUB_REPO = process.env.GITHUB_REPO || "character-backend";
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Personal Access Token
+const GITHUB_BRANCH = process.env.GITHUB_BRANCH || "main";
+
+// GitHub API'ye dosya commit et
+async function commitToGitHub(filePath, content, message) {
+  if (!GITHUB_TOKEN) {
+    console.warn("GITHUB_TOKEN yok, veriler sadece geçici olarak kaydedilecek");
+    return;
+  }
+
+  try {
+    const fileContent = typeof content === "string" ? content : JSON.stringify(content, null, 2);
+    const base64Content = Buffer.from(fileContent).toString("base64");
+
+    // Önce dosyanın mevcut SHA'sını al (varsa)
+    let sha = null;
+    try {
+      const getResponse = await axios.get(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${filePath}`,
+        {
+          headers: {
+            Authorization: `token ${GITHUB_TOKEN}`,
+            Accept: "application/vnd.github.v3+json"
+          },
+          params: { ref: GITHUB_BRANCH }
+        }
+      );
+      sha = getResponse.data.sha;
+    } catch (err) {
+      // Dosya yoksa, yeni oluşturulacak
+      if (err.response?.status !== 404) throw err;
+    }
+
+    // Dosyayı commit et
+    const commitResponse = await axios.put(
+      `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${filePath}`,
+      {
+        message: message,
+        content: base64Content,
+        branch: GITHUB_BRANCH,
+        ...(sha && { sha: sha }) // Güncelleme için SHA gerekli
+      },
+      {
+        headers: {
+          Authorization: `token ${GITHUB_TOKEN}`,
+          Accept: "application/vnd.github.v3+json",
+          "Content-Type": "application/json"
+        }
+      }
+    );
+
+    console.log(`GitHub'a commit edildi: ${filePath}`);
+    return commitResponse.data;
+  } catch (err) {
+    console.error("GitHub commit hatası:", err.response?.data || err.message);
+    throw err;
+  }
+}
+
+// Proje verilerini yükle (önce GitHub'dan, yoksa local'den)
 async function loadProjects() {
+  // Önce GitHub'dan yüklemeyi dene
+  if (GITHUB_TOKEN) {
+    try {
+      const response = await axios.get(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/projects.json`,
+        {
+          headers: {
+            Authorization: `token ${GITHUB_TOKEN}`,
+            Accept: "application/vnd.github.v3+json"
+          },
+          params: { ref: GITHUB_BRANCH }
+        }
+      );
+      const content = Buffer.from(response.data.content, "base64").toString("utf8");
+      const projects = JSON.parse(content);
+      
+      // Local'e de kaydet (cache için)
+      await fs.mkdir(path.dirname(PROJECTS_FILE), { recursive: true });
+      await fs.writeFile(PROJECTS_FILE, content);
+      
+      return projects;
+    } catch (err) {
+      if (err.response?.status !== 404) {
+        console.error("GitHub'dan yüklenirken hata:", err.message);
+      }
+      // GitHub'da yoksa local'den yükle
+    }
+  }
+
+  // Local'den yükle
   try {
     const data = await fs.readFile(PROJECTS_FILE, "utf8");
     return JSON.parse(data);
@@ -64,10 +157,22 @@ async function loadProjects() {
   }
 }
 
-// Proje verilerini kaydet
+// Proje verilerini kaydet (hem local hem GitHub'a)
 async function saveProjects(projects) {
+  const content = JSON.stringify(projects, null, 2);
+  
+  // Local'e kaydet (hızlı erişim için)
   await fs.mkdir(path.dirname(PROJECTS_FILE), { recursive: true });
-  await fs.writeFile(PROJECTS_FILE, JSON.stringify(projects, null, 2));
+  await fs.writeFile(PROJECTS_FILE, content);
+
+  // GitHub'a commit et (kalıcılık için)
+  if (GITHUB_TOKEN) {
+    try {
+      await commitToGitHub("data/projects.json", content, `Update projects: ${new Date().toISOString()}`);
+    } catch (err) {
+      console.error("GitHub'a kaydedilemedi, sadece local kaydedildi:", err.message);
+    }
+  }
 }
 
 // ID oluştur
@@ -79,8 +184,38 @@ function generateCharacterId() {
   return "char-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8);
 }
 
-// Karakter verilerini yükle
+// Karakter verilerini yükle (önce GitHub'dan, yoksa local'den)
 async function loadCharacters() {
+  // Önce GitHub'dan yüklemeyi dene
+  if (GITHUB_TOKEN) {
+    try {
+      const response = await axios.get(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/characters.json`,
+        {
+          headers: {
+            Authorization: `token ${GITHUB_TOKEN}`,
+            Accept: "application/vnd.github.v3+json"
+          },
+          params: { ref: GITHUB_BRANCH }
+        }
+      );
+      const content = Buffer.from(response.data.content, "base64").toString("utf8");
+      const characters = JSON.parse(content);
+      
+      // Local'e de kaydet (cache için)
+      await fs.mkdir(path.dirname(CHARACTERS_FILE), { recursive: true });
+      await fs.writeFile(CHARACTERS_FILE, content);
+      
+      return characters;
+    } catch (err) {
+      if (err.response?.status !== 404) {
+        console.error("GitHub'dan yüklenirken hata:", err.message);
+      }
+      // GitHub'da yoksa local'den yükle
+    }
+  }
+
+  // Local'den yükle
   try {
     const data = await fs.readFile(CHARACTERS_FILE, "utf8");
     return JSON.parse(data);
@@ -90,10 +225,22 @@ async function loadCharacters() {
   }
 }
 
-// Karakter verilerini kaydet
+// Karakter verilerini kaydet (hem local hem GitHub'a)
 async function saveCharacters(characters) {
+  const content = JSON.stringify(characters, null, 2);
+  
+  // Local'e kaydet (hızlı erişim için)
   await fs.mkdir(path.dirname(CHARACTERS_FILE), { recursive: true });
-  await fs.writeFile(CHARACTERS_FILE, JSON.stringify(characters, null, 2));
+  await fs.writeFile(CHARACTERS_FILE, content);
+
+  // GitHub'a commit et (kalıcılık için)
+  if (GITHUB_TOKEN) {
+    try {
+      await commitToGitHub("data/characters.json", content, `Update characters: ${new Date().toISOString()}`);
+    } catch (err) {
+      console.error("GitHub'a kaydedilemedi, sadece local kaydedildi:", err.message);
+    }
+  }
 }
 
 // Proje endpoint'leri
