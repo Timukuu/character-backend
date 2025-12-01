@@ -8,7 +8,9 @@
       "zodiac": "dede",
       "age": 21,
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764618240/character-gallery/gn60bsq5s3qene2kznfe.png",
-      "createdAt": "2025-12-01T19:41:39.712Z"
+      "createdAt": "2025-12-01T19:41:39.712Z",
+      "mainImageId": "img-minkinkj-ykhrg9",
+      "mainImageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764618875/character-gallery/vzirxrqaefcebsjuwuro.png"
     }
   ]
 }
