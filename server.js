@@ -3,49 +3,18 @@ require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const multer = require("multer");
-const { google } = require("googleapis");
-const { Readable } = require("stream");
+const axios = require("axios");
+const FormData = require("form-data");
 
 const app = express();
 app.use(cors({
-  origin: "*", // Tüm origin'lere izin ver (production'da spesifik domain'ler belirtebilirsin)
+  origin: "*",
   methods: ["GET", "POST", "OPTIONS"],
   allowedHeaders: ["Content-Type"]
 }));
 
 // Bellekte tutulan upload (diskte geçici dosya yok)
 const upload = multer({ storage: multer.memoryStorage() });
-
-// Google Drive client ayarı
-let auth, drive;
-
-try {
-  const privateKey = process.env.GOOGLE_PRIVATE_KEY
-    ? process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n")
-    : null;
-
-  if (!process.env.GOOGLE_CLIENT_EMAIL || !privateKey || !process.env.GOOGLE_DRIVE_FOLDER_ID) {
-    console.error("Eksik environment variables!");
-    console.error("GOOGLE_CLIENT_EMAIL:", process.env.GOOGLE_CLIENT_EMAIL ? "var" : "YOK");
-    console.error("GOOGLE_PRIVATE_KEY:", process.env.GOOGLE_PRIVATE_KEY ? "var" : "YOK");
-    console.error("GOOGLE_DRIVE_FOLDER_ID:", process.env.GOOGLE_DRIVE_FOLDER_ID ? "var" : "YOK");
-  } else {
-    console.log("Environment variables OK:");
-    console.log("GOOGLE_CLIENT_EMAIL:", process.env.GOOGLE_CLIENT_EMAIL);
-    console.log("GOOGLE_DRIVE_FOLDER_ID:", process.env.GOOGLE_DRIVE_FOLDER_ID);
-  }
-
-  auth = new google.auth.JWT(
-    process.env.GOOGLE_CLIENT_EMAIL,
-    null,
-    privateKey,
-    ["https://www.googleapis.com/auth/drive.file"]
-  );
-
-  drive = google.drive({ version: "v3", auth });
-} catch (err) {
-  console.error("Google Drive auth hatası:", err);
-}
 
 // Basit sağlık kontrolü (Render health check için)
 app.get("/", (req, res) => {
@@ -57,71 +26,56 @@ app.get("/health", (req, res) => {
   res.status(200).json({ status: "healthy", timestamp: new Date().toISOString() });
 });
 
-// Resim upload endpoint'i
+// Resim upload endpoint'i - Imgur kullanıyor
 app.post("/upload", upload.single("file"), async (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({ error: "Dosya bulunamadı" });
     }
 
-    // Dosya meta bilgileri
-    // ÖNEMLİ: GOOGLE_DRIVE_FOLDER_ID, senin kişisel Google Drive'ındaki bir klasörün ID'si olmalı
-    // Service account bu klasöre "Düzenleyici" olarak paylaşılmış olmalı
-    const folderId = process.env.GOOGLE_DRIVE_FOLDER_ID;
-    
-    if (!folderId) {
-      console.error("GOOGLE_DRIVE_FOLDER_ID eksik!");
-      return res.status(500).json({ error: "GOOGLE_DRIVE_FOLDER_ID environment variable eksik" });
-    }
-
-    console.log("Dosya yükleniyor, klasör ID:", folderId);
+    console.log("Dosya yükleniyor, Imgur'a gönderiliyor");
     console.log("Dosya adı:", req.file.originalname);
     console.log("Dosya boyutu:", req.file.size, "bytes");
+    console.log("MIME type:", req.file.mimetype);
 
-    const fileMetadata = {
-      name: req.file.originalname,
-      parents: [folderId],
-    };
-
-    // Buffer'ı stream'e çevir (Google Drive API stream bekliyor)
-    const bufferStream = new Readable();
-    bufferStream.push(req.file.buffer);
-    bufferStream.push(null); // Stream'i sonlandır
-
-    const media = {
-      mimeType: req.file.mimetype,
-      body: bufferStream,
-    };
-
-    // Drive'a yükle
-    const file = await drive.files.create({
-      requestBody: fileMetadata,
-      media,
-      fields: "id, name",
+    // Imgur API'ye yükle
+    // Not: Imgur anonymous upload için client ID gerekmez, ama rate limit var
+    // Daha iyi performans için Imgur'da bir uygulama oluşturup client ID alabilirsin
+    const formData = new FormData();
+    formData.append("image", req.file.buffer, {
+      filename: req.file.originalname,
+      contentType: req.file.mimetype
     });
 
-    const fileId = file.data.id;
-
-    // Herkese açık okuma izni ver
-    await drive.permissions.create({
-      fileId,
-      requestBody: {
-        role: "reader",
-        type: "anyone",
-      },
+    // Imgur anonymous upload endpoint
+    const imgurResponse = await axios.post("https://api.imgur.com/3/image", formData, {
+      headers: {
+        ...formData.getHeaders(),
+        // Anonymous upload için Authorization header gerekmez
+        // Ama rate limit çok düşük (1250 upload/gün)
+        // Daha fazla için: https://api.imgur.com/oauth2/addclient adresinden client ID al
+      }
     });
 
-    // Direkt resim URL'si (uc?export=view trükü)
-    const viewUrl = `https://drive.google.com/uc?export=view&id=${fileId}`;
+    if (!imgurResponse.data || !imgurResponse.data.data || !imgurResponse.data.data.link) {
+      throw new Error("Imgur yanıtında link bulunamadı");
+    }
+
+    const imageUrl = imgurResponse.data.data.link;
+
+    console.log("Upload başarılı, URL:", imageUrl);
 
     res.json({
-      id: fileId,
-      name: file.data.name,
-      url: viewUrl,
+      id: imgurResponse.data.data.id,
+      name: req.file.originalname,
+      url: imageUrl,
     });
   } catch (err) {
     console.error("Upload hatası:", err);
     console.error("Hata detayı:", err.message);
+    if (err.response) {
+      console.error("Imgur yanıtı:", err.response.data);
+    }
     console.error("Stack:", err.stack);
     res.status(500).json({ 
       error: "Upload sırasında hata oluştu",
