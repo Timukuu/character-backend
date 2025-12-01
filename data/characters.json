@@ -7,10 +7,20 @@
       "traits": "deneme",
       "zodiac": "dede",
       "age": 21,
-      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764618240/character-gallery/gn60bsq5s3qene2kznfe.png",
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764622561/character-gallery/nroxa7odk4d9yq5oipzl.png",
       "createdAt": "2025-12-01T19:41:39.712Z",
       "mainImageId": "img-minkinkj-ykhrg9",
       "mainImageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764618875/character-gallery/vzirxrqaefcebsjuwuro.png"
+    },
+    {
+      "id": "minmney2-adw15c",
+      "firstName": "deneme",
+      "lastName": "deneme",
+      "traits": "",
+      "zodiac": "adad",
+      "age": null,
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764622459/character-gallery/tgbxynxip8taa7sxgdvo.png",
+      "createdAt": "2025-12-01T20:54:21.193Z"
     }
   ]
 }
