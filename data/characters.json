@@ -11,6 +11,16 @@
       "createdAt": "2025-12-01T19:41:39.712Z",
       "mainImageId": "img-minkinkj-ykhrg9",
       "mainImageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764618875/character-gallery/vzirxrqaefcebsjuwuro.png"
+    },
+    {
+      "id": "minmney2-adw15c",
+      "firstName": "deneme",
+      "lastName": "deneme",
+      "traits": "",
+      "zodiac": "adad",
+      "age": null,
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764622459/character-gallery/tgbxynxip8taa7sxgdvo.png",
+      "createdAt": "2025-12-01T20:54:21.193Z"
     }
   ]
 }
