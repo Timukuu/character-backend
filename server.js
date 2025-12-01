@@ -4,11 +4,14 @@ const express = require("express");
 const cors = require("cors");
 const multer = require("multer");
 const cloudinary = require("cloudinary").v2;
+const fs = require("fs").promises;
+const path = require("path");
 
 const app = express();
+app.use(express.json()); // JSON body parser
 app.use(cors({
   origin: "*",
-  methods: ["GET", "POST", "OPTIONS"],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type"]
 }));
 
@@ -36,6 +39,121 @@ app.get("/", (req, res) => {
 // Health check endpoint (Render için)
 app.get("/health", (req, res) => {
   res.status(200).json({ status: "healthy", timestamp: new Date().toISOString() });
+});
+
+// Proje verilerini tutmak için dosya yolu
+const PROJECTS_FILE = path.join(__dirname, "data", "projects.json");
+
+// Proje verilerini yükle
+async function loadProjects() {
+  try {
+    const data = await fs.readFile(PROJECTS_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (err) {
+    // Dosya yoksa varsayılan projeleri oluştur
+    const defaultProjects = [
+      { id: "proje-1", name: "Örnek Proje 1" },
+      { id: "proje-2", name: "Örnek Proje 2" }
+    ];
+    // Klasör yoksa oluştur
+    await fs.mkdir(path.dirname(PROJECTS_FILE), { recursive: true });
+    await fs.writeFile(PROJECTS_FILE, JSON.stringify(defaultProjects, null, 2));
+    return defaultProjects;
+  }
+}
+
+// Proje verilerini kaydet
+async function saveProjects(projects) {
+  await fs.mkdir(path.dirname(PROJECTS_FILE), { recursive: true });
+  await fs.writeFile(PROJECTS_FILE, JSON.stringify(projects, null, 2));
+}
+
+// ID oluştur
+function generateProjectId() {
+  return "proje-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 8);
+}
+
+// Proje endpoint'leri
+// Tüm projeleri getir
+app.get("/api/projects", async (req, res) => {
+  try {
+    const projects = await loadProjects();
+    res.json(projects);
+  } catch (err) {
+    console.error("Projeler yüklenirken hata:", err);
+    res.status(500).json({ error: "Projeler yüklenemedi" });
+  }
+});
+
+// Yeni proje oluştur
+app.post("/api/projects", async (req, res) => {
+  try {
+    const { name } = req.body;
+    if (!name || !name.trim()) {
+      return res.status(400).json({ error: "Proje adı gerekli" });
+    }
+
+    const projects = await loadProjects();
+    const newProject = {
+      id: generateProjectId(),
+      name: name.trim()
+    };
+    projects.push(newProject);
+    await saveProjects(projects);
+
+    res.json(newProject);
+  } catch (err) {
+    console.error("Proje oluşturulurken hata:", err);
+    res.status(500).json({ error: "Proje oluşturulamadı" });
+  }
+});
+
+// Proje güncelle
+app.put("/api/projects/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+    const { name } = req.body;
+
+    if (!name || !name.trim()) {
+      return res.status(400).json({ error: "Proje adı gerekli" });
+    }
+
+    const projects = await loadProjects();
+    const projectIndex = projects.findIndex(p => p.id === id);
+
+    if (projectIndex === -1) {
+      return res.status(404).json({ error: "Proje bulunamadı" });
+    }
+
+    projects[projectIndex].name = name.trim();
+    await saveProjects(projects);
+
+    res.json(projects[projectIndex]);
+  } catch (err) {
+    console.error("Proje güncellenirken hata:", err);
+    res.status(500).json({ error: "Proje güncellenemedi" });
+  }
+});
+
+// Proje sil
+app.delete("/api/projects/:id", async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const projects = await loadProjects();
+    const filteredProjects = projects.filter(p => p.id !== id);
+
+    if (projects.length === filteredProjects.length) {
+      return res.status(404).json({ error: "Proje bulunamadı" });
+    }
+
+    await saveProjects(filteredProjects);
+
+    res.json({ success: true, message: "Proje silindi" });
+  } catch (err) {
+    console.error("Proje silinirken hata:", err);
+    res.status(500).json({ error: "Proje silinemedi" });
+  }
 });
 
 // Resim upload endpoint'i - Cloudinary kullanıyor
