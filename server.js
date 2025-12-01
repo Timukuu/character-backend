@@ -16,14 +16,31 @@ app.use(cors({
 const upload = multer({ storage: multer.memoryStorage() });
 
 // Google Drive client ayarı
-const auth = new google.auth.JWT(
-  process.env.GOOGLE_CLIENT_EMAIL,
-  null,
-  process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"),
-  ["https://www.googleapis.com/auth/drive.file"]
-);
+let auth, drive;
 
-const drive = google.drive({ version: "v3", auth });
+try {
+  const privateKey = process.env.GOOGLE_PRIVATE_KEY
+    ? process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n")
+    : null;
+
+  if (!process.env.GOOGLE_CLIENT_EMAIL || !privateKey || !process.env.GOOGLE_DRIVE_FOLDER_ID) {
+    console.error("Eksik environment variables!");
+    console.error("GOOGLE_CLIENT_EMAIL:", process.env.GOOGLE_CLIENT_EMAIL ? "var" : "YOK");
+    console.error("GOOGLE_PRIVATE_KEY:", process.env.GOOGLE_PRIVATE_KEY ? "var" : "YOK");
+    console.error("GOOGLE_DRIVE_FOLDER_ID:", process.env.GOOGLE_DRIVE_FOLDER_ID ? "var" : "YOK");
+  }
+
+  auth = new google.auth.JWT(
+    process.env.GOOGLE_CLIENT_EMAIL,
+    null,
+    privateKey,
+    ["https://www.googleapis.com/auth/drive.file"]
+  );
+
+  drive = google.drive({ version: "v3", auth });
+} catch (err) {
+  console.error("Google Drive auth hatası:", err);
+}
 
 // Basit sağlık kontrolü
 app.get("/", (req, res) => {
@@ -76,7 +93,13 @@ app.post("/upload", upload.single("file"), async (req, res) => {
     });
   } catch (err) {
     console.error("Upload hatası:", err);
-    res.status(500).json({ error: "Upload sırasında hata oluştu" });
+    console.error("Hata detayı:", err.message);
+    console.error("Stack:", err.stack);
+    res.status(500).json({ 
+      error: "Upload sırasında hata oluştu",
+      message: err.message,
+      details: process.env.NODE_ENV === "development" ? err.stack : undefined
+    });
   }
 });
 
