@@ -51,6 +51,19 @@
       ],
       "createdAt": "2025-12-01T20:34:08.949Z",
       "createdByUserId": "timuku"
+    },
+    {
+      "id": "img-minmva4k-czglrn",
+      "characterId": "mink1xp9-kw9h7x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764622823/character-gallery/spkcp5mqn7al6vl3jcfw.png",
+      "fileName": "ChatGPT Image 19 Kas 2025 11_14_56.png",
+      "title": "Deneme2",
+      "description": "dada",
+      "tags": [
+        "dad"
+      ],
+      "createdAt": "2025-12-01T21:00:25.220Z",
+      "createdByUserId": "timuku"
     }
   ]
 }
