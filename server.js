@@ -9,12 +9,21 @@ const path = require("path");
 const axios = require("axios");
 
 const app = express();
-app.use(express.json()); // JSON body parser
+
+// CORS ayarları - tüm origin'lere izin ver (production'da spesifik origin'ler belirtilebilir)
 app.use(cors({
   origin: "*",
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type"]
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+  allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
+  credentials: false,
+  preflightContinue: false,
+  optionsSuccessStatus: 204
 }));
+
+// OPTIONS preflight request'leri için manuel handle (bazı durumlarda gerekli)
+app.options("*", cors());
+
+app.use(express.json()); // JSON body parser
 
 // Bellekte tutulan upload (diskte geçici dosya yok)
 const upload = multer({ storage: multer.memoryStorage() });
@@ -774,7 +783,7 @@ app.delete("/api/users/:id", async (req, res) => {
 });
 
 // Resim upload endpoint'i - Cloudinary kullanıyor
-app.post("/upload", upload.single("file"), async (req, res) => {
+app.post("/upload", cors(), upload.single("file"), async (req, res) => {
   try {
     if (!req.file) {
       return res.status(400).json({ error: "Dosya bulunamadı" });
