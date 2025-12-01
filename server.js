@@ -43,9 +43,14 @@ try {
   console.error("Google Drive auth hatası:", err);
 }
 
-// Basit sağlık kontrolü
+// Basit sağlık kontrolü (Render health check için)
 app.get("/", (req, res) => {
-  res.send("Character backend up");
+  res.status(200).json({ status: "ok", message: "Character backend up" });
+});
+
+// Health check endpoint (Render için)
+app.get("/health", (req, res) => {
+  res.status(200).json({ status: "healthy", timestamp: new Date().toISOString() });
 });
 
 // Resim upload endpoint'i
