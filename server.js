@@ -29,6 +29,10 @@ try {
     console.error("GOOGLE_CLIENT_EMAIL:", process.env.GOOGLE_CLIENT_EMAIL ? "var" : "YOK");
     console.error("GOOGLE_PRIVATE_KEY:", process.env.GOOGLE_PRIVATE_KEY ? "var" : "YOK");
     console.error("GOOGLE_DRIVE_FOLDER_ID:", process.env.GOOGLE_DRIVE_FOLDER_ID ? "var" : "YOK");
+  } else {
+    console.log("Environment variables OK:");
+    console.log("GOOGLE_CLIENT_EMAIL:", process.env.GOOGLE_CLIENT_EMAIL);
+    console.log("GOOGLE_DRIVE_FOLDER_ID:", process.env.GOOGLE_DRIVE_FOLDER_ID);
   }
 
   auth = new google.auth.JWT(
@@ -66,8 +70,13 @@ app.post("/upload", upload.single("file"), async (req, res) => {
     const folderId = process.env.GOOGLE_DRIVE_FOLDER_ID;
     
     if (!folderId) {
+      console.error("GOOGLE_DRIVE_FOLDER_ID eksik!");
       return res.status(500).json({ error: "GOOGLE_DRIVE_FOLDER_ID environment variable eksik" });
     }
+
+    console.log("Dosya yükleniyor, klasör ID:", folderId);
+    console.log("Dosya adı:", req.file.originalname);
+    console.log("Dosya boyutu:", req.file.size, "bytes");
 
     const fileMetadata = {
       name: req.file.originalname,
