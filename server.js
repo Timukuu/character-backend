@@ -581,7 +581,7 @@ app.get("/api/characters/:characterId/images", async (req, res) => {
 app.post("/api/characters/:characterId/images", async (req, res) => {
   try {
     const { characterId } = req.params;
-    const { url, fileName, title, description, tags, createdByUserId } = req.body;
+    const { url, fileName, title, description, positivePrompt, negativePrompt, tags, createdByUserId } = req.body;
 
     if (!url || !title) {
       return res.status(400).json({ error: "URL ve başlık gerekli" });
@@ -597,6 +597,8 @@ app.post("/api/characters/:characterId/images", async (req, res) => {
       fileName: fileName || "",
       title: title.trim(),
       description: description || "",
+      positivePrompt: positivePrompt || null,
+      negativePrompt: negativePrompt || null,
       tags: Array.isArray(tags) ? tags : (tags ? tags.split(",").map(t => t.trim()) : []),
       orderIndex: characterImages.length, // Yeni resim en sona eklenir
       createdAt: new Date().toISOString(),
@@ -618,7 +620,7 @@ app.post("/api/characters/:characterId/images", async (req, res) => {
 app.put("/api/images/:imageId", async (req, res) => {
   try {
     const { imageId } = req.params;
-    const { title, description, tags, defaultImageId } = req.body;
+    const { title, description, positivePrompt, negativePrompt, tags, defaultImageId } = req.body;
 
     const allImages = await loadCharacterImages();
     
@@ -632,6 +634,8 @@ app.put("/api/images/:imageId", async (req, res) => {
           ...images[imageIndex],
           title: title !== undefined ? title.trim() : images[imageIndex].title,
           description: description !== undefined ? description : images[imageIndex].description,
+          positivePrompt: positivePrompt !== undefined ? (positivePrompt || null) : images[imageIndex].positivePrompt,
+          negativePrompt: negativePrompt !== undefined ? (negativePrompt || null) : images[imageIndex].negativePrompt,
           tags: tags !== undefined ? (Array.isArray(tags) ? tags : tags.split(",").map(t => t.trim())) : images[imageIndex].tags,
           orderIndex: req.body.orderIndex !== undefined ? req.body.orderIndex : images[imageIndex].orderIndex,
           defaultImageId: defaultImageId !== undefined ? defaultImageId : images[imageIndex].defaultImageId,
