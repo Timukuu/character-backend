@@ -29,8 +29,10 @@
       ],
       "createdAt": "2025-12-01T20:13:13.047Z",
       "createdByUserId": "timuku",
-      "updatedAt": "2025-12-02T08:26:27.740Z",
-      "defaultImageId": "img-minl6kt3-fe6rq8"
+      "updatedAt": "2025-12-02T10:55:08.432Z",
+      "defaultImageId": "img-minl6kt3-fe6rq8",
+      "positivePrompt": null,
+      "negativePrompt": null
     },
     {
       "id": "img-minlwrtp-z1fsre",
