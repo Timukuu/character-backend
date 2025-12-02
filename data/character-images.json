@@ -61,6 +61,20 @@
       "createdByUserId": "timuku",
       "updatedAt": "2025-12-02T08:15:58.873Z",
       "defaultImageId": null
+    },
+    {
+      "id": "img-miogpgvv-23q84d",
+      "characterId": "mink1xp9-kw9h7x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764672941/character-gallery/ny4npkfgrwfv88imjbz3.png",
+      "fileName": "ChatGPT Image 19 Kas 2025 14_01_19.png",
+      "title": "Deneme2",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [],
+      "orderIndex": 4,
+      "createdAt": "2025-12-02T10:55:42.523Z",
+      "createdByUserId": "timuku"
     }
   ]
 }
