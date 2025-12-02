@@ -45,11 +45,11 @@
       ],
       "createdAt": "2025-12-01T20:13:13.047Z",
       "createdByUserId": "timuku",
-      "updatedAt": "2025-12-02T13:15:52.112Z",
+      "updatedAt": "2025-12-02T13:25:05.464Z",
       "defaultImageId": "img-minl6kt3-fe6rq8",
       "positivePrompt": null,
       "negativePrompt": null,
-      "orderIndex": 2
+      "orderIndex": 1
     },
     {
       "id": "img-minlwrtp-z1fsre",
