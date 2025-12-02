@@ -62,8 +62,9 @@
       ],
       "createdAt": "2025-12-01T20:34:08.949Z",
       "createdByUserId": "timuku",
-      "updatedAt": "2025-12-02T08:15:58.873Z",
-      "defaultImageId": null
+      "updatedAt": "2025-12-02T13:03:10.849Z",
+      "defaultImageId": null,
+      "orderIndex": 3
     },
     {
       "id": "img-miogpgvv-23q84d",
