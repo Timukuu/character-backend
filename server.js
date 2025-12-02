@@ -59,6 +59,8 @@ const CHARACTERS_FILE = path.join(__dirname, "data", "characters.json");
 const CHARACTER_IMAGES_FILE = path.join(__dirname, "data", "character-images.json");
 // Kullanıcı verilerini tutmak için dosya yolu
 const USERS_FILE = path.join(__dirname, "data", "users.json");
+// Chat mesajlarını tutmak için dosya yolu
+const CHAT_MESSAGES_FILE = path.join(__dirname, "data", "chat-messages.json");
 
 // GitHub API yapılandırması (kalıcı veri için)
 const GITHUB_OWNER = process.env.GITHUB_OWNER || "Timukuu";
@@ -552,6 +554,117 @@ async function saveUsers(users) {
     }
   }
 }
+
+// Chat mesajlarını yükle
+async function loadChatMessages() {
+  // Önce GitHub'dan yüklemeyi dene
+  if (GITHUB_TOKEN) {
+    try {
+      const response = await axios.get(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/chat-messages.json`,
+        {
+          headers: {
+            Authorization: `token ${GITHUB_TOKEN}`,
+            Accept: "application/vnd.github.v3+json"
+          },
+          params: { ref: GITHUB_BRANCH }
+        }
+      );
+      const content = Buffer.from(response.data.content, "base64").toString("utf8");
+      const messages = JSON.parse(content);
+      
+      await fs.mkdir(path.dirname(CHAT_MESSAGES_FILE), { recursive: true });
+      await fs.writeFile(CHAT_MESSAGES_FILE, content);
+      
+      return messages;
+    } catch (err) {
+      if (err.response?.status !== 404) {
+        console.error("GitHub'dan chat mesajları yüklenirken hata:", err.message);
+      }
+    }
+  }
+
+  // Local'den yükle
+  try {
+    const data = await fs.readFile(CHAT_MESSAGES_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (err) {
+    // Dosya yoksa boş array döndür
+    const defaultMessages = [];
+    await fs.mkdir(path.dirname(CHAT_MESSAGES_FILE), { recursive: true });
+    await fs.writeFile(CHAT_MESSAGES_FILE, JSON.stringify(defaultMessages, null, 2));
+    return defaultMessages;
+  }
+}
+
+// Chat mesajlarını kaydet
+async function saveChatMessages(messages) {
+  const content = JSON.stringify(messages, null, 2);
+  
+  await fs.mkdir(path.dirname(CHAT_MESSAGES_FILE), { recursive: true });
+  await fs.writeFile(CHAT_MESSAGES_FILE, content);
+
+  if (GITHUB_TOKEN) {
+    try {
+      await commitToGitHub("data/chat-messages.json", content, `Update chat messages: ${new Date().toISOString()}`);
+    } catch (err) {
+      console.error("GitHub'a chat mesajları kaydedilemedi:", err.message);
+    }
+  }
+}
+
+// Chat endpoint'leri
+// Chat mesajlarını getir (son 50 mesaj)
+app.get("/api/chat/messages", async (req, res) => {
+  try {
+    // TODO: Auth kontrolü ekle (sadece admin)
+    const messages = await loadChatMessages();
+    
+    // Son 50 mesajı döndür (en yeni en sonda)
+    const sortedMessages = messages.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
+    const last50Messages = sortedMessages.slice(-50);
+    
+    res.json(last50Messages);
+  } catch (err) {
+    console.error("Chat mesajları yüklenirken hata:", err);
+    res.status(500).json({ error: "Chat mesajları yüklenemedi" });
+  }
+});
+
+// Yeni chat mesajı gönder
+app.post("/api/chat/messages", async (req, res) => {
+  try {
+    // TODO: Auth kontrolü ekle (sadece admin)
+    const { userId, username, message } = req.body;
+
+    if (!userId || !username || !message || !message.trim()) {
+      return res.status(400).json({ error: "userId, username ve message gerekli" });
+    }
+
+    const messages = await loadChatMessages();
+    
+    const newMessage = {
+      id: `msg_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      userId,
+      username,
+      message: message.trim(),
+      createdAt: new Date().toISOString()
+    };
+
+    messages.push(newMessage);
+    
+    // Son 50 mesajı tut (eski mesajları sil)
+    const sortedMessages = messages.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
+    const last50Messages = sortedMessages.slice(-50);
+    
+    await saveChatMessages(last50Messages);
+
+    res.json(newMessage);
+  } catch (err) {
+    console.error("Chat mesajı oluşturulurken hata:", err);
+    res.status(500).json({ error: "Chat mesajı oluşturulamadı" });
+  }
+});
 
 // CharacterImage endpoint'leri
 // Karaktere ait tüm görselleri getir
