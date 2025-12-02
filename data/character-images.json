@@ -29,8 +29,10 @@
       ],
       "createdAt": "2025-12-01T20:13:13.047Z",
       "createdByUserId": "timuku",
-      "updatedAt": "2025-12-02T08:26:27.740Z",
-      "defaultImageId": "img-minl6kt3-fe6rq8"
+      "updatedAt": "2025-12-02T10:55:21.203Z",
+      "defaultImageId": "img-minl6kt3-fe6rq8",
+      "positivePrompt": null,
+      "negativePrompt": null
     },
     {
       "id": "img-minlwrtp-z1fsre",
@@ -61,18 +63,18 @@
       "defaultImageId": null
     },
     {
-      "id": "img-minmva4k-czglrn",
+      "id": "img-miogpgvv-23q84d",
       "characterId": "mink1xp9-kw9h7x",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764622823/character-gallery/spkcp5mqn7al6vl3jcfw.png",
-      "fileName": "ChatGPT Image 19 Kas 2025 11_14_56.png",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764672941/character-gallery/ny4npkfgrwfv88imjbz3.png",
+      "fileName": "ChatGPT Image 19 Kas 2025 14_01_19.png",
       "title": "Deneme2",
-      "description": "dada",
-      "tags": [
-        "dad"
-      ],
-      "createdAt": "2025-12-01T21:00:25.220Z",
-      "createdByUserId": "timuku",
-      "updatedAt": "2025-12-02T08:26:35.240Z"
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [],
+      "orderIndex": 4,
+      "createdAt": "2025-12-02T10:55:42.523Z",
+      "createdByUserId": "timuku"
     }
   ]
 }
