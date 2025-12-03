@@ -135,7 +135,7 @@
       "title": "Portrait - JANKU",
       "description": "Luna Portre",
       "positivePrompt": "lazypos, 1girl,  arm up, purple bow, open mouth,bone white hair, solo,  simple background, flat background,medium breasts, , looking at viewer, yellow eyes, long hair, hair between eyes, blush, white background, :d, smile, breasts, bare shoulders, upper body, portrait, symmetrical face, nude",
-      "negativePrompt": "lazyneg, lazyhand,bow,",
+      "negativePrompt": "lazyneg, lazyhand,bow,detailed eyes,",
       "tags": [
         "Luna",
         "portrait",
@@ -144,7 +144,8 @@
       ],
       "orderIndex": 2,
       "createdAt": "2025-12-03T12:44:36.684Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "updatedAt": "2025-12-03T13:22:06.610Z"
     },
     {
       "id": "img-miq0x53b-bev6p1",
