@@ -152,7 +152,7 @@
       "characterId": "mipl0jjt-eg7z3x",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764767358/character-gallery/bz0r76jynrc11o9hhd4h.png",
       "fileName": "00011-644782408.png",
-      "title": "Luna Portrait",
+      "title": "Luna Portrait-JANKU",
       "description": "elleri önden bağlı poz",
       "positivePrompt": "masterpiece,1girl, closed mouth,bright white hair, solo, detailed eyes, perfect eyes, simple background, flat background,medium breasts, , looking at viewer, yellow eyes, long hair, hair between eyes, blush, white background, :d, smile, medium breasts, bare shoulders, upper body, portrait, nipples, symmetrical face, symmetrical body, nude, hands clasped in front on waist",
       "negativePrompt": "lazyneg, lazyloli",
@@ -165,7 +165,8 @@
       ],
       "orderIndex": 3,
       "createdAt": "2025-12-03T13:09:18.983Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "updatedAt": "2025-12-03T13:22:30.418Z"
     }
   ]
 }
