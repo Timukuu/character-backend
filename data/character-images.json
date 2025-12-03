@@ -126,6 +126,25 @@
       "createdAt": "2025-12-03T08:52:21.419Z",
       "createdByUserId": "merycim",
       "updatedAt": "2025-12-03T08:52:47.325Z"
+    },
+    {
+      "id": "img-miq01dcc-zwdr2j",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764765875/character-gallery/vt5tuhsfbcwt7wlhyro3.png",
+      "fileName": "00007-644782408.png",
+      "title": "Portrait - JANKU",
+      "description": "Luna Portre",
+      "positivePrompt": "lazypos, 1girl,  arm up, purple bow, open mouth,bone white hair, solo,  simple background, flat background,medium breasts, , looking at viewer, yellow eyes, long hair, hair between eyes, blush, white background, :d, smile, breasts, bare shoulders, upper body, portrait, symmetrical face, nude",
+      "negativePrompt": "lazyneg, lazyhand,bow,",
+      "tags": [
+        "Luna",
+        "portrait",
+        "face",
+        "smiling"
+      ],
+      "orderIndex": 2,
+      "createdAt": "2025-12-03T12:44:36.684Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
