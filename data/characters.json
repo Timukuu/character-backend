@@ -22,5 +22,17 @@
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764622459/character-gallery/tgbxynxip8taa7sxgdvo.png",
       "createdAt": "2025-12-01T20:54:21.193Z"
     }
+  ],
+  "proje-mioy5tos-jelgwb": [
+    {
+      "id": "mipl0jjt-eg7z3x",
+      "firstName": "Luna",
+      "lastName": "Moon",
+      "traits": "Ana karakter, Tilki Prenses.",
+      "zodiac": "Balık",
+      "age": 20,
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764740646/character-gallery/acwgpeer1guxnt37hs4d.png",
+      "createdAt": "2025-12-03T05:44:07.742Z"
+    }
   ]
 }
