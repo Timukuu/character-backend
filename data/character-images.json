@@ -89,7 +89,7 @@
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764742095/character-gallery/jurd5jry0zawwodixvzx.png",
       "fileName": "00043-1604218144.png",
       "title": "Luna Standing - amanatsuIllustrious_v2.safetensors [190dec1694]",
-      "description": "Kıyafet değiştirme ekranı için poz. Bir eli başının arkasında.",
+      "description": "Kıyafet değiştirme ekranı için poz. Bir eli başının arkasında. 1536x2034",
       "positivePrompt": "masterpiece, best quality, ultra-detailed, highres, 8k, finely detailed, intricate details, hdr, volumetric light, natural shadows , 1girl, leather, yellow eyes,white hair, long hair, straight hair, hair between eyes, big eyes, looking at viewer, full body, head to toes, perfect nipples, perfect fingers, front view, standing, whole body is visible, one hand behind head, bent arm, straight ahead, solo, completely nude, medium breasts, nipples, pussy,medium breasts, black flat background, long shot, wide shot, distant view <lora:Eyes_High_Definition:1>",
       "negativePrompt": "Negative prompt: bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,",
       "tags": [
@@ -102,7 +102,7 @@
       "orderIndex": 0,
       "createdAt": "2025-12-03T06:08:16.654Z",
       "createdByUserId": "merycim",
-      "updatedAt": "2025-12-03T06:14:13.255Z"
+      "updatedAt": "2025-12-03T07:47:18.767Z"
     }
   ]
 }
