@@ -113,10 +113,18 @@
       "description": "Luna için kıyafet penceresi pozu. 1536x2304",
       "positivePrompt": "NikWzrd, masterpiece, best quality, ultra-detailed, highres, 8k, finely detailed, intricate details, hdr, volumetric light, natural shadows , 1girl, leather, yellow eyes,white hair, long hair, straight hair, hair between eyes, big eyes, looking at viewer, full body, head to toes,  perfect nipples, perfect fingers, front view, standing, whole body is visible, one hand behind head, bent arm, straight ahead, solo, completely nude, medium breasts, nipples, pussy,medium  breasts, black flat background, long shot, wide shot, distant view <lora:Eyes_High_Definition:1>",
       "negativePrompt": "bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,",
-      "tags": [],
+      "tags": [
+        "Luna",
+        "nude",
+        "standing",
+        "head to toe",
+        "wide shot",
+        "Jankut"
+      ],
       "orderIndex": 1,
       "createdAt": "2025-12-03T08:52:21.419Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "updatedAt": "2025-12-03T08:52:47.325Z"
     }
   ]
 }
