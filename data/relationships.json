@@ -20,7 +20,13 @@
         }
       }
     ],
-    "groups": [],
+    "groups": [
+      {
+        "id": "group-1764853421444",
+        "name": "İnsanlar",
+        "color": "#FF6B6B"
+      }
+    ],
     "relationships": [
       {
         "id": "rel-1764852212127",
