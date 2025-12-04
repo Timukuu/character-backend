@@ -21,6 +21,14 @@
       }
     ],
     "groups": [],
-    "relationships": []
+    "relationships": [
+      {
+        "id": "rel-1764852190053",
+        "from": "char-1764850303623",
+        "to": "char-1764851113925",
+        "type": "friend",
+        "strength": 50
+      }
+    ]
   }
 }
