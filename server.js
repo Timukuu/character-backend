@@ -63,6 +63,8 @@ const USERS_FILE = path.join(__dirname, "data", "users.json");
 const CHAT_MESSAGES_FILE = path.join(__dirname, "data", "chat-messages.json");
 // Senaryo verilerini tutmak için dosya yolu
 const SCENARIOS_FILE = path.join(__dirname, "data", "scenarios.json");
+const RELATIONSHIPS_FILE = path.join(__dirname, "data", "relationships.json");
+const RELATIONSHIPS_FILE = path.join(__dirname, "data", "relationships.json");
 
 // Senaryo verilerini yükle (önce GitHub'dan, yoksa local'den)
 async function loadScenarios() {
