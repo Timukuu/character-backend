@@ -15,20 +15,12 @@
         "name": "Ryan",
         "groupId": null,
         "position": {
-          "x": 277.0000305175781,
-          "y": 306
+          "x": 279.0000305175781,
+          "y": 286
         }
       }
     ],
     "groups": [],
-    "relationships": [
-      {
-        "id": "rel-1764852190053",
-        "from": "char-1764850303623",
-        "to": "char-1764851113925",
-        "type": "friend",
-        "strength": 50
-      }
-    ]
+    "relationships": []
   }
 }
