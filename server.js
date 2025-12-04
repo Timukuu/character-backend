@@ -180,16 +180,41 @@ const GITHUB_REPO = process.env.GITHUB_REPO || "character-backend";
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN; // Personal Access Token
 const GITHUB_BRANCH = process.env.GITHUB_BRANCH || "main";
 
-// GitHub API'ye dosya commit et
+// Debouncing için: Her dosya için pending commit'leri tut
+const pendingCommits = new Map(); // filePath -> { content, message, timeout }
+
+// GitHub API'ye dosya commit et (debounced - 5 saniye içinde birden fazla çağrı olsa bile tek commit)
 async function commitToGitHub(filePath, content, message) {
   if (!GITHUB_TOKEN) {
     console.warn("GITHUB_TOKEN yok, veriler sadece geçici olarak kaydedilecek");
     return;
   }
 
+  // Eğer bu dosya için zaten bir pending commit varsa, timeout'u iptal et
+  if (pendingCommits.has(filePath)) {
+    clearTimeout(pendingCommits.get(filePath).timeout);
+  }
+
+  const fileContent = typeof content === "string" ? content : JSON.stringify(content, null, 2);
+
+  // Yeni timeout ayarla (5 saniye sonra commit yapılacak)
+  const timeout = setTimeout(async () => {
+    const pending = pendingCommits.get(filePath);
+    if (pending) {
+      pendingCommits.delete(filePath);
+      await executeCommit(filePath, pending.content, pending.message);
+    }
+  }, 5000); // 5 saniye debounce
+
+  // Pending commit'i güncelle
+  pendingCommits.set(filePath, { content: fileContent, message, timeout });
+  console.log(`GitHub commit planlandı: ${filePath} (5 saniye içinde commit edilecek)`);
+}
+
+// Gerçek commit işlemini yapan fonksiyon
+async function executeCommit(filePath, content, message) {
   try {
-    const fileContent = typeof content === "string" ? content : JSON.stringify(content, null, 2);
-    const base64Content = Buffer.from(fileContent).toString("base64");
+    const base64Content = Buffer.from(content).toString("base64");
 
     // Önce dosyanın mevcut SHA'sını al (varsa)
     let sha = null;
