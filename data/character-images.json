@@ -211,6 +211,24 @@
       "orderIndex": 5,
       "createdAt": "2025-12-04T11:34:43.870Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mireylz7-we04gt",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764851407/character-gallery/nkhfmzegspwwv52orc4b.png",
+      "fileName": "00021-1604218144.png",
+      "title": "Luna Talking",
+      "description": "Yarım poz, konuşma sahneleri için kullanım.",
+      "positivePrompt": "ose Show from the hips to the shoulders, When viewed from the front, the composition is symmetrical, standing,medium breasts, (white hair), yellow eyes, looking at viewer, ),smile, hair, yellow eyes, (narrow eyes:1.2),masterpiece, hands front of the legs, flat background, nude,",
+      "negativePrompt": "bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn,",
+      "tags": [
+        "hips to shoulder",
+        "talking",
+        "symmetrical"
+      ],
+      "orderIndex": 6,
+      "createdAt": "2025-12-04T12:30:08.324Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
