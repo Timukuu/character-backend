@@ -6,17 +6,8 @@
         "name": "Luna",
         "groupId": null,
         "position": {
-          "x": 159,
-          "y": 83
-        }
-      },
-      {
-        "id": "char-1764850314647",
-        "name": "Ryan",
-        "groupId": null,
-        "position": {
-          "x": 336,
-          "y": 85
+          "x": 289,
+          "y": 204
         }
       }
     ],
