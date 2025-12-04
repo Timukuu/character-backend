@@ -122,6 +122,59 @@ async function saveScenarios(scenarios) {
   }
 }
 
+// İlişki verilerini yükle
+async function loadRelationships() {
+  try {
+    if (GITHUB_TOKEN) {
+      try {
+        const response = await axios.get(
+          `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/relationships.json`,
+          {
+            headers: {
+              Authorization: `token ${GITHUB_TOKEN}`,
+              Accept: "application/vnd.github.v3+json"
+            },
+            params: { ref: GITHUB_BRANCH }
+          }
+        );
+        
+        const content = Buffer.from(response.data.content, "base64").toString("utf8");
+        const relationships = JSON.parse(content);
+        
+        await fs.mkdir(path.dirname(RELATIONSHIPS_FILE), { recursive: true });
+        await fs.writeFile(RELATIONSHIPS_FILE, content);
+        
+        return relationships;
+      } catch (err) {
+        if (err.response?.status !== 404) {
+          console.error("GitHub'dan ilişki yüklenirken hata:", err.message);
+        }
+      }
+    }
+    
+    const data = await fs.readFile(RELATIONSHIPS_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (err) {
+    return {};
+  }
+}
+
+// İlişki verilerini kaydet
+async function saveRelationships(relationships) {
+  const content = JSON.stringify(relationships, null, 2);
+  
+  await fs.mkdir(path.dirname(RELATIONSHIPS_FILE), { recursive: true });
+  await fs.writeFile(RELATIONSHIPS_FILE, content);
+
+  if (GITHUB_TOKEN) {
+    try {
+      await commitToGitHub("data/relationships.json", content, `Update relationships: ${new Date().toISOString()}`);
+    } catch (err) {
+      console.error("GitHub'a ilişki kaydedilemedi, sadece local kaydedildi:", err.message);
+    }
+  }
+}
+
 // GitHub API yapılandırması (kalıcı veri için)
 const GITHUB_OWNER = process.env.GITHUB_OWNER || "Timukuu";
 const GITHUB_REPO = process.env.GITHUB_REPO || "character-backend";
@@ -1105,6 +1158,39 @@ app.put("/api/projects/:projectId/scenario", async (req, res) => {
   } catch (err) {
     console.error("Senaryo kaydedilirken hata:", err);
     res.status(500).json({ error: "Senaryo kaydedilemedi" });
+  }
+});
+
+// İlişki endpoint'leri
+app.get("/api/projects/:projectId/relationships", async (req, res) => {
+  try {
+    const { projectId } = req.params;
+    const relationships = await loadRelationships();
+    const relationship = relationships[projectId] || { characters: [], groups: [], relationships: [] };
+    res.json(relationship);
+  } catch (err) {
+    console.error("İlişki yüklenirken hata:", err);
+    res.status(500).json({ error: "İlişki yüklenemedi" });
+  }
+});
+
+app.put("/api/projects/:projectId/relationships", async (req, res) => {
+  try {
+    const { projectId } = req.params;
+    const { characters, groups, relationships: rels } = req.body;
+    
+    if (!Array.isArray(characters) || !Array.isArray(groups) || !Array.isArray(rels)) {
+      return res.status(400).json({ error: "characters, groups, and relationships must be arrays" });
+    }
+    
+    const relationships = await loadRelationships();
+    relationships[projectId] = { characters, groups, relationships: rels };
+    await saveRelationships(relationships);
+
+    res.json({ success: true, relationship: { characters, groups, relationships: rels } });
+  } catch (err) {
+    console.error("İlişki kaydedilirken hata:", err);
+    res.status(500).json({ error: "İlişki kaydedilemedi" });
   }
 });
 
