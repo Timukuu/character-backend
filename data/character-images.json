@@ -1,6 +1,21 @@
 {
   "mink1xp9-kw9h7x": [
     {
+      "id": "img-miogpgvv-23q84d",
+      "characterId": "mink1xp9-kw9h7x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764672941/character-gallery/ny4npkfgrwfv88imjbz3.png",
+      "fileName": "ChatGPT Image 19 Kas 2025 14_01_19.png",
+      "title": "Deneme2",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [],
+      "orderIndex": 0,
+      "createdAt": "2025-12-02T10:55:42.523Z",
+      "createdByUserId": "timuku",
+      "updatedAt": "2025-12-02T13:15:52.112Z"
+    },
+    {
       "id": "img-minkinkj-ykhrg9",
       "characterId": "mink1xp9-kw9h7x",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764618875/character-gallery/vzirxrqaefcebsjuwuro.png",
@@ -13,8 +28,9 @@
       ],
       "createdAt": "2025-12-01T19:54:36.883Z",
       "createdByUserId": "timuku",
-      "updatedAt": "2025-12-02T08:15:55.570Z",
-      "defaultImageId": null
+      "updatedAt": "2025-12-02T14:53:02.248Z",
+      "defaultImageId": null,
+      "orderIndex": 1
     },
     {
       "id": "img-minl6kt3-fe6rq8",
@@ -29,10 +45,11 @@
       ],
       "createdAt": "2025-12-01T20:13:13.047Z",
       "createdByUserId": "timuku",
-      "updatedAt": "2025-12-02T10:55:21.203Z",
+      "updatedAt": "2025-12-02T14:53:04.498Z",
       "defaultImageId": "img-minl6kt3-fe6rq8",
       "positivePrompt": null,
-      "negativePrompt": null
+      "negativePrompt": null,
+      "orderIndex": 3
     },
     {
       "id": "img-minlwrtp-z1fsre",
@@ -44,8 +61,9 @@
       "tags": [],
       "createdAt": "2025-12-01T20:33:35.197Z",
       "createdByUserId": "timuku",
-      "updatedAt": "2025-12-02T08:15:57.790Z",
-      "defaultImageId": null
+      "updatedAt": "2025-12-02T14:53:01.223Z",
+      "defaultImageId": null,
+      "orderIndex": 0
     },
     {
       "id": "img-minlxhv9-0x7c5x",
@@ -59,22 +77,96 @@
       ],
       "createdAt": "2025-12-01T20:34:08.949Z",
       "createdByUserId": "timuku",
-      "updatedAt": "2025-12-02T08:15:58.873Z",
-      "defaultImageId": null
+      "updatedAt": "2025-12-02T14:53:03.334Z",
+      "defaultImageId": null,
+      "orderIndex": 2
+    }
+  ],
+  "mipl0jjt-eg7z3x": [
+    {
+      "id": "img-miplvojy-e2wbkn",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764742095/character-gallery/jurd5jry0zawwodixvzx.png",
+      "fileName": "00043-1604218144.png",
+      "title": "Luna Standing - amanatsuIllustrious",
+      "description": "Kıyafet değiştirme ekranı için poz. Bir eli başının arkasında. 1536x2304",
+      "positivePrompt": "masterpiece, best quality, ultra-detailed, highres, 8k, finely detailed, intricate details, hdr, volumetric light, natural shadows , 1girl, leather, yellow eyes,white hair, long hair, straight hair, hair between eyes, big eyes, looking at viewer, full body, head to toes, perfect nipples, perfect fingers, front view, standing, whole body is visible, one hand behind head, bent arm, straight ahead, solo, completely nude, medium breasts, nipples, pussy,medium breasts, black flat background, long shot, wide shot, distant view <lora:Eyes_High_Definition:1>",
+      "negativePrompt": "Negative prompt: bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,",
+      "tags": [
+        "Luna",
+        "nude",
+        "standing",
+        "head to toe",
+        "wide shot",
+        "amanat"
+      ],
+      "orderIndex": 0,
+      "createdAt": "2025-12-03T06:08:16.654Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2025-12-03T18:41:05.831Z"
     },
     {
-      "id": "img-miogpgvv-23q84d",
-      "characterId": "mink1xp9-kw9h7x",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764672941/character-gallery/ny4npkfgrwfv88imjbz3.png",
-      "fileName": "ChatGPT Image 19 Kas 2025 14_01_19.png",
-      "title": "Deneme2",
-      "description": "",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [],
-      "orderIndex": 4,
-      "createdAt": "2025-12-02T10:55:42.523Z",
-      "createdByUserId": "timuku"
+      "id": "img-miprqotn-w83j4s",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764751939/character-gallery/w4585yxlbsys2qj21xvy.png",
+      "fileName": "00001-1604218144.png",
+      "title": "Luna Standing - JANKU",
+      "description": "Luna için kıyafet penceresi pozu. 1536x2304",
+      "positivePrompt": "NikWzrd, masterpiece, best quality, ultra-detailed, highres, 8k, finely detailed, intricate details, hdr, volumetric light, natural shadows , 1girl, leather, yellow eyes,white hair, long hair, straight hair, hair between eyes, big eyes, looking at viewer, full body, head to toes,  perfect nipples, perfect fingers, front view, standing, whole body is visible, one hand behind head, bent arm, straight ahead, solo, completely nude, medium breasts, nipples, pussy,medium  breasts, black flat background, long shot, wide shot, distant view <lora:Eyes_High_Definition:1>",
+      "negativePrompt": "bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,",
+      "tags": [
+        "Luna",
+        "nude",
+        "standing",
+        "head to toe",
+        "wide shot",
+        "Jankut"
+      ],
+      "orderIndex": 1,
+      "createdAt": "2025-12-03T08:52:21.419Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2025-12-03T18:40:55.120Z"
+    },
+    {
+      "id": "img-miq01dcc-zwdr2j",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764765875/character-gallery/vt5tuhsfbcwt7wlhyro3.png",
+      "fileName": "00007-644782408.png",
+      "title": "Portrait - JANKU",
+      "description": "Luna Portre - detaylı gözler",
+      "positivePrompt": "lazypos, 1girl,  arm up, purple bow, open mouth,bone white hair, solo,  simple background, flat background,medium breasts, , looking at viewer, yellow eyes, long hair, hair between eyes, blush, white background, :d, smile, breasts, bare shoulders, upper body, portrait, symmetrical face, nude",
+      "negativePrompt": "lazyneg, lazyhand,bow,detailed eyes,",
+      "tags": [
+        "Luna",
+        "portrait",
+        "face",
+        "smiling"
+      ],
+      "orderIndex": 2,
+      "createdAt": "2025-12-03T12:44:36.684Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2025-12-03T13:23:43.974Z"
+    },
+    {
+      "id": "img-miq0x53b-bev6p1",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764767358/character-gallery/bz0r76jynrc11o9hhd4h.png",
+      "fileName": "00011-644782408.png",
+      "title": "Luna Portrait-JANKU",
+      "description": "elleri önden bağlı poz, göğüsler detaylı",
+      "positivePrompt": "masterpiece,1girl, closed mouth,bright white hair, solo, detailed eyes, perfect eyes, simple background, flat background,medium breasts, , looking at viewer, yellow eyes, long hair, hair between eyes, blush, white background, :d, smile, medium breasts, bare shoulders, upper body, portrait, nipples, symmetrical face, symmetrical body, nude, hands clasped in front on waist",
+      "negativePrompt": "lazyneg, lazyloli",
+      "tags": [
+        "Luna",
+        "portrait",
+        "face",
+        "smiling",
+        "hands clasped in front on waist"
+      ],
+      "orderIndex": 3,
+      "createdAt": "2025-12-03T13:09:18.983Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2025-12-03T13:23:05.927Z"
     }
   ]
 }
