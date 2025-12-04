@@ -4,34 +4,23 @@
       {
         "id": "char-1764850303623",
         "name": "Luna",
-        "groupId": "group-1764853434541",
+        "groupId": null,
         "position": {
-          "x": 117,
-          "y": 73
+          "x": 35.000030517578125,
+          "y": 79
         }
       },
       {
         "id": "char-1764851113925",
         "name": "Ryan",
-        "groupId": "group-1764853421444",
+        "groupId": null,
         "position": {
-          "x": 117,
-          "y": 252
+          "x": 176.00003051757812,
+          "y": 618
         }
       }
     ],
-    "groups": [
-      {
-        "id": "group-1764853421444",
-        "name": "İnsanlar",
-        "color": "#FF6B6B"
-      },
-      {
-        "id": "group-1764853434541",
-        "name": "Tilkiler",
-        "color": "#4ECDC4"
-      }
-    ],
+    "groups": [],
     "relationships": [
       {
         "id": "rel-1764852212127",
