@@ -61,6 +61,64 @@ const CHARACTER_IMAGES_FILE = path.join(__dirname, "data", "character-images.jso
 const USERS_FILE = path.join(__dirname, "data", "users.json");
 // Chat mesajlarını tutmak için dosya yolu
 const CHAT_MESSAGES_FILE = path.join(__dirname, "data", "chat-messages.json");
+// Senaryo verilerini tutmak için dosya yolu
+const SCENARIOS_FILE = path.join(__dirname, "data", "scenarios.json");
+
+// Senaryo verilerini yükle (önce GitHub'dan, yoksa local'den)
+async function loadScenarios() {
+  // Önce GitHub'dan yüklemeyi dene
+  if (GITHUB_TOKEN) {
+    try {
+      const response = await axios.get(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/scenarios.json`,
+        {
+          headers: {
+            Authorization: `token ${GITHUB_TOKEN}`,
+            Accept: "application/vnd.github.v3+json"
+          },
+          params: { ref: GITHUB_BRANCH }
+        }
+      );
+      const content = Buffer.from(response.data.content, "base64").toString("utf8");
+      const scenarios = JSON.parse(content);
+      
+      await fs.mkdir(path.dirname(SCENARIOS_FILE), { recursive: true });
+      await fs.writeFile(SCENARIOS_FILE, content);
+      
+      return scenarios;
+    } catch (err) {
+      if (err.response?.status !== 404) {
+        console.error("GitHub'dan senaryo yüklenirken hata:", err.message);
+      }
+      // GitHub'da yoksa local'den yükle
+    }
+  }
+
+  // Local'den yükle
+  try {
+    const data = await fs.readFile(SCENARIOS_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (err) {
+    // Dosya yoksa boş obje döndür
+    return {};
+  }
+}
+
+// Senaryo verilerini kaydet (hem local hem GitHub'a)
+async function saveScenarios(scenarios) {
+  const content = JSON.stringify(scenarios, null, 2);
+  
+  await fs.mkdir(path.dirname(SCENARIOS_FILE), { recursive: true });
+  await fs.writeFile(SCENARIOS_FILE, content);
+
+  if (GITHUB_TOKEN) {
+    try {
+      await commitToGitHub("data/scenarios.json", content, `Update scenarios: ${new Date().toISOString()}`);
+    } catch (err) {
+      console.error("GitHub'a senaryo kaydedilemedi, sadece local kaydedildi:", err.message);
+    }
+  }
+}
 
 // GitHub API yapılandırması (kalıcı veri için)
 const GITHUB_OWNER = process.env.GITHUB_OWNER || "Timukuu";
@@ -1010,6 +1068,41 @@ app.post("/upload", cors(), upload.single("file"), async (req, res) => {
       message: err.message,
       details: process.env.NODE_ENV === "development" ? err.stack : undefined
     });
+  }
+});
+
+// Senaryo endpoint'leri
+// Projeye ait senaryoyu getir
+app.get("/api/projects/:projectId/scenario", async (req, res) => {
+  try {
+    const { projectId } = req.params;
+    const scenarios = await loadScenarios();
+    const scenario = scenarios[projectId] || { chapters: [] };
+    res.json(scenario);
+  } catch (err) {
+    console.error("Senaryo yüklenirken hata:", err);
+    res.status(500).json({ error: "Senaryo yüklenemedi" });
+  }
+});
+
+// Projeye ait senaryoyu kaydet/güncelle
+app.put("/api/projects/:projectId/scenario", async (req, res) => {
+  try {
+    const { projectId } = req.params;
+    const { chapters } = req.body;
+    
+    if (!Array.isArray(chapters)) {
+      return res.status(400).json({ error: "Geçersiz senaryo verisi" });
+    }
+
+    const scenarios = await loadScenarios();
+    scenarios[projectId] = { chapters };
+    await saveScenarios(scenarios);
+
+    res.json({ success: true, scenario: { chapters } });
+  } catch (err) {
+    console.error("Senaryo kaydedilirken hata:", err);
+    res.status(500).json({ error: "Senaryo kaydedilemedi" });
   }
 });
 
