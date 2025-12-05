@@ -1,43 +1,5 @@
 {
   "proje-mioy5tos-jelgwb": {
-    "chapters": [
-      {
-        "id": "chapter_1764834188496",
-        "title": "Yeni Bölüm",
-        "content": "Tanışma",
-        "x": 26,
-        "y": 137,
-        "parts": [
-          {
-            "id": "part_1764834250215",
-            "title": "Yeni Kısım",
-            "content": "alalalalla",
-            "x": 304,
-            "y": 13
-          },
-          {
-            "id": "part_1764834253432",
-            "title": "Yeni Kısım",
-            "content": "fasfasf",
-            "x": 334,
-            "y": 250
-          },
-          {
-            "id": "part_1764834253912",
-            "title": "Yeni Kısım",
-            "content": "asfasfas",
-            "x": 268,
-            "y": 473
-          },
-          {
-            "id": "part_1764834254333",
-            "title": "Yeni Kısım",
-            "content": "fasfasf",
-            "x": 34,
-            "y": 517
-          }
-        ]
-      }
-    ]
+    "chapters": []
   }
 }
