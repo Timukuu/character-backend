@@ -1,5 +1,29 @@
 {
   "proje-mioy5tos-jelgwb": {
-    "chapters": []
+    "chapters": [
+      {
+        "id": "chapter_1764916442112",
+        "title": "Yeni Bölüm",
+        "content": "Tanışma",
+        "x": 200,
+        "y": 100,
+        "parts": [
+          {
+            "id": "part_1764916449665",
+            "title": "Yeni Kısım",
+            "content": "",
+            "x": 450.0000305175781,
+            "y": 98.99999237060547
+          },
+          {
+            "id": "part_1764916453561",
+            "title": "Yeni Kısım",
+            "content": "",
+            "x": 469.0000305175781,
+            "y": 324.00000762939453
+          }
+        ]
+      }
+    ]
   }
 }
