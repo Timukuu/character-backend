@@ -229,6 +229,27 @@
       "orderIndex": 6,
       "createdAt": "2025-12-04T12:30:08.324Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mishurya-w81zuh",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764916733/character-gallery/vemxxlkruprdfvtre9rf.png",
+      "fileName": "00027-1604218144.png",
+      "title": "Luna Talking - JANKU",
+      "description": "Konuşma sahnelerinde kullanılabilir.",
+      "positivePrompt": "Pose Show from the hips to the shoulders, When viewed from the front, the composition is symmetrical, standing,medium breasts, (white hair), yellow eyes, looking at viewer, ),smile, shy, blush, long  hair, yellow eyes,masterpiece,  hands together, flat background, nude, arms forward,",
+      "negativePrompt": "bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn,",
+      "tags": [
+        "Luna",
+        "portrait",
+        "face",
+        "smiling",
+        "arms forward",
+        "hips to shoulder"
+      ],
+      "orderIndex": 7,
+      "createdAt": "2025-12-05T06:38:54.466Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
