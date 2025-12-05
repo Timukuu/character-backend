@@ -1,0 +1,9 @@
+[
+  {
+    "id": "user-gawain-001",
+    "username": "gawain",
+    "password": "gawain",
+    "role": "superuser",
+    "projects": []
+  }
+]
