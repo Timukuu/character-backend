@@ -18,6 +18,6 @@
     "username": "gawain",
     "password": "gawain",
     "role": "superuser",
-    "projects": []
+    "projects": ["proje-1"]
   }
 ]
