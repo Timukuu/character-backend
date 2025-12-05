@@ -4,20 +4,28 @@
     "username": "timuku",
     "password": "timuku",
     "role": "admin",
-    "projects": ["proje-1", "proje-2"]
+    "projects": [
+      "proje-1",
+      "proje-2"
+    ]
   },
   {
     "id": "user-merycim-001",
     "username": "merycim",
     "password": "merycim",
     "role": "admin",
-    "projects": ["proje-1", "proje-2"]
+    "projects": [
+      "proje-1",
+      "proje-2"
+    ]
   },
   {
     "id": "user-gawain-001",
     "username": "gawain",
     "password": "gawain",
     "role": "superuser",
-    "projects": ["proje-1"]
+    "projects": [
+      "proje-1"
+    ]
   }
 ]
