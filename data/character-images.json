@@ -256,7 +256,7 @@
       "characterId": "mipl0jjt-eg7z3x",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764918060/character-gallery/zmgnijdgoh6rvbr7pyeo.png",
       "fileName": "00001-1604218144.png",
-      "title": "Luna Eyes",
+      "title": "Luna Eyes - hoseki",
       "description": "Luna'nın gözleri için seçtim.",
       "positivePrompt": "masterpiece, anime, portrait, soft lighting, best quality, masterpiece, ultra detailed face,ultra detailed body, ultra detailed eyes, soft lighting, head shot, extreme close up, big smile, looking at viewer, fair skin, animated eyes, blue sky, 1 girl,  white hair, yellow eyes, long hair,",
       "negativePrompt": "worst quality,",
@@ -268,7 +268,8 @@
       ],
       "orderIndex": 8,
       "createdAt": "2025-12-05T07:01:01.645Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "updatedAt": "2025-12-05T07:02:16.282Z"
     }
   ]
 }
