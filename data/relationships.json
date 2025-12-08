@@ -117,6 +117,13 @@
         "to": "char-1764851113925",
         "type": "love",
         "strength": 5
+      },
+      {
+        "id": "rel-1765178628332",
+        "from": "char-1765178524059",
+        "to": "char-1764857817549",
+        "type": "friend",
+        "strength": 50
       }
     ]
   }
