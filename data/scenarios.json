@@ -67,11 +67,20 @@
           {
             "id": "part_1765183145433",
             "title": "Ryan Otopark",
-            "content": "\n",
-            "x": 19,
-            "y": 1616.0000915527344,
+            "content": "\nRyan arabasına binmek için ilerlerken yine o hoş sesi duyar.\n\nTiffany: “Ryan!”\n\nTiffany yine o mükemmel görüntüsüyle yeniden karşısında belirmiştir. \n\nTiffany: “Şey. Hala o evde oturuyorsun değil mi? Yani o küçükken yaşadığınız evde.”\n\nRyan: “Evet. Ailem sonradan taşındığımız evde. Ben okula yakın olduğu için burada kalacağım. Yani bir süre yine komşunuz olacağım.”\n\nTiffany: “Süper! Çok sevindim. Beni de eve bırakabilir misin?”\n\nRyan: “Tabii ki. Aynı yere gidiyoruz zaten.”\n",
+            "x": 343,
+            "y": 1529.0000915527344,
             "width": 282,
             "height": 268
+          },
+          {
+            "id": "part_1765183260634",
+            "title": "Ryan'ın Arabası",
+            "content": "Ryan biraz bekler ve devam eder. \n\nRyan: “Hatta istersen her gün de birlikte gidip gelebiliriz.”\n\nTiffany: “Çok sevinirim tabii ki.” Tiffany sevincini hafif bir kikirdemeyle de belli etmiştir.\n\nEve vardıklarında araba durur ve Tiffany inmeden önce bir şeyler söylemek için kalır.\nTiffany: “Ryan, şey…”\n\nRyan: “Efendim?”\n\nTiffany: “Çok iyisin. Yani ben senin hep böyle iyi halini seviyordum. Ve hiç değişmemişsin. Tekrar karşılaşmak iyi oldu.”\n\nRyan bu mükemmel güzellikteki kızdan aldığı iltifat karşılığında şaşkın bir şekilde kalakalmıştır. Kız arabadan indikten sonra parfüm kokusunun hala arabada olduğunu fark eder. \n\n“Kokusu hala burada… Öyle güzel bir koku ki saatlerce burada kalabilirim.”\n\nAraçtan inip de eve doğru yöneldiğinde aklına birden evdeki tilki kız gelir. \n\nRyan iç ses: “Ah! Şu tilki kız. Tamamen unuttum. Tiffany aklımı öyle başımdan aldı ki. Gitti mi acaba? Belki de geldiği yere geri dönmüştür.”\n",
+            "x": 361.0000305175781,
+            "y": 1834.0000762939453,
+            "width": 230,
+            "height": 375
           }
         ]
       }
