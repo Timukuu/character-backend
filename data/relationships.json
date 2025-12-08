@@ -62,8 +62,8 @@
         "id": "rel-1764857882357",
         "from": "char-1764851113925",
         "to": "char-1764857817549",
-        "type": "love",
-        "strength": 50
+        "type": "friend",
+        "strength": 75
       },
       {
         "id": "rel-1765178226090",
