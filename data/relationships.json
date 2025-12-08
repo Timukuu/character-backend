@@ -76,8 +76,8 @@
         "id": "rel-1765178336642",
         "from": "char-1764850303623",
         "to": "char-1765178204043",
-        "type": "friend",
-        "strength": 50
+        "type": "rival",
+        "strength": 60
       }
     ]
   }
