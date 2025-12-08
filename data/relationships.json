@@ -31,7 +31,7 @@
       {
         "id": "char-1765178204043",
         "name": "Tiffany",
-        "groupId": null,
+        "groupId": "group-1764853421444",
         "position": {
           "x": 463.0000305175781,
           "y": 302.00000762939453
@@ -40,7 +40,7 @@
       {
         "id": "char-1765178426946",
         "name": "Celeste",
-        "groupId": null,
+        "groupId": "group-1764853434541",
         "position": {
           "x": 65,
           "y": 173.00000762939453
