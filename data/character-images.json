@@ -327,6 +327,25 @@
       "orderIndex": 11,
       "createdAt": "2025-12-09T05:57:34.808Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-miy66wrg-i0o0wg",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1765259941/character-gallery/b7djde3xjp1ofnsshbpd.png",
+      "fileName": "00014-1604218144.png",
+      "title": "Luna Face",
+      "description": "expressions",
+      "positivePrompt": "masterpiece, anime, portrait, soft lighting, best quality, masterpiece, ultra detailed face,ultra detailed body, ultra detailed eyes, soft lighting, head shot, smile, closed lips, looking at viewer, fair skin, animated eyes, blue sky, 1 girl, bald, no hair, yellow eyes, wide shot, shoulders to head, (symmetrical face: 1.5),",
+      "negativePrompt": "lazyneg, lazyhand, worst quality, low quality, hair, normal quality, multiple views, bad anatomy, bad hands, extra limb, missing limbs, ,extra hands, extra fingers,",
+      "tags": [
+        "Luna",
+        "portrait",
+        "face",
+        "smiling"
+      ],
+      "orderIndex": 12,
+      "createdAt": "2025-12-09T05:59:02.236Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
