@@ -367,6 +367,25 @@
       "orderIndex": 13,
       "createdAt": "2025-12-09T06:13:43.446Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mj2fbkc6-zptiad",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1765517139/character-gallery/uphxpwyccmuiyag0pmil.jpg",
+      "fileName": "00001.jpg",
+      "title": "Luna Standing",
+      "description": "Luna için kıyafet pozu",
+      "positivePrompt": "masterpiece, standing, vwhite background, best quality, ultra-detailed, highres, standing, hdr, volumetric light, natural shadows , 1girl, yellow eyes,white hair, long hair, straight hair, hair between eyes, big eyes, looking at viewer, full body, perfect nipples, perfect fingers, front view, standing, whole body is visible, right hand behind head, bent arm, straight ahead, solo, completely nude, medium breasts, nipples, pussy,medium breasts, simple background, long shot, wide shot, distant view <lora:Eyes_High_Definition:1>",
+      "negativePrompt": "bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,",
+      "tags": [
+        "Luna",
+        "standing",
+        "hand behind head",
+        ""
+      ],
+      "orderIndex": 14,
+      "createdAt": "2025-12-12T05:25:40.662Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
