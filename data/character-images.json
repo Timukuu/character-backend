@@ -364,6 +364,24 @@
       "orderIndex": 14,
       "createdAt": "2025-12-12T05:25:40.662Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mj2ffjsu-f9ld7x",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1765517325/character-gallery/yqde1izmbcyxz8a6sfvt.jpg",
+      "fileName": "00003.jpg",
+      "title": "Luna Hair",
+      "description": "Luna saç stilleri",
+      "positivePrompt": "solo, hips to the shoulders, viewed from the front, the composition is symmetrical, standing,medium breasts, symmetric hair, long hair, bonewhite hair, nipples, (white hair), yellow eyes, detailed hair, looking at viewer, ),smile,  hair, yellow eyes, (narrow eyes:1.2),masterpiece,  hands front of the legs,simple background, nude, fine",
+      "negativePrompt": "blue, yellow hair, cutted hair, bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, blue hair,",
+      "tags": [
+        "Luna",
+        "talking",
+        "hair"
+      ],
+      "orderIndex": 14,
+      "createdAt": "2025-12-12T05:28:46.590Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
