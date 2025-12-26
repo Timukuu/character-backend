@@ -337,6 +337,27 @@
       "orderIndex": 12,
       "createdAt": "2025-12-12T13:39:59.226Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mjmv52yy-z4ddx0",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1766753034/character-gallery/fqd5cuahw02twlboofon.png",
+      "fileName": "00001-1604218144.png",
+      "title": "Tiffany Standing",
+      "description": "Tiffany Talking Pose",
+      "positivePrompt": "masterpiece, standing, white background, best quality, ultra-detailed, highres, standing, hdr, volumetric light, natural shadows , 1girl, blue eyes,blonde hair, long hair, straight hair, hair between eyes, big eyes, looking at viewer, full body, perfect nipples, perfect fingers, front view, standing, whole body is visible, one hand on hips, straight ahead, solo, completely nude, medium breasts, nipples, pussy,medium breasts, simple background, long shot, wide shot, distant view <lora:Eyes_High_Definition:1>",
+      "negativePrompt": "bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,",
+      "tags": [
+        "Tiffany",
+        "nude",
+        "standing",
+        "head to toe",
+        "wide shot",
+        "hand on hips"
+      ],
+      "orderIndex": 13,
+      "createdAt": "2025-12-26T12:43:55.594Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
