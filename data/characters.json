@@ -33,6 +33,16 @@
       "age": 19,
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764740780/character-gallery/rimqxbom3od5np4izdbg.png",
       "createdAt": "2025-12-03T05:44:07.742Z"
+    },
+    {
+      "id": "mjr3k4aa-ui5ftb",
+      "firstName": "Tiffany",
+      "lastName": "Rich",
+      "traits": "Ryan'ın komşusu ve çocukluk arkadaşı. Zengin bir ailesi var. Özgüvenli, lüksü seviyor.",
+      "zodiac": "Aslan",
+      "age": 19,
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767009040/character-gallery/wlodnqc42dpmwwnafjbk.png",
+      "createdAt": "2025-12-29T11:50:41.830Z"
     }
   ]
 }
