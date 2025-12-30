@@ -416,6 +416,25 @@
       "orderIndex": 2,
       "createdAt": "2025-12-30T08:50:35.265Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mjscmmob-hxokuy",
+      "characterId": "mjr3k4aa-ui5ftb",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767084737/character-gallery/dxu4sr1kmjrlzuezaexm.png",
+      "fileName": "00001-1463482425.png",
+      "title": "Tiffany Outfit",
+      "description": "Tiffany günlük - dekolteli versiyon",
+      "positivePrompt": "positive_plus, high quality illustration, clean linesmasterpiece, standing, white background, best quality, ultra-detailed, highres, standing, hdr, volumetric light, natural shadows , 1girl, blue eyes,no hair,bald, big eyes, looking at viewer, full body, perfect fingers, front view, standing, whole body is visible, one hand on hips, straight ahead, solo, medium breasts, medium breasts, simple background, long shot, wide shot, distant view,lazynegative, low quality, bad anatomy, flutter sleeve cream-colored v-neck blouse, beige high-waisted tailored shorts, Old money aesthetic, Preppy style, Elegant summer outfit, breast revealing,",
+      "negativePrompt": "lazy hand, missing fingers, hair, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,\nSteps: 30, Sampler: Euler, Schedule type: Automatic, CFG scale: 7, Seed: 1463482425, Size: 1152x2024, Model hash: 217daae812, Model: JANKUTrainedNoobaiRouwei_v50, Denoising strength: 0.75, Version: v1.10.1",
+      "tags": [
+        "Tiffany",
+        "outfit",
+        "Tiffany outfit",
+        "revealing"
+      ],
+      "orderIndex": 3,
+      "createdAt": "2025-12-30T08:52:18.635Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
