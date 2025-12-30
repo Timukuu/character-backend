@@ -43,6 +43,16 @@
       "age": 19,
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767009040/character-gallery/wlodnqc42dpmwwnafjbk.png",
       "createdAt": "2025-12-29T11:50:41.830Z"
+    },
+    {
+      "id": "mjsmbcs9-8haoj5",
+      "firstName": "Nova",
+      "lastName": "Geek",
+      "traits": "geek, Ryan'ın iş arkadaşı, Kibirli",
+      "zodiac": "Kova",
+      "age": 19,
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767101010/character-gallery/nyxrwuwf0i1orq7xwdrd.png",
+      "createdAt": "2025-12-30T13:23:30.746Z"
     }
   ]
 }
