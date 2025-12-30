@@ -454,6 +454,26 @@
       "orderIndex": 0,
       "createdAt": "2025-12-30T13:25:20.229Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mjsmfllt-s8eqx1",
+      "characterId": "mjsmbcs9-8haoj5",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767101205/character-gallery/b1l4egfttlrmijh4l7rz.png",
+      "fileName": "00028-1604218144.png",
+      "title": "Nova Standing",
+      "description": "Nova konuşma pozu",
+      "positivePrompt": "masterpiece, standing, white background, best quality, ultra-detailed, highres, standing, hdr, volumetric light, natural shadows , arogant 1girl, blue eyes, split-color hair, mix of <blue> and <black> hair, short cut hair, hair between eyes, big eyes, looking at viewer, full body, arogant, perfect nipples, perfect fingers, front view, standing, whole body is visible, with her arms crossed, straight ahead, solo, completely nude, big breasts, nipples, pussy, simple background, long shot, wide shot, distant view <lora:Eyes_High_Definition:1> <lora:Split Color Hair:1.5>,",
+      "negativePrompt": "bad anatomy, low quality, (lazyneg), (lazyhand),missing fingers, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,lazyneg, lazyhand, lazynsfw, white hair, shoes, outfit,",
+      "tags": [
+        "Nova",
+        "standing",
+        "Nova talking",
+        "arms crossed",
+        ""
+      ],
+      "orderIndex": 1,
+      "createdAt": "2025-12-30T13:26:46.817Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
