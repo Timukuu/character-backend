@@ -489,6 +489,24 @@
       "orderIndex": 2,
       "createdAt": "2025-12-31T07:33:32.829Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mjtqtd5s-3gbf5x",
+      "characterId": "mjsmbcs9-8haoj5",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767169032/character-gallery/r6wvhenmnwgqgaxsxzlh.png",
+      "fileName": "00034-1604218144.png",
+      "title": "Nova Hair",
+      "description": "Nova'nın günlük saçı",
+      "positivePrompt": "solo, hips to the shoulders, viewed from the front, the composition is symmetrical, standing,medium breasts, symmetric hair,short hair, nipples, blue eyes, detailed hair, looking at viewer, half blue hair, half black hair,smile, blue eyes, (narrow eyes:1.2),masterpiece, hands front of the legs,simple background, nude, fine, split-color hair, mix of <blue> and <black> hair, short cut hair, hair between eyes, <lora:Split Color Hair:1.5>,",
+      "negativePrompt": "Negative prompt: lazyneg, lazyhand, blue hair, low quality, worst quality, normal quality, jpeg artifacts, signature, watermark, text, error, blurry, ugly, poorly drawn, mutated, extra limbs, deformed, distorted face, bad proportions, out of focus, cloned face,mutated hands, disfigured, extra arms, extra legs, extra fingers, missing arms, missing legs, missing fingers, disconnected limbs, long neck, bad anatomy, bad hands, poorly drawn hands, six fingers, extra fingers, poorly drawn hands, malformed hands, distorted fingers, warped finger joints, fused fingers, webbed fingers, missing fingers, incomplete hands, broken anatomy, unnatural finger angles, duplicate thumbs, floating fingers, oversized hands, tiny hands, blurry hands, low-detail fingers, melted hands, glitched finger shapes, white hair,",
+      "tags": [
+        "Nova",
+        "hair",
+        "split color"
+      ],
+      "orderIndex": 3,
+      "createdAt": "2025-12-31T08:17:13.696Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
