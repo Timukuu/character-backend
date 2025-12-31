@@ -474,6 +474,24 @@
       "orderIndex": 1,
       "createdAt": "2025-12-30T13:26:46.817Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mjtp96vx-kt6h4e",
+      "characterId": "mjsmbcs9-8haoj5",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767166411/character-gallery/ryyopnojojlw5i4b3bwi.png",
+      "fileName": "00003-1604218144.png",
+      "title": "Nova Outfit",
+      "description": "Nova barista kıyafeti",
+      "positivePrompt": "masterpiece, standing, white background, best quality, ultra-detailed, highres, standing, hdr, volumetric light, natural shadows , arogant 1girl, blue eyes, split-color hair, mix of <blue> and <black> hair, short cut hair, hair between eyes, big eyes, looking at viewer, full body, arogant, perfect fingers, front view, standing, whole body is visible, with her arms crossed, straight ahead, solo,  (black polo crop top:1.3), short sleeves, (black mini skirt:1.2), high-waisted, midriff, navel,big breasts, simple background, long shot, wide shot, distant view <lora:Eyes_High_Definition:1> <lora:Split Color Hair:1.5>,lazypos,",
+      "negativePrompt": "bad anatomy, low quality, (lazyneg), (lazyhand),missing fingers, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,lazyneg, lazyhand, lazynsfw, white hair, shoes, outfit,",
+      "tags": [
+        "Nova",
+        "outfit",
+        "cafe"
+      ],
+      "orderIndex": 2,
+      "createdAt": "2025-12-31T07:33:32.829Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
