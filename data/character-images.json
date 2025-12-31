@@ -337,6 +337,24 @@
       "orderIndex": 12,
       "createdAt": "2025-12-12T13:39:59.226Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mjtqqdoq-bilxo2",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767168893/character-gallery/lpydfu55ozw4fkbzowpn.png",
+      "fileName": "00005-1463482425.png",
+      "title": "Luna outfit",
+      "description": "Luna t-shirt",
+      "positivePrompt": "masterpiece, standing, white background, best quality, ultra-detailed, highres, standing, hdr, volumetric light, natural shadows , 1girl, yellow eyes,no hair, (bald: 1.5), big eyes, looking at viewer, full body, perfect fingers, front view, standing, whole body is visible, right hand behind head, bent arm, straight ahead, solo, white tshirt, one shoulder off, no bra inside , medium breasts, white t-shirt, simple background, long shot, wide shot, distant view <lora:Eyes_High_Definition:1>",
+      "negativePrompt": "hair, hands, missing fingers, , extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,",
+      "tags": [
+        "Luna",
+        "t-shirt",
+        "outfit"
+      ],
+      "orderIndex": 13,
+      "createdAt": "2025-12-31T08:14:54.410Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjr3k4aa-ui5ftb": [
