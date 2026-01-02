@@ -53,16 +53,6 @@
       "age": 19,
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767101010/character-gallery/nyxrwuwf0i1orq7xwdrd.png",
       "createdAt": "2025-12-30T13:23:30.746Z"
-    },
-    {
-      "id": "mjwm7em0-fwnb2n",
-      "firstName": "Raven",
-      "lastName": "Fox",
-      "traits": "Raven, Karanlık Lordun kızı. Evil",
-      "zodiac": "Akrep",
-      "age": 19,
-      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767342690/character-gallery/qmpvsvz9ic2mstdwnn6g.png",
-      "createdAt": "2026-01-02T08:31:31.394Z"
     }
   ]
 }
