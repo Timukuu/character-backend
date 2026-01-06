@@ -506,6 +506,24 @@
       "orderIndex": 7,
       "createdAt": "2026-01-06T14:08:09.170Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mk2o10ab-h28ftf",
+      "characterId": "mjr3k4aa-ui5ftb",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767708546/character-gallery/onbg7hcjpvuxc1iivsqo.png",
+      "fileName": "00005-1604218144.png",
+      "title": "Tiffany Face",
+      "description": "Tiffany Shy",
+      "positivePrompt": "masterpiece, anime, portrait, soft lighting, best quality, masterpiece, ultra detailed face,ultra detailed eyes, soft lighting, head shot,shy, looking at viewer, animated eyes,simple background, 1 girl, bald, no hair, blue eyes, wide shot, shoulders to head, (symmetrical: 1.5), lazypos, pink lip,",
+      "negativePrompt": "lazyneg, lazyhand, worst quality, low quality, hair, normal quality, multiple views, bad anatomy, bad hands, extra limb, missing limbs, missing toes, missing fingers,extra hands, extra fingers,",
+      "tags": [
+        "Tiffany",
+        "face",
+        "shy"
+      ],
+      "orderIndex": 8,
+      "createdAt": "2026-01-06T14:09:06.996Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjsmbcs9-8haoj5": [
