@@ -432,6 +432,24 @@
       "orderIndex": 3,
       "createdAt": "2025-12-30T08:52:18.635Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mk2nixac-6vrqn2",
+      "characterId": "mjr3k4aa-ui5ftb",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767707702/character-gallery/xpyxdiplei6linfl1m15.png",
+      "fileName": "00001-1604218144.png",
+      "title": "Tiffany Face",
+      "description": "Tiffany no expression",
+      "positivePrompt": "masterpiece, anime, portrait, soft lighting, best quality, masterpiece, ultra detailed face,ultra detailed eyes, soft lighting, head shot, no expression , looking at viewer, animated eyes,simple background, 1 girl, bald, no hair, blue eyes, wide shot, shoulders to head, (symmetrical: 1.5), lazypos, pink lip,",
+      "negativePrompt": "lazyneg, lazyhand, worst quality, low quality, hair, normal quality, multiple views, bad anatomy, bad hands, extra limb, missing limbs, missing toes, missing fingers,extra hands, extra fingers,",
+      "tags": [
+        "Tiffany",
+        "face",
+        "no expression"
+      ],
+      "orderIndex": 4,
+      "createdAt": "2026-01-06T13:55:03.300Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjsmbcs9-8haoj5": [
