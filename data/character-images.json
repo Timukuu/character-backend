@@ -450,6 +450,24 @@
       "orderIndex": 4,
       "createdAt": "2026-01-06T13:55:03.300Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mk2nk2rb-6edyfu",
+      "characterId": "mjr3k4aa-ui5ftb",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767707756/character-gallery/mzewvinxubujnqhxp6ns.png",
+      "fileName": "00002-1604218144.png",
+      "title": "Tiffany Face",
+      "description": "Tiffany Smiling",
+      "positivePrompt": "masterpiece, anime, portrait, soft lighting, best quality, masterpiece, ultra detailed face,ultra detailed eyes, soft lighting, head shot,smile, looking at viewer, animated eyes,simple background, 1 girl,  bald, no hair, blue eyes, wide shot, shoulders to head, (symmetrical: 1.5), lazypos, pink lip,",
+      "negativePrompt": "lazyneg, lazyhand, worst quality, low quality, hair, normal quality, multiple views, bad anatomy, bad hands, extra limb, missing limbs, missing toes, missing fingers,extra hands, extra fingers,",
+      "tags": [
+        "Tiffany",
+        "face",
+        "smile"
+      ],
+      "orderIndex": 5,
+      "createdAt": "2026-01-06T13:55:57.047Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjsmbcs9-8haoj5": [
