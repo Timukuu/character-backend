@@ -488,6 +488,24 @@
       "orderIndex": 6,
       "createdAt": "2026-01-06T13:58:32.745Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mk2nzro2-ij6iur",
+      "characterId": "mjr3k4aa-ui5ftb",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767708487/character-gallery/ayfhgxhn6fakw27bztoz.png",
+      "fileName": "00004-1604218144.png",
+      "title": "Tiffany Face",
+      "description": "Tiffany angry",
+      "positivePrompt": "masterpiece, anime, portrait, soft lighting, best quality, masterpiece, ultra detailed face,ultra detailed eyes, soft lighting, head shot,angry, looking at viewer, animated eyes,simple background, 1 girl, bald, no hair, blue eyes, wide shot, shoulders to head, (symmetrical: 1.5), lazypos, pink lip,",
+      "negativePrompt": "lazyneg, lazyhand, worst quality, low quality, hair, normal quality, multiple views, bad anatomy, bad hands, extra limb, missing limbs, missing toes, missing fingers,extra hands, extra fingers,",
+      "tags": [
+        "Tiffany",
+        "face",
+        "angry"
+      ],
+      "orderIndex": 7,
+      "createdAt": "2026-01-06T14:08:09.170Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjsmbcs9-8haoj5": [
