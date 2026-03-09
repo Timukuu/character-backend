@@ -966,6 +966,22 @@
       "orderIndex": 11,
       "createdAt": "2026-03-09T08:00:22.037Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwe5v4-x9xrdz",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773043620/character-gallery/quaboe1edttszwrzq8tv.png",
+      "fileName": "ChatGPT Image 4 Mar 2026 14_57_28.png",
+      "title": "Tiffany ev",
+      "description": "Tiffany ev gündüz",
+      "positivePrompt": "16:9 yatay lük bir ev çiz. bahçeli olsun. bahçesinde köpek kulübesi var. etrafında çitler olsun.",
+      "negativePrompt": "-",
+      "tags": [
+        "Tiffany ev"
+      ],
+      "orderIndex": 12,
+      "createdAt": "2026-03-09T08:07:01.168Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
