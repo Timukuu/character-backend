@@ -1000,6 +1000,24 @@
       "orderIndex": 13,
       "createdAt": "2026-03-09T08:08:01.043Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwil5w-ixjic3",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773043826/character-gallery/jkbtc6ykyqpob7vlgzt2.png",
+      "fileName": "tiffany ev.png",
+      "title": "Tiffany ev",
+      "description": "Tiffany salon",
+      "positivePrompt": "anime film background / interior background art; clean thin lineart; soft painterly shading; cel + gradient mix; subtle brush texture; cinematic soft window light; no photorealism; no 3D render look; wide shot; 2-point perspective; 16:9. luxury living room with beige couch set with golden corners and tv.",
+      "negativePrompt": "-",
+      "tags": [
+        "Tiffany",
+        "ev",
+        "salon"
+      ],
+      "orderIndex": 14,
+      "createdAt": "2026-03-09T08:10:27.620Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
