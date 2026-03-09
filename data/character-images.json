@@ -1406,6 +1406,24 @@
       "orderIndex": 32,
       "createdAt": "2026-03-09T10:55:29.592Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmj2flo4-kyk2mm",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773053764/character-gallery/kocajp8psvlm1qnlnbky.png",
+      "fileName": "orman ve göl.png",
+      "title": "Orman",
+      "description": "göl kıyısı gündüz",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "orman",
+        "göl",
+        "gündüz"
+      ],
+      "orderIndex": 33,
+      "createdAt": "2026-03-09T10:56:06.004Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": [
