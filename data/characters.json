@@ -73,6 +73,16 @@
       "age": 4000000000,
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773041712/character-gallery/ghi2cql93134q0zebr9g.png",
       "createdAt": "2026-03-09T07:35:13.249Z"
+    },
+    {
+      "id": "mmixwou6-bd17qq",
+      "firstName": "Obje",
+      "lastName": "Tasarımları",
+      "traits": "objeler",
+      "zodiac": "",
+      "age": null,
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046167/character-gallery/ijgeyznfsgt3gyevs1ub.png",
+      "createdAt": "2026-03-09T08:49:28.004Z"
     }
   ]
 }
