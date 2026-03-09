@@ -1369,6 +1369,25 @@
       "orderIndex": 30,
       "createdAt": "2026-03-09T09:05:35.060Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmj2dm79-9wzk0j",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773053672/character-gallery/m97zpvxspnqy1bpxzfam.png",
+      "fileName": "orman1.png",
+      "title": "Orman",
+      "description": "Orman gündüz patika yol",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "orman",
+        "patika",
+        "dere",
+        "gündüz"
+      ],
+      "orderIndex": 31,
+      "createdAt": "2026-03-09T10:54:33.381Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": [
