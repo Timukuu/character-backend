@@ -361,7 +361,7 @@
       "characterId": "mipl0jjt-eg7z3x",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773038406/character-gallery/lczuqmxzwwryviyi7pov.png",
       "fileName": "00006-2709456454.png",
-      "title": "Luna t-shirt",
+      "title": "Luna outfit",
       "description": "Luna beyaz t-shirt",
       "positivePrompt": "anime style, clean lineart, soft shading), (character identity preserved: same face, hair, eyes),\nwhite t-shirt, long t-shirt, one shoulder off, lazypos, perfect fit,\nfabric folds, neat seams, detailed texture, consistent lighting, coherent shadows,\nno change to pose, no change to background, crisp mask edges,",
       "negativePrompt": "worst quality, low quality, bad anatomy, bad hands, extra limbs, deformed,\nwrong outfit, messy lines, inconsistent shading, text, watermark, logo, icon, text,",
@@ -373,7 +373,8 @@
       ],
       "orderIndex": 14,
       "createdAt": "2026-03-09T06:40:07.389Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-03-09T06:40:44.720Z"
     }
   ],
   "mjr3k4aa-ui5ftb": [
