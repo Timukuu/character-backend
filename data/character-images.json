@@ -469,6 +469,24 @@
       "orderIndex": 19,
       "createdAt": "2026-03-09T06:52:09.211Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwydin-c5c6p0",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044563/character-gallery/alipynimi1j4avl2lfqc.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 10_24_46.png",
+      "title": "Luna tilki",
+      "description": "Luna tilki yaralı",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Luna",
+        "tilki",
+        "yaralı"
+      ],
+      "orderIndex": 20,
+      "createdAt": "2026-03-09T08:22:44.207Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjr3k4aa-ui5ftb": [
