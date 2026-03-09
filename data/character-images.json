@@ -1297,6 +1297,22 @@
       "orderIndex": 26,
       "createdAt": "2026-03-09T08:56:01.273Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiy5yw6-15qp1v",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046596/character-gallery/vft4hst0reqgk9c0vg6x.png",
+      "fileName": "ağaç ev iç.png",
+      "title": "Orman",
+      "description": "Ağaç ev içi",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev"
+      ],
+      "orderIndex": 27,
+      "createdAt": "2026-03-09T08:56:38.118Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": [
