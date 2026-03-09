@@ -469,6 +469,25 @@
       "orderIndex": 19,
       "createdAt": "2026-03-09T06:52:09.211Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmixir2w-19wl28",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773045514/character-gallery/b3uifbmkr4gsvcyeznbc.png",
+      "fileName": "ChatGPT Image 9 Mar 2026 11_30_32.png",
+      "title": "Luna Tilki",
+      "description": "Luna tilki yaralı ve kirli",
+      "positivePrompt": "Black background, a small fluffy white fox curled up and sleeping peacefully, centered composition, anime style illustration, soft anime painting style, Japanese anime aesthetic, detailed long fluffy fur, eyes closed, fluffy tail wrapped around the body, elegant clean anime lineart, subtle painterly shading, cel-shading + soft gradient shading mix, dramatic contrast, cinematic lighting. Red blood stains and smears across the fur on the back, leg, and tail, a few drops of blood on the ground beneath the paw. Melancholic and tragic atmosphere, highly detailed fur texture, isolated subject, no environment, no extra objects, studio black background.",
+      "negativePrompt": null,
+      "tags": [
+        "Luna",
+        "tilki",
+        "yaralı",
+        "kirli"
+      ],
+      "orderIndex": 20,
+      "createdAt": "2026-03-09T08:38:34.904Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjr3k4aa-ui5ftb": [
