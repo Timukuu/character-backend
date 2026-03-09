@@ -876,6 +876,24 @@
       "orderIndex": 6,
       "createdAt": "2026-03-09T07:52:40.849Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmivy307-m2r1db",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773042869/character-gallery/v1y6hwfynr2ezwys0zfj.png",
+      "fileName": "ChatGPT Image 6 Mar 2026 16_13_59.png",
+      "title": "Ryan ev",
+      "description": "Ryan buzdobalı- chatgpt",
+      "positivePrompt": "bir buzdolabı içi tasarla ama içerisinde japon tarzı yiyecekler olsun. anime stilinde çiz. çok aşırı dolu olmasın buzdolabı. bir kaç şey olsun. bir öğrenci evinde olabilecek şeyler. 16:9 yatay.",
+      "negativePrompt": "-",
+      "tags": [
+        "ryan",
+        "ev",
+        "buzdolabı"
+      ],
+      "orderIndex": 7,
+      "createdAt": "2026-03-09T07:54:30.967Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
