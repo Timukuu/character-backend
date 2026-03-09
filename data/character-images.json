@@ -732,5 +732,24 @@
       "createdAt": "2025-12-31T08:17:13.696Z",
       "createdByUserId": "merycim"
     }
+  ],
+  "mmitsm3z-24tk84": [
+    {
+      "id": "img-mmitv7el-fk172k",
+      "characterId": "mmitsm3z-24tk84",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773039376/character-gallery/n4guwoqdn4wnoawcrmbp.png",
+      "fileName": "00004-1463482425.png",
+      "title": "Raven Standing",
+      "description": "Raven standing pose",
+      "positivePrompt": "positive_plus, high quality illustration, clean linesmasterpiece, standing, white background, best quality, ultra-detailed, highres, standing, hdr, volumetric light, natural shadows , 1girl, red eyes,bald,no hair, big eyes, looking at viewer, full body, perfect fingers, front view, standing, whole body is visible, two hands on hips, straight ahead, solo, completely nude, small breasts, nipples, pussy,simple background, long shot, wide shot, distant view,lazynegative, lazypos,",
+      "negativePrompt": "lazyhand:1,2, lazyneg, missing fingers, hair, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,lazyloli,low quality, bad anatomy, loli,",
+      "tags": [
+        "Raven",
+        "standing"
+      ],
+      "orderIndex": 0,
+      "createdAt": "2026-03-09T06:56:17.469Z",
+      "createdByUserId": "merycim"
+    }
   ]
 }
