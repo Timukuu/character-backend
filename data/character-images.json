@@ -947,6 +947,25 @@
       "orderIndex": 10,
       "createdAt": "2026-03-09T07:59:22.826Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiw5lw5-srj5zz",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773043220/character-gallery/uz2qc2winyppyijhqysz.png",
+      "fileName": "ryan banyo gece.png",
+      "title": "Ryan ev",
+      "description": "Ryan banyo gece",
+      "positivePrompt": "anime film background / interior background art; clean thin lineart; soft painterly shading; cel + gradient mix; subtle brush texture; cinematic soft window light; no photorealism; no 3D render look; wide shot; 2-point perspective; 16:9. Japan style basic bathroom in a house.",
+      "negativePrompt": "-",
+      "tags": [
+        "Ryan",
+        "ev",
+        "banyo",
+        "gece"
+      ],
+      "orderIndex": 11,
+      "createdAt": "2026-03-09T08:00:22.037Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
