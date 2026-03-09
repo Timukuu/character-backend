@@ -808,6 +808,24 @@
       "orderIndex": 2,
       "createdAt": "2026-03-09T07:44:46.718Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmivnwx9-npba01",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773042395/character-gallery/wkw0dmslvx3th65jykgo.png",
+      "fileName": "ryan dolap.png",
+      "title": "Ryan ev",
+      "description": "Ryan gar",
+      "positivePrompt": "Ryan oda promptuna devam edildi.",
+      "negativePrompt": null,
+      "tags": [
+        "Ryan",
+        "gardrop",
+        "giyinme sahnesi"
+      ],
+      "orderIndex": 3,
+      "createdAt": "2026-03-09T07:46:36.525Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
