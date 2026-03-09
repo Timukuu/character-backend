@@ -841,6 +841,24 @@
       "orderIndex": 4,
       "createdAt": "2026-03-09T07:51:15.175Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmivuva2-j6l9pa",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773042720/character-gallery/rc2a0iuzgbcnqlbvwdmo.png",
+      "fileName": "ChatGPT Image 25 Şub 2026 15_15_54.png",
+      "title": "Ryan ev",
+      "description": "Ryan salon gece - chatgpt",
+      "positivePrompt": "anime film background / interior background art; clean thin lineart; soft painterly shading; cel + gradient mix; low-to-mid saturation; cool palette; subtle brush texture; cinematic soft window light; no photorealism; no 3D render look; wide shot; 2-point perspective; 16:9. a living room, doors, blue sofa set. beige walls.",
+      "negativePrompt": "-",
+      "tags": [
+        "ryan",
+        "salon",
+        "gece"
+      ],
+      "orderIndex": 5,
+      "createdAt": "2026-03-09T07:52:00.986Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
