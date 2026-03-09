@@ -1351,6 +1351,24 @@
       "createdAt": "2026-03-09T08:58:38.277Z",
       "createdByUserId": "merycim",
       "updatedAt": "2026-03-09T09:02:36.574Z"
+    },
+    {
+      "id": "img-mmiyhh78-tzyr31",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773047133/character-gallery/pash2iwq7xotdamortjo.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 13_42_34.png",
+      "title": "Orman",
+      "description": "gal gün batımı",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "göl",
+        "gün batımı",
+        "orman"
+      ],
+      "orderIndex": 30,
+      "createdAt": "2026-03-09T09:05:35.060Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": [
