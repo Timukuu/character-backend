@@ -1316,14 +1316,14 @@
       "orderIndex": 28,
       "createdAt": "2026-03-09T08:57:19.913Z",
       "createdByUserId": "merycim",
-      "updatedAt": "2026-03-09T09:02:06.695Z"
+      "updatedAt": "2026-03-09T09:02:00.144Z"
     },
     {
       "id": "img-mmiy7kld-yey5pv",
       "characterId": "mmiv94rd-q1p6b0",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046671/character-gallery/qs1q3ang9vi3i68sziad.png",
       "fileName": "ChatGPT Image 27 Şub 2026 09_57_22.png",
-      "title": "Orman",
+      "title": "Ağaç ev",
       "description": "ağaç ev yıpranmış gece",
       "positivePrompt": null,
       "negativePrompt": null,
@@ -1332,7 +1332,8 @@
       ],
       "orderIndex": 29,
       "createdAt": "2026-03-09T08:57:52.897Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-03-09T09:02:13.033Z"
     },
     {
       "id": "img-mmiy8jlx-yu7msz",
