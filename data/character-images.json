@@ -1120,6 +1120,23 @@
       "orderIndex": 20,
       "createdAt": "2026-03-09T08:18:09.973Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwt1md-y7fm8a",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044314/character-gallery/phkzesxfunv9n98f23kg.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 10_45_40.png",
+      "title": "Üniversite",
+      "description": "npc",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "Üniversite",
+        "npc"
+      ],
+      "orderIndex": 21,
+      "createdAt": "2026-03-09T08:18:35.509Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
