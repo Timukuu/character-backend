@@ -1313,6 +1313,22 @@
       "orderIndex": 27,
       "createdAt": "2026-03-09T08:56:38.118Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiy6v55-g7ri6s",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046638/character-gallery/sbkkljrj1fhjaftrgcep.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 09_56_09.png",
+      "title": "Orman",
+      "description": "Ağaç ev yıpranmış",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev"
+      ],
+      "orderIndex": 28,
+      "createdAt": "2026-03-09T08:57:19.913Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": [
