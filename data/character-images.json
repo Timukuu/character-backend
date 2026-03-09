@@ -1070,6 +1070,23 @@
       "orderIndex": 17,
       "createdAt": "2026-03-09T08:16:30.402Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwr429-pdsb8c",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044224/character-gallery/tvpxfjp2vnuybxhxfnzk.png",
+      "fileName": "kantin.png",
+      "title": "Üniversite",
+      "description": "Üniversite kantin",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "Üniversite",
+        "kantin"
+      ],
+      "orderIndex": 18,
+      "createdAt": "2026-03-09T08:17:05.361Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
