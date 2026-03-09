@@ -912,6 +912,23 @@
       "orderIndex": 8,
       "createdAt": "2026-03-09T07:56:07.820Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiw18rg-vojewa",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773043017/character-gallery/wwxfzltfj0vpzzljjipp.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 13_39_35.png",
+      "title": "Ryan ev",
+      "description": "Ryan sokak",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "Ryan",
+        "sojka-"
+      ],
+      "orderIndex": 9,
+      "createdAt": "2026-03-09T07:56:58.396Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
