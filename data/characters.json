@@ -63,6 +63,16 @@
       "age": 18,
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773041598/character-gallery/e5lt34ysfljr5ddjtfol.png",
       "createdAt": "2026-03-09T06:54:20.290Z"
+    },
+    {
+      "id": "mmiv94rd-q1p6b0",
+      "firstName": "Mekan",
+      "lastName": "Tasarımları",
+      "traits": "Mekanlar bu dosyada toplanacaktır.",
+      "zodiac": "yay",
+      "age": 4000000000,
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773041712/character-gallery/ghi2cql93134q0zebr9g.png",
+      "createdAt": "2026-03-09T07:35:13.249Z"
     }
   ]
 }
