@@ -355,6 +355,25 @@
       "orderIndex": 13,
       "createdAt": "2025-12-31T08:14:54.410Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmitaevx-4l9p9w",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773038406/character-gallery/lczuqmxzwwryviyi7pov.png",
+      "fileName": "00006-2709456454.png",
+      "title": "Luna t-shirt",
+      "description": "Luna beyaz t-shirt",
+      "positivePrompt": "anime style, clean lineart, soft shading), (character identity preserved: same face, hair, eyes),\nwhite t-shirt, long t-shirt, one shoulder off, lazypos, perfect fit,\nfabric folds, neat seams, detailed texture, consistent lighting, coherent shadows,\nno change to pose, no change to background, crisp mask edges,",
+      "negativePrompt": "worst quality, low quality, bad anatomy, bad hands, extra limbs, deformed,\nwrong outfit, messy lines, inconsistent shading, text, watermark, logo, icon, text,",
+      "tags": [
+        "t-shirt",
+        "luna",
+        "white",
+        "wearing"
+      ],
+      "orderIndex": 14,
+      "createdAt": "2026-03-09T06:40:07.389Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjr3k4aa-ui5ftb": [
