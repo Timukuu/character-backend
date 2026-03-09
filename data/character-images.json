@@ -1340,7 +1340,7 @@
       "characterId": "mmiv94rd-q1p6b0",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046717/character-gallery/cznqzrxxqc2u695tcw5j.png",
       "fileName": "ChatGPT Image 27 Şub 2026 10_12_29.png",
-      "title": "Orman",
+      "title": "Ağaç ev",
       "description": "Ağaç ev içi",
       "positivePrompt": null,
       "negativePrompt": null,
@@ -1349,7 +1349,8 @@
       ],
       "orderIndex": 30,
       "createdAt": "2026-03-09T08:58:38.277Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-03-09T09:02:28.990Z"
     }
   ],
   "mmixwou6-bd17qq": [
