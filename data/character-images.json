@@ -789,6 +789,25 @@
       "orderIndex": 1,
       "createdAt": "2026-03-09T07:43:30.771Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmivlk71-nwtq6q",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773042285/character-gallery/j4ylkfqhgfwz6ijxfka0.png",
+      "fileName": "ChatGPT Image 3 Mar 2026 14_48_20.png",
+      "title": "Ryan ev",
+      "description": "Ryan odası, anahtar deliği görünümü",
+      "positivePrompt": "16:9 oranlarında, yatay olarak, anime stilinde çizilmiş bir erkek genç odası istiyorum. siyah, lacivert ve gri tonlar olsun. köşede bir yatak, karşı duvarda bir pencere, pencereden dışarıda güzel bir ağaçlık manzara görünsün. odanın sağ tarafında bir gamer bilgisayarı, masası ve koltuğu olsun. duvar rafına çeşitli kitaplar ekleyebilirsin. duvarlarda asılı herhangi bir poster istemiyorum. Anahtar deliğinden gör",
+      "negativePrompt": "-",
+      "tags": [
+        "Ryan",
+        "oda",
+        "ev",
+        "anahtar deliği"
+      ],
+      "orderIndex": 2,
+      "createdAt": "2026-03-09T07:44:46.718Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
