@@ -1018,6 +1018,24 @@
       "orderIndex": 15,
       "createdAt": "2026-03-09T08:11:53.123Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwodzs-jytv95",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044096/character-gallery/smdmpridfsfd2zea6wxk.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 10_40_23.png",
+      "title": "Üniversite",
+      "description": "Üniversiteye ait tasarımlar",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "university",
+        "üniversite",
+        "giriş"
+      ],
+      "orderIndex": 15,
+      "createdAt": "2026-03-09T08:14:58.264Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
