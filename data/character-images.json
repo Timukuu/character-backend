@@ -1388,6 +1388,24 @@
       "orderIndex": 31,
       "createdAt": "2026-03-09T10:54:33.381Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmj2etko-zpvtb3",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773053728/character-gallery/ge46f9venjos7lgzwogm.png",
+      "fileName": "orman.png",
+      "title": "Orman",
+      "description": "Orman, patika, gece",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "orman",
+        "patika",
+        "gece"
+      ],
+      "orderIndex": 32,
+      "createdAt": "2026-03-09T10:55:29.592Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": [
