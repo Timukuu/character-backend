@@ -525,6 +525,25 @@
       "orderIndex": 22,
       "createdAt": "2026-03-09T08:40:51.893Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmixvqaj-ju27au",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046119/character-gallery/njdguwvcxweuewmtcolz.png",
+      "fileName": "ChatGPT Image 6 Mar 2026 16_34_34.png",
+      "title": "Aksesuar",
+      "description": "Kolye ucu",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ay kolyesi",
+        "kolye",
+        "Luna",
+        "aksesuar"
+      ],
+      "orderIndex": 23,
+      "createdAt": "2026-03-09T08:48:40.411Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjr3k4aa-ui5ftb": [
