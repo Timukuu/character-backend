@@ -1263,6 +1263,23 @@
       "orderIndex": 24,
       "createdAt": "2026-03-09T08:54:45.339Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiy4jcp-7tpapi",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046529/character-gallery/lspphwhfkq9mwkmgzrfw.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 14_09_38.png",
+      "title": "Orman",
+      "description": "ağaç ev gün batımı",
+      "positivePrompt": "anime film background / interior background art; clean thin lineart; soft painterly shading; cel + gradient mix; subtle brush texture; cinematic soft window light; no photorealism; no 3D render look; wide shot; 2-point perspective; 16:9. a old tree house on the dry old tree in the forest. no leaf on the tree. near a lake.",
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev",
+        "gün batımı"
+      ],
+      "orderIndex": 25,
+      "createdAt": "2026-03-09T08:55:31.321Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": [
