@@ -1229,6 +1229,24 @@
       "orderIndex": 22,
       "createdAt": "2026-03-09T08:19:00.145Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiy2mqp-xpwvx6",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046441/character-gallery/e220ybrg3d8mfklyngrd.png",
+      "fileName": "ağaç ev eski hali.png",
+      "title": "Orman",
+      "description": "ağaç ev eski hali",
+      "positivePrompt": "anime film background / interior background art; clean thin lineart; soft painterly shading; cel + gradient mix; subtle brush texture; cinematic soft window light; no photorealism; no 3D render look; wide shot; 2-point perspective; 16:9. a old tree house on the dry old tree in the forest. no leaf on the tree. near a lake.",
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev",
+        "eski hali",
+        "orman"
+      ],
+      "orderIndex": 23,
+      "createdAt": "2026-03-09T08:54:02.401Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": [
