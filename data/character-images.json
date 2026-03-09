@@ -1053,6 +1053,23 @@
       "orderIndex": 16,
       "createdAt": "2026-03-09T08:15:39.561Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwqd36-11rn4w",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044189/character-gallery/hkubve0b5bpvboaljmap.png",
+      "fileName": "ChatGPT Image 4 Mar 2026 11_41_21.png",
+      "title": "Üniversite",
+      "description": "üniversite otopark2",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "üniversite",
+        "otopark"
+      ],
+      "orderIndex": 17,
+      "createdAt": "2026-03-09T08:16:30.402Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
