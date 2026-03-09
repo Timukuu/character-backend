@@ -1036,6 +1036,23 @@
       "orderIndex": 15,
       "createdAt": "2026-03-09T08:14:58.264Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwp9ux-6b1dek",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044138/character-gallery/wjon2zjptyqdn08pba3u.png",
+      "fileName": "ChatGPT Image 4 Mar 2026 11_51_20.png",
+      "title": "Üniversite",
+      "description": "otopark boş",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "otopark",
+        "üniversite"
+      ],
+      "orderIndex": 16,
+      "createdAt": "2026-03-09T08:15:39.561Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
