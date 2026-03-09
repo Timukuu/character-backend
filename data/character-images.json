@@ -1424,6 +1424,24 @@
       "orderIndex": 33,
       "createdAt": "2026-03-09T10:56:06.004Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmj2gji5-f17hnv",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773053808/character-gallery/zpkmck1hyyvq4m788gi1.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 13_45_41.png",
+      "title": "Orman",
+      "description": "orman gündüz, ağaçlık",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "orman",
+        "gündüz",
+        "ağaçlık"
+      ],
+      "orderIndex": 34,
+      "createdAt": "2026-03-09T10:56:49.853Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": [
