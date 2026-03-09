@@ -375,6 +375,25 @@
       "createdAt": "2026-03-09T06:40:07.389Z",
       "createdByUserId": "merycim",
       "updatedAt": "2026-03-09T06:40:44.720Z"
+    },
+    {
+      "id": "img-mmitdaih-6mwfvs",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773038540/character-gallery/czsjqlkll1f1mpqe3yhc.png",
+      "fileName": "00007-2709456454.png",
+      "title": "Luna Outfit",
+      "description": "Luna white underwear",
+      "positivePrompt": "anime style, clean lineart, soft shading), (character identity preserved: same face, hair, eyes),\n,lace, underwear, white underwear, detailed underwear, lazypos, perfect fit,\nfabric folds, neat seams, detailed texture, consistent lighting, coherent shadows,\nno change to pose, no change to background, crisp mask edges,",
+      "negativePrompt": "worst quality, low quality, bad anatomy, bad hands, extra limbs, deformed,\nwrong outfit, messy lines, inconsistent shading, text, watermark, logo, icon, text,",
+      "tags": [
+        "Luna",
+        "underwear",
+        "white underwear",
+        ""
+      ],
+      "orderIndex": 15,
+      "createdAt": "2026-03-09T06:42:21.689Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjr3k4aa-ui5ftb": [
