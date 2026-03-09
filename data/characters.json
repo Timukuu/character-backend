@@ -53,6 +53,16 @@
       "age": 19,
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1767101010/character-gallery/nyxrwuwf0i1orq7xwdrd.png",
       "createdAt": "2025-12-30T13:23:30.746Z"
+    },
+    {
+      "id": "mmitsm3z-24tk84",
+      "firstName": "Raven",
+      "lastName": "Fox",
+      "traits": "evil, gothic, bad girl,",
+      "zodiac": "Akrep",
+      "age": 20,
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773039259/character-gallery/rlzrj9tuzt1o1rslqzqt.png",
+      "createdAt": "2026-03-09T06:54:20.290Z"
     }
   ]
 }
