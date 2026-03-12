@@ -1274,6 +1274,25 @@
       "orderIndex": 27,
       "createdAt": "2026-03-12T12:59:11.536Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmnh6465-m7hiuj",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320381/character-gallery/hvozot4hhspovxaioazc.jpg",
+      "fileName": "Ryan ev gece kapı.jpg",
+      "title": "Ryan ev",
+      "description": "chatgpt",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Ryan",
+        "ev",
+        "kapı",
+        "gece"
+      ],
+      "orderIndex": 28,
+      "createdAt": "2026-03-12T12:59:42.365Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
