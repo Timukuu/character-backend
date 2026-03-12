@@ -1171,6 +1171,23 @@
       "orderIndex": 21,
       "createdAt": "2026-03-12T12:51:55.692Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmngwsfq-x98all",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773319946/character-gallery/x7rwqwjnadkqcljmtgdv.jpg",
+      "fileName": "düdüklü.jpg",
+      "title": "Ryan ev",
+      "description": "chatgpt",
+      "positivePrompt": "16:9 oranlarında, yatay olarak, anime stilinde çizilmiş bir erkek genç odası istiyorum. siyah, lacivert ve gri tonlar olsun. köşede bir yatak, karşı duvarda bir pencere, pencereden dışarıda güzel bir ağaçlık manzara görünsün. odanın sağ tarafında bir gamer bilgisayarı, masası ve koltuğu olsun. duvar rafına çeşitli kitaplar ekleyebilirsin. duvarlarda asılı herhangi bir poster istemiyorum.",
+      "negativePrompt": null,
+      "tags": [
+        "düdüklü",
+        "tencere"
+      ],
+      "orderIndex": 22,
+      "createdAt": "2026-03-12T12:52:27.254Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
