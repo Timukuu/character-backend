@@ -1192,6 +1192,23 @@
       "createdByUserId": "merycim",
       "defaultImageId": null,
       "updatedAt": "2026-03-12T12:55:32.226Z"
+    },
+    {
+      "id": "img-mmnh1eku-c5u3qg",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320161/character-gallery/jsbs3injbqntgm4dbygi.jpg",
+      "fileName": "düdüklü.jpg",
+      "title": "Ryan ev",
+      "description": "chatgpt",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "düdüklü",
+        "tencere"
+      ],
+      "orderIndex": 23,
+      "createdAt": "2026-03-12T12:56:02.574Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
