@@ -1152,134 +1152,86 @@
       "tags": [],
       "orderIndex": 20,
       "createdAt": "2026-03-12T12:51:08.098Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "defaultImageId": "img-mmngv3cy-waatrn",
+      "updatedAt": "2026-03-12T12:55:31.990Z"
     },
     {
-      "id": "img-mmngw430-u7db5b",
+      "id": "img-mmngxtfg-lndsdg",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773319914/character-gallery/gai8edtpvkfxljbfywix.jpg",
-      "fileName": "Ryan ev gece.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773319994/character-gallery/aldbd1veidsjsfxq5vyk.jpg",
+      "fileName": "metropol.jpg",
       "title": "Ryan ev",
       "description": "chatgpt",
-      "positivePrompt": "16:9 oranlarında, yatay olarak, anime stilinde çizilmiş bir erkek genç odası istiyorum. siyah, lacivert ve gri tonlar olsun. köşede bir yatak, karşı duvarda bir pencere, pencereden dışarıda güzel bir ağaçlık manzara görünsün. odanın sağ tarafında bir gamer bilgisayarı, masası ve koltuğu olsun. duvar rafına çeşitli kitaplar ekleyebilirsin. duvarlarda asılı herhangi bir poster istemiyorum.",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "metropol"
+      ],
+      "orderIndex": 21,
+      "createdAt": "2026-03-12T12:53:15.196Z",
+      "createdByUserId": "merycim",
+      "defaultImageId": null,
+      "updatedAt": "2026-03-12T12:55:32.152Z"
+    },
+    {
+      "id": "img-mmnh08hm-o3naye",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320107/character-gallery/xmvrguwutfev5vsaumyn.jpg",
+      "fileName": "Ryan buzdolabı.jpg",
+      "title": "Ryan ev",
+      "description": "chatgpt",
+      "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "Ryan",
-        "ev",
-        "gece"
+        "buzdolabı"
       ],
-      "orderIndex": 21,
-      "createdAt": "2026-03-12T12:51:55.692Z",
-      "createdByUserId": "merycim"
+      "orderIndex": 22,
+      "createdAt": "2026-03-12T12:55:08.026Z",
+      "createdByUserId": "merycim",
+      "defaultImageId": null,
+      "updatedAt": "2026-03-12T12:55:32.226Z"
     },
     {
-      "id": "img-mmngwsfq-x98all",
+      "id": "img-mmnh1eku-c5u3qg",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773319946/character-gallery/x7rwqwjnadkqcljmtgdv.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320161/character-gallery/jsbs3injbqntgm4dbygi.jpg",
       "fileName": "düdüklü.jpg",
       "title": "Ryan ev",
       "description": "chatgpt",
-      "positivePrompt": "16:9 oranlarında, yatay olarak, anime stilinde çizilmiş bir erkek genç odası istiyorum. siyah, lacivert ve gri tonlar olsun. köşede bir yatak, karşı duvarda bir pencere, pencereden dışarıda güzel bir ağaçlık manzara görünsün. odanın sağ tarafında bir gamer bilgisayarı, masası ve koltuğu olsun. duvar rafına çeşitli kitaplar ekleyebilirsin. duvarlarda asılı herhangi bir poster istemiyorum.",
+      "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "düdüklü",
         "tencere"
       ],
-      "orderIndex": 22,
-      "createdAt": "2026-03-12T12:52:27.254Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mmngyu7x-vxldd0",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320041/character-gallery/tofxup8cudyd5rihwofe.jpg",
-      "fileName": "Ryan banyo gece.jpg",
-      "title": "Ryan ev",
-      "description": "chatgpt",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "ryan",
-        "banyo",
-        "gece"
-      ],
       "orderIndex": 23,
-      "createdAt": "2026-03-12T12:54:02.877Z",
+      "createdAt": "2026-03-12T12:56:02.574Z",
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mmngzgkj-1yzv5f",
+      "id": "img-mmnh4x8n-n324kq",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320070/character-gallery/yigunwgovfeclo5tpuzw.jpg",
-      "fileName": "Ryan banyo gündüz.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320326/character-gallery/ljb3lheumu9gnqj1t015.jpg",
+      "fileName": "Ryan dolap ecza kutusu.jpg",
       "title": "Ryan ev",
       "description": "chatgpt",
       "positivePrompt": null,
       "negativePrompt": null,
-      "tags": [],
+      "tags": [
+        "Ryan",
+        "ecza kutusu"
+      ],
       "orderIndex": 24,
-      "createdAt": "2026-03-12T12:54:31.843Z",
+      "createdAt": "2026-03-12T12:58:46.727Z",
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mmnh2tjz-wbddp9",
+      "id": "img-mmnh6vk3-kystu4",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320227/character-gallery/wqg2li40yzbolenijm2w.jpg",
-      "fileName": "Ryan banyo gece.jpg",
-      "title": "Ryan ev",
-      "description": "chatgpt",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "Ryan",
-        "gece",
-        "banyo"
-      ],
-      "orderIndex": 25,
-      "createdAt": "2026-03-12T12:57:08.639Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mmnh3ge8-e2uk84",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320257/character-gallery/mywyewi6vivbdzzzm9dw.jpg",
-      "fileName": "Ryan banyo gündüz.jpg",
-      "title": "Ryan ev",
-      "description": "chatgpt",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "ryan",
-        "banyo",
-        "gündüz"
-      ],
-      "orderIndex": 26,
-      "createdAt": "2026-03-12T12:57:38.240Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mmnh5gds-ahq88h",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320350/character-gallery/vljuw3lvaolsmnrgmmib.jpg",
-      "fileName": "Ryan el tabak.jpg",
-      "title": "Ryan ev",
-      "description": "chatgpt",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "Ryan",
-        "tabak",
-        "yemek"
-      ],
-      "orderIndex": 27,
-      "createdAt": "2026-03-12T12:59:11.536Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mmnh6465-m7hiuj",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320381/character-gallery/hvozot4hhspovxaioazc.jpg",
-      "fileName": "Ryan ev gece kapı.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320416/character-gallery/bzja8ejbswyqtfdn4eg4.jpg",
+      "fileName": "Ryan ev kapı gündüz.jpg",
       "title": "Ryan ev",
       "description": "chatgpt",
       "positivePrompt": null,
@@ -1288,10 +1240,10 @@
         "Ryan",
         "ev",
         "kapı",
-        "gece"
+        "gündüz"
       ],
-      "orderIndex": 28,
-      "createdAt": "2026-03-12T12:59:42.365Z",
+      "orderIndex": 25,
+      "createdAt": "2026-03-12T13:00:17.859Z",
       "createdByUserId": "merycim"
     }
   ],
