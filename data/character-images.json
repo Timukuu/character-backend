@@ -808,24 +808,6 @@
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mmiwfg2b-h479vc",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773043679/character-gallery/gcbgoq0bn6cl5jy0iioa.png",
-      "fileName": "ChatGPT Image 4 Mar 2026 15_08_49.png",
-      "title": "Tiffany ev",
-      "description": "Tiffany ev kapı",
-      "positivePrompt": "16:9 yatay lük bir ev çiz. bahçeli olsun. bahçesinde köpek kulübesi var. etrafında çitler olsun.",
-      "negativePrompt": null,
-      "tags": [
-        "Tiffany",
-        "ev",
-        "kapı"
-      ],
-      "orderIndex": 13,
-      "createdAt": "2026-03-09T08:08:01.043Z",
-      "createdByUserId": "merycim"
-    },
-    {
       "id": "img-mmiwodzs-jytv95",
       "characterId": "mmiv94rd-q1p6b0",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044096/character-gallery/smdmpridfsfd2zea6wxk.png",
