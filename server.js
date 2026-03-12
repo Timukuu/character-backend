@@ -939,6 +939,35 @@ app.patch("/api/characters/:characterId/images/reorder", async (req, res) => {
   }
 });
 
+// Toplu görsel sil
+app.post("/api/images/batch-delete", async (req, res) => {
+  try {
+    const { imageIds } = req.body;
+    if (!imageIds || !Array.isArray(imageIds) || imageIds.length === 0) {
+      return res.status(400).json({ error: "imageIds dizisi gerekli" });
+    }
+
+    const allImages = await loadCharacterImages();
+    const idsToDelete = new Set(imageIds);
+    let deletedCount = 0;
+
+    for (const characterId in allImages) {
+      const before = allImages[characterId].length;
+      allImages[characterId] = allImages[characterId].filter(img => !idsToDelete.has(img.id));
+      deletedCount += before - allImages[characterId].length;
+    }
+
+    if (deletedCount > 0) {
+      await saveCharacterImages(allImages);
+    }
+
+    res.json({ success: true, deletedCount, requestedCount: imageIds.length });
+  } catch (err) {
+    console.error("Toplu görsel silinirken hata:", err);
+    res.status(500).json({ error: "Görseller silinemedi" });
+  }
+});
+
 // Görsel sil
 app.delete("/api/images/:imageId", async (req, res) => {
   try {
@@ -946,7 +975,6 @@ app.delete("/api/images/:imageId", async (req, res) => {
 
     const allImages = await loadCharacterImages();
     
-    // Tüm karakterlerde ara
     for (const characterId in allImages) {
       const images = allImages[characterId];
       const filteredImages = images.filter(img => img.id !== imageId);
