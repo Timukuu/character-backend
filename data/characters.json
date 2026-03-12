@@ -83,6 +83,16 @@
       "age": null,
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046167/character-gallery/ijgeyznfsgt3gyevs1ub.png",
       "createdAt": "2026-03-09T08:49:28.004Z"
+    },
+    {
+      "id": "mmnftgz4-mjumv2",
+      "firstName": "Timuku",
+      "lastName": "L",
+      "traits": "",
+      "zodiac": "Yengeç",
+      "age": 30,
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773318114/character-gallery/mympg95bhtojiy1tn7pk.jpg",
+      "createdAt": "2026-03-12T12:21:55.883Z"
     }
   ]
 }
