@@ -1153,6 +1153,24 @@
       "orderIndex": 20,
       "createdAt": "2026-03-12T12:51:08.098Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmngw430-u7db5b",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773319914/character-gallery/gai8edtpvkfxljbfywix.jpg",
+      "fileName": "Ryan ev gece.jpg",
+      "title": "Ryan ev",
+      "description": "chatgpt",
+      "positivePrompt": "16:9 oranlarında, yatay olarak, anime stilinde çizilmiş bir erkek genç odası istiyorum. siyah, lacivert ve gri tonlar olsun. köşede bir yatak, karşı duvarda bir pencere, pencereden dışarıda güzel bir ağaçlık manzara görünsün. odanın sağ tarafında bir gamer bilgisayarı, masası ve koltuğu olsun. duvar rafına çeşitli kitaplar ekleyebilirsin. duvarlarda asılı herhangi bir poster istemiyorum.",
+      "negativePrompt": null,
+      "tags": [
+        "Ryan",
+        "ev",
+        "gece"
+      ],
+      "orderIndex": 21,
+      "createdAt": "2026-03-12T12:51:55.692Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
