@@ -64,6 +64,8 @@ const CHAT_MESSAGES_FILE = path.join(__dirname, "data", "chat-messages.json");
 // Senaryo verilerini tutmak için dosya yolu
 const SCENARIOS_FILE = path.join(__dirname, "data", "scenarios.json");
 const RELATIONSHIPS_FILE = path.join(__dirname, "data", "relationships.json");
+// Site ayarları (arka plan vb.)
+const SETTINGS_FILE = path.join(__dirname, "data", "settings.json");
 
 // Senaryo verilerini yükle (önce local'den, yoksa GitHub'dan)
 async function loadScenarios() {
@@ -1246,6 +1248,82 @@ app.put("/api/projects/:projectId/relationships", async (req, res) => {
   }
 });
 
+// ===== SİTE AYARLARI (arka plan vb.) =====
+
+async function loadSettings() {
+  try {
+    const data = await fs.readFile(SETTINGS_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (localErr) {
+    // Local dosya yok, GitHub'dan yüklemeyi dene
+  }
+
+  if (GITHUB_TOKEN) {
+    try {
+      const response = await axios.get(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/settings.json`,
+        {
+          headers: {
+            Authorization: `token ${GITHUB_TOKEN}`,
+            Accept: "application/vnd.github.v3+json"
+          },
+          params: { ref: GITHUB_BRANCH }
+        }
+      );
+      const content = Buffer.from(response.data.content, "base64").toString("utf8");
+      const settings = JSON.parse(content);
+      
+      await fs.mkdir(path.dirname(SETTINGS_FILE), { recursive: true });
+      await fs.writeFile(SETTINGS_FILE, content);
+      
+      return settings;
+    } catch (err) {
+      if (err.response?.status !== 404) {
+        console.error("GitHub'dan ayarlar yüklenirken hata:", err.message);
+      }
+    }
+  }
+
+  return {};
+}
+
+async function saveSettings(settings) {
+  const content = JSON.stringify(settings, null, 2);
+  
+  await fs.mkdir(path.dirname(SETTINGS_FILE), { recursive: true });
+  await fs.writeFile(SETTINGS_FILE, content);
+
+  if (GITHUB_TOKEN) {
+    try {
+      await commitToGitHub("data/settings.json", content, `Update settings: ${new Date().toISOString()}`);
+    } catch (err) {
+      console.error("GitHub'a ayarlar kaydedilemedi:", err.message);
+    }
+  }
+}
+
+app.get("/api/settings", async (req, res) => {
+  try {
+    const settings = await loadSettings();
+    res.json(settings);
+  } catch (err) {
+    console.error("Ayarlar yüklenirken hata:", err);
+    res.status(500).json({ error: "Ayarlar yüklenemedi" });
+  }
+});
+
+app.put("/api/settings", async (req, res) => {
+  try {
+    const currentSettings = await loadSettings();
+    const updated = { ...currentSettings, ...req.body };
+    await saveSettings(updated);
+    res.json(updated);
+  } catch (err) {
+    console.error("Ayarlar kaydedilirken hata:", err);
+    res.status(500).json({ error: "Ayarlar kaydedilemedi" });
+  }
+});
+
 // Sunucu başlatıldığında GitHub'dan local dosyalara tek seferlik senkronizasyon
 // Render'ın ephemeral filesystem'i nedeniyle restart sonrası local dosyalar kaybolur
 async function syncFromGitHub() {
@@ -1258,6 +1336,7 @@ async function syncFromGitHub() {
     { githubPath: "data/users.json", localPath: USERS_FILE },
     { githubPath: "data/scenarios.json", localPath: SCENARIOS_FILE },
     { githubPath: "data/relationships.json", localPath: RELATIONSHIPS_FILE },
+    { githubPath: "data/settings.json", localPath: SETTINGS_FILE },
   ];
 
   console.log("GitHub'dan local dosyalara senkronizasyon başlıyor...");
