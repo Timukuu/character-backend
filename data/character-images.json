@@ -1175,24 +1175,5 @@
       "createdByUserId": "merycim"
     }
   ],
-  "mmixwou6-bd17qq": [
-    {
-      "id": "img-mmixxwoy-nfar3q",
-      "characterId": "mmixwou6-bd17qq",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046220/character-gallery/kemmm9e40wh6ccodkm5h.png",
-      "fileName": "ChatGPT Image 4 Mar 2026 11_33_33.png",
-      "title": "yemek",
-      "description": "Noodle",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "noodle",
-        "yemek"
-      ],
-      "orderIndex": 0,
-      "createdAt": "2026-03-09T08:50:22.018Z",
-      "createdByUserId": "merycim",
-      "updatedAt": "2026-03-09T08:50:42.886Z"
-    }
-  ]
+  "mmixwou6-bd17qq": []
 }
