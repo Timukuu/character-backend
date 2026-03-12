@@ -878,24 +878,6 @@
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mmiw05qk-3364cj",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773042966/character-gallery/l93iaebezws0iw4qftna.png",
-      "fileName": "ChatGPT Image 27 Şub 2026 13_38_17.png",
-      "title": "Ryan ev",
-      "description": "Ryan ev - bahçe",
-      "positivePrompt": "anime stilinde çizilmiş bahçeli bir tek katlı ev çiz. bahçesinin arkasından orman görünsün. 16:9 boyutlarında, yatay çiz.",
-      "negativePrompt": "-",
-      "tags": [
-        "Ryan",
-        "ev",
-        "bahçe"
-      ],
-      "orderIndex": 8,
-      "createdAt": "2026-03-09T07:56:07.820Z",
-      "createdByUserId": "merycim"
-    },
-    {
       "id": "img-mmiwe5v4-x9xrdz",
       "characterId": "mmiv94rd-q1p6b0",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773043620/character-gallery/quaboe1edttszwrzq8tv.png",
