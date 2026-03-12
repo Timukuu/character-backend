@@ -1152,7 +1152,9 @@
       "tags": [],
       "orderIndex": 20,
       "createdAt": "2026-03-12T12:51:08.098Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "defaultImageId": null,
+      "updatedAt": "2026-03-12T12:55:15.588Z"
     },
     {
       "id": "img-mmngxtfg-lndsdg",
@@ -1168,7 +1170,9 @@
       ],
       "orderIndex": 21,
       "createdAt": "2026-03-12T12:53:15.196Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "defaultImageId": null,
+      "updatedAt": "2026-03-12T12:55:15.658Z"
     },
     {
       "id": "img-mmnh08hm-o3naye",
@@ -1186,7 +1190,9 @@
       ],
       "orderIndex": 22,
       "createdAt": "2026-03-12T12:55:08.026Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "defaultImageId": "img-mmnh08hm-o3naye",
+      "updatedAt": "2026-03-12T12:55:15.727Z"
     }
   ],
   "mmixwou6-bd17qq": []
