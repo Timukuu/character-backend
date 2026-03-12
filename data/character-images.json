@@ -1238,6 +1238,24 @@
       "orderIndex": 25,
       "createdAt": "2026-03-12T12:57:08.639Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmnh3ge8-e2uk84",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320257/character-gallery/mywyewi6vivbdzzzm9dw.jpg",
+      "fileName": "Ryan banyo gündüz.jpg",
+      "title": "Ryan ev",
+      "description": "chatgpt",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ryan",
+        "banyo",
+        "gündüz"
+      ],
+      "orderIndex": 26,
+      "createdAt": "2026-03-12T12:57:38.240Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
