@@ -65,9 +65,15 @@ const CHAT_MESSAGES_FILE = path.join(__dirname, "data", "chat-messages.json");
 const SCENARIOS_FILE = path.join(__dirname, "data", "scenarios.json");
 const RELATIONSHIPS_FILE = path.join(__dirname, "data", "relationships.json");
 
-// Senaryo verilerini yükle (önce GitHub'dan, yoksa local'den)
+// Senaryo verilerini yükle (önce local'den, yoksa GitHub'dan)
 async function loadScenarios() {
-  // Önce GitHub'dan yüklemeyi dene
+  try {
+    const data = await fs.readFile(SCENARIOS_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (localErr) {
+    // Local dosya yok, GitHub'dan yüklemeyi dene
+  }
+
   if (GITHUB_TOKEN) {
     try {
       const response = await axios.get(
@@ -91,18 +97,10 @@ async function loadScenarios() {
       if (err.response?.status !== 404) {
         console.error("GitHub'dan senaryo yüklenirken hata:", err.message);
       }
-      // GitHub'da yoksa local'den yükle
     }
   }
 
-  // Local'den yükle
-  try {
-    const data = await fs.readFile(SCENARIOS_FILE, "utf8");
-    return JSON.parse(data);
-  } catch (err) {
-    // Dosya yoksa boş obje döndür
-    return {};
-  }
+  return {};
 }
 
 // Senaryo verilerini kaydet (hem local hem GitHub'a)
@@ -121,41 +119,43 @@ async function saveScenarios(scenarios) {
   }
 }
 
-// İlişki verilerini yükle
+// İlişki verilerini yükle (önce local'den, yoksa GitHub'dan)
 async function loadRelationships() {
   try {
-    if (GITHUB_TOKEN) {
-      try {
-        const response = await axios.get(
-          `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/relationships.json`,
-          {
-            headers: {
-              Authorization: `token ${GITHUB_TOKEN}`,
-              Accept: "application/vnd.github.v3+json"
-            },
-            params: { ref: GITHUB_BRANCH }
-          }
-        );
-        
-        const content = Buffer.from(response.data.content, "base64").toString("utf8");
-        const relationships = JSON.parse(content);
-        
-        await fs.mkdir(path.dirname(RELATIONSHIPS_FILE), { recursive: true });
-        await fs.writeFile(RELATIONSHIPS_FILE, content);
-        
-        return relationships;
-      } catch (err) {
-        if (err.response?.status !== 404) {
-          console.error("GitHub'dan ilişki yüklenirken hata:", err.message);
-        }
-      }
-    }
-    
     const data = await fs.readFile(RELATIONSHIPS_FILE, "utf8");
     return JSON.parse(data);
-  } catch (err) {
-    return {};
+  } catch (localErr) {
+    // Local dosya yok, GitHub'dan yüklemeyi dene
   }
+
+  if (GITHUB_TOKEN) {
+    try {
+      const response = await axios.get(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/relationships.json`,
+        {
+          headers: {
+            Authorization: `token ${GITHUB_TOKEN}`,
+            Accept: "application/vnd.github.v3+json"
+          },
+          params: { ref: GITHUB_BRANCH }
+        }
+      );
+      
+      const content = Buffer.from(response.data.content, "base64").toString("utf8");
+      const relationships = JSON.parse(content);
+      
+      await fs.mkdir(path.dirname(RELATIONSHIPS_FILE), { recursive: true });
+      await fs.writeFile(RELATIONSHIPS_FILE, content);
+      
+      return relationships;
+    } catch (err) {
+      if (err.response?.status !== 404) {
+        console.error("GitHub'dan ilişki yüklenirken hata:", err.message);
+      }
+    }
+  }
+
+  return {};
 }
 
 // İlişki verilerini kaydet
@@ -263,7 +263,14 @@ async function executeCommit(filePath, content, message) {
 
 // Proje verilerini yükle (önce GitHub'dan, yoksa local'den)
 async function loadProjects() {
-  // Önce GitHub'dan yüklemeyi dene
+  // Önce local'den yükle (save sonrası her zaman güncel)
+  try {
+    const data = await fs.readFile(PROJECTS_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (localErr) {
+    // Local dosya yok, GitHub'dan yüklemeyi dene
+  }
+
   if (GITHUB_TOKEN) {
     try {
       const response = await axios.get(
@@ -279,7 +286,6 @@ async function loadProjects() {
       const content = Buffer.from(response.data.content, "base64").toString("utf8");
       const projects = JSON.parse(content);
       
-      // Local'e de kaydet (cache için)
       await fs.mkdir(path.dirname(PROJECTS_FILE), { recursive: true });
       await fs.writeFile(PROJECTS_FILE, content);
       
@@ -288,25 +294,17 @@ async function loadProjects() {
       if (err.response?.status !== 404) {
         console.error("GitHub'dan yüklenirken hata:", err.message);
       }
-      // GitHub'da yoksa local'den yükle
     }
   }
 
-  // Local'den yükle
-  try {
-    const data = await fs.readFile(PROJECTS_FILE, "utf8");
-    return JSON.parse(data);
-  } catch (err) {
-    // Dosya yoksa varsayılan projeleri oluştur
-    const defaultProjects = [
-      { id: "proje-1", name: "Örnek Proje 1" },
-      { id: "proje-2", name: "Örnek Proje 2" }
-    ];
-    // Klasör yoksa oluştur
-    await fs.mkdir(path.dirname(PROJECTS_FILE), { recursive: true });
-    await fs.writeFile(PROJECTS_FILE, JSON.stringify(defaultProjects, null, 2));
-    return defaultProjects;
-  }
+  // Hiçbir kaynak bulunamadı, varsayılan projeleri oluştur
+  const defaultProjects = [
+    { id: "proje-1", name: "Örnek Proje 1" },
+    { id: "proje-2", name: "Örnek Proje 2" }
+  ];
+  await fs.mkdir(path.dirname(PROJECTS_FILE), { recursive: true });
+  await fs.writeFile(PROJECTS_FILE, JSON.stringify(defaultProjects, null, 2));
+  return defaultProjects;
 }
 
 // Proje verilerini kaydet (hem local hem GitHub'a)
@@ -338,7 +336,14 @@ function generateCharacterId() {
 
 // Karakter verilerini yükle (önce GitHub'dan, yoksa local'den)
 async function loadCharacters() {
-  // Önce GitHub'dan yüklemeyi dene
+  // Önce local'den yükle (save sonrası her zaman güncel)
+  try {
+    const data = await fs.readFile(CHARACTERS_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (localErr) {
+    // Local dosya yok, GitHub'dan yüklemeyi dene
+  }
+
   if (GITHUB_TOKEN) {
     try {
       const response = await axios.get(
@@ -354,7 +359,6 @@ async function loadCharacters() {
       const content = Buffer.from(response.data.content, "base64").toString("utf8");
       const characters = JSON.parse(content);
       
-      // Local'e de kaydet (cache için)
       await fs.mkdir(path.dirname(CHARACTERS_FILE), { recursive: true });
       await fs.writeFile(CHARACTERS_FILE, content);
       
@@ -363,18 +367,10 @@ async function loadCharacters() {
       if (err.response?.status !== 404) {
         console.error("GitHub'dan yüklenirken hata:", err.message);
       }
-      // GitHub'da yoksa local'den yükle
     }
   }
 
-  // Local'den yükle
-  try {
-    const data = await fs.readFile(CHARACTERS_FILE, "utf8");
-    return JSON.parse(data);
-  } catch (err) {
-    // Dosya yoksa boş obje döndür
-    return {};
-  }
+  return {};
 }
 
 // Karakter verilerini kaydet (hem local hem GitHub'a)
@@ -582,7 +578,14 @@ app.delete("/api/projects/:projectId/characters/:characterId", async (req, res) 
 
 // CharacterImage yükle/kaydet fonksiyonları
 async function loadCharacterImages() {
-  // Önce GitHub'dan yüklemeyi dene
+  // Önce local'den yükle (save sonrası her zaman güncel)
+  try {
+    const data = await fs.readFile(CHARACTER_IMAGES_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (localErr) {
+    // Local dosya yok, GitHub'dan yüklemeyi dene
+  }
+
   if (GITHUB_TOKEN) {
     try {
       const response = await axios.get(
@@ -609,12 +612,7 @@ async function loadCharacterImages() {
     }
   }
 
-  try {
-    const data = await fs.readFile(CHARACTER_IMAGES_FILE, "utf8");
-    return JSON.parse(data);
-  } catch (err) {
-    return {}; // characterId -> image array mapping
-  }
+  return {};
 }
 
 async function saveCharacterImages(images) {
@@ -642,7 +640,14 @@ function generateUserId() {
 
 // Kullanıcı yükle/kaydet fonksiyonları
 async function loadUsers() {
-  // Önce GitHub'dan yüklemeyi dene
+  // Önce local'den yükle (save sonrası her zaman güncel)
+  try {
+    const data = await fs.readFile(USERS_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (localErr) {
+    // Local dosya yok, GitHub'dan yüklemeyi dene
+  }
+
   if (GITHUB_TOKEN) {
     try {
       const response = await axios.get(
@@ -669,12 +674,7 @@ async function loadUsers() {
     }
   }
 
-  try {
-    const data = await fs.readFile(USERS_FILE, "utf8");
-    return JSON.parse(data);
-  } catch (err) {
-    return [];
-  }
+  return [];
 }
 
 async function saveUsers(users) {
@@ -1246,7 +1246,59 @@ app.put("/api/projects/:projectId/relationships", async (req, res) => {
   }
 });
 
+// Sunucu başlatıldığında GitHub'dan local dosyalara tek seferlik senkronizasyon
+// Render'ın ephemeral filesystem'i nedeniyle restart sonrası local dosyalar kaybolur
+async function syncFromGitHub() {
+  if (!GITHUB_TOKEN) return;
+  
+  const filesToSync = [
+    { githubPath: "data/projects.json", localPath: PROJECTS_FILE },
+    { githubPath: "data/characters.json", localPath: CHARACTERS_FILE },
+    { githubPath: "data/character-images.json", localPath: CHARACTER_IMAGES_FILE },
+    { githubPath: "data/users.json", localPath: USERS_FILE },
+    { githubPath: "data/scenarios.json", localPath: SCENARIOS_FILE },
+    { githubPath: "data/relationships.json", localPath: RELATIONSHIPS_FILE },
+  ];
+
+  console.log("GitHub'dan local dosyalara senkronizasyon başlıyor...");
+  
+  await Promise.all(filesToSync.map(async ({ githubPath, localPath }) => {
+    try {
+      await fs.access(localPath);
+      return;
+    } catch {
+      // Local dosya yok, GitHub'dan çek
+    }
+
+    try {
+      const response = await axios.get(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${githubPath}`,
+        {
+          headers: {
+            Authorization: `token ${GITHUB_TOKEN}`,
+            Accept: "application/vnd.github.v3+json"
+          },
+          params: { ref: GITHUB_BRANCH }
+        }
+      );
+      const content = Buffer.from(response.data.content, "base64").toString("utf8");
+      await fs.mkdir(path.dirname(localPath), { recursive: true });
+      await fs.writeFile(localPath, content);
+      console.log(`  ✓ ${githubPath} senkronize edildi`);
+    } catch (err) {
+      if (err.response?.status === 404) {
+        console.log(`  - ${githubPath} GitHub'da bulunamadı (yeni dosya)`);
+      } else {
+        console.error(`  ✗ ${githubPath} senkronizasyon hatası:`, err.message);
+      }
+    }
+  }));
+
+  console.log("GitHub senkronizasyonu tamamlandı.");
+}
+
 const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log("Server running on", PORT);
+  await syncFromGitHub();
 });
