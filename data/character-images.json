@@ -1245,6 +1245,23 @@
       "orderIndex": 25,
       "createdAt": "2026-03-12T13:00:17.859Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmnh7g6b-nr0vdx",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773320443/character-gallery/srdteofig6in0gfg9aks.png",
+      "fileName": "Ryan kapı deliği.png",
+      "title": "Ryan ev",
+      "description": "chatgpt",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Ryan",
+        "kapı deliği"
+      ],
+      "orderIndex": 26,
+      "createdAt": "2026-03-12T13:00:44.579Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
