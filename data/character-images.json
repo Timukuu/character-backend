@@ -1193,24 +1193,6 @@
       "createdAt": "2026-03-09T08:50:22.018Z",
       "createdByUserId": "merycim",
       "updatedAt": "2026-03-09T08:50:42.886Z"
-    },
-    {
-      "id": "img-mmixyyia-7i7qnk",
-      "characterId": "mmixwou6-bd17qq",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046269/character-gallery/am2gr5mgo8q5ujjmerdf.png",
-      "fileName": "ChatGPT Image 4 Mar 2026 13_39_44.png",
-      "title": "yemek",
-      "description": "sandviç",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "yemek",
-        "sandviç",
-        "yiyecek"
-      ],
-      "orderIndex": 1,
-      "createdAt": "2026-03-09T08:51:11.026Z",
-      "createdByUserId": "merycim"
     }
   ]
 }
