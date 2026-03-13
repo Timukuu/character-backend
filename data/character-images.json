@@ -914,43 +914,6 @@
       "updatedAt": "2026-03-09T09:02:36.574Z"
     },
     {
-      "id": "img-mmiyhh78-tzyr31",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773047133/character-gallery/pash2iwq7xotdamortjo.png",
-      "fileName": "ChatGPT Image 27 Şub 2026 13_42_34.png",
-      "title": "Orman",
-      "description": "gal gün batımı",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "göl",
-        "gün batımı",
-        "orman"
-      ],
-      "orderIndex": 30,
-      "createdAt": "2026-03-09T09:05:35.060Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mmj2dm79-9wzk0j",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773053672/character-gallery/m97zpvxspnqy1bpxzfam.png",
-      "fileName": "orman1.png",
-      "title": "Orman",
-      "description": "Orman gündüz patika yol",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "orman",
-        "patika",
-        "dere",
-        "gündüz"
-      ],
-      "orderIndex": 31,
-      "createdAt": "2026-03-09T10:54:33.381Z",
-      "createdByUserId": "merycim"
-    },
-    {
       "id": "img-mmngv3cy-waatrn",
       "characterId": "mmiv94rd-q1p6b0",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773319867/character-gallery/muyk069ia2uxkhoyvmgd.jpg",
