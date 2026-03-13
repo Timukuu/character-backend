@@ -1293,9 +1293,10 @@ async function saveSettings(settings) {
   await fs.mkdir(path.dirname(SETTINGS_FILE), { recursive: true });
   await fs.writeFile(SETTINGS_FILE, content);
 
+  // Ayarlar kritik veri - debounce olmadan anında GitHub'a commit et
   if (GITHUB_TOKEN) {
     try {
-      await commitToGitHub("data/settings.json", content, `Update settings: ${new Date().toISOString()}`);
+      await executeCommit("data/settings.json", content, `Update settings: ${new Date().toISOString()}`);
     } catch (err) {
       console.error("GitHub'a ayarlar kaydedilemedi:", err.message);
     }
