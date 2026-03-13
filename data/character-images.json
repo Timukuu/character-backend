@@ -792,40 +792,6 @@
   ],
   "mmiv94rd-q1p6b0": [
     {
-      "id": "img-mmiy6v55-g7ri6s",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046638/character-gallery/sbkkljrj1fhjaftrgcep.png",
-      "fileName": "ChatGPT Image 27 Şub 2026 09_56_09.png",
-      "title": "Ağaç ev",
-      "description": "Ağaç ev yıpranmış",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "ağaç ev"
-      ],
-      "orderIndex": 28,
-      "createdAt": "2026-03-09T08:57:19.913Z",
-      "createdByUserId": "merycim",
-      "updatedAt": "2026-03-09T09:02:00.144Z"
-    },
-    {
-      "id": "img-mmiy7kld-yey5pv",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046671/character-gallery/qs1q3ang9vi3i68sziad.png",
-      "fileName": "ChatGPT Image 27 Şub 2026 09_57_22.png",
-      "title": "Ağaç ev",
-      "description": "ağaç ev yıpranmış gece",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "ağaç ev"
-      ],
-      "orderIndex": 29,
-      "createdAt": "2026-03-09T08:57:52.897Z",
-      "createdByUserId": "merycim",
-      "updatedAt": "2026-03-09T09:02:20.316Z"
-    },
-    {
       "id": "img-mmngv3cy-waatrn",
       "characterId": "mmiv94rd-q1p6b0",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773319867/character-gallery/muyk069ia2uxkhoyvmgd.jpg",
