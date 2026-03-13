@@ -1368,6 +1368,24 @@
       "orderIndex": 32,
       "createdAt": "2026-03-13T07:20:57.500Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmokixqb-uohlye",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773386484/character-gallery/bg0dmhzj9i753wccnyoz.jpg",
+      "fileName": "Ryan salon gece.jpg",
+      "title": "Ryan ev",
+      "description": "chatgpt",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Ryan",
+        "salon",
+        "gece"
+      ],
+      "orderIndex": 33,
+      "createdAt": "2026-03-13T07:21:25.571Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
