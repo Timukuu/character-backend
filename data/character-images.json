@@ -1350,6 +1350,24 @@
       "orderIndex": 31,
       "createdAt": "2026-03-13T07:22:03.061Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmokkd7l-akgh3s",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773386551/character-gallery/atgngp4ujobkzr4jkq5k.jpg",
+      "fileName": "Ryan tavan.jpg",
+      "title": "Ryan ev",
+      "description": "chatgpt",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Ryan",
+        "salon",
+        "tavan"
+      ],
+      "orderIndex": 32,
+      "createdAt": "2026-03-13T07:22:32.289Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
