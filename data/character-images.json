@@ -792,56 +792,6 @@
   ],
   "mmiv94rd-q1p6b0": [
     {
-      "id": "img-mmiwrqr9-c9r03i",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044253/character-gallery/npdmcso19bjjalc2tngr.png",
-      "fileName": "kantin2.png",
-      "title": "Üniversite",
-      "description": "Üniversite kantin2",
-      "positivePrompt": "-",
-      "negativePrompt": "-",
-      "tags": [
-        "Üniversite",
-        "kantin"
-      ],
-      "orderIndex": 19,
-      "createdAt": "2026-03-09T08:17:34.773Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mmiwshx0-ojhe2m",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044289/character-gallery/ajwpqarmrgpugmdzxxyp.png",
-      "fileName": "ChatGPT Image 27 Şub 2026 10_42_54.png",
-      "title": "Üniversite",
-      "description": "npc",
-      "positivePrompt": "-",
-      "negativePrompt": "-",
-      "tags": [
-        "npc"
-      ],
-      "orderIndex": 20,
-      "createdAt": "2026-03-09T08:18:09.973Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mmiwt1md-y7fm8a",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044314/character-gallery/phkzesxfunv9n98f23kg.png",
-      "fileName": "ChatGPT Image 27 Şub 2026 10_45_40.png",
-      "title": "Üniversite",
-      "description": "npc",
-      "positivePrompt": "-",
-      "negativePrompt": "-",
-      "tags": [
-        "Üniversite",
-        "npc"
-      ],
-      "orderIndex": 21,
-      "createdAt": "2026-03-09T08:18:35.509Z",
-      "createdByUserId": "merycim"
-    },
-    {
       "id": "img-mmiy2mqp-xpwvx6",
       "characterId": "mmiv94rd-q1p6b0",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046441/character-gallery/e220ybrg3d8mfklyngrd.png",
