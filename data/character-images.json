@@ -792,57 +792,298 @@
   ],
   "mmiv94rd-q1p6b0": [
     {
-      "id": "img-mmj2etko-zpvtb3",
+      "id": "img-mmiwodzs-jytv95",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773053728/character-gallery/ge46f9venjos7lgzwogm.png",
-      "fileName": "orman.png",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044096/character-gallery/smdmpridfsfd2zea6wxk.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 10_40_23.png",
+      "title": "Üniversite",
+      "description": "Üniversiteye ait tasarımlar",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "university",
+        "üniversite",
+        "giriş"
+      ],
+      "orderIndex": 15,
+      "createdAt": "2026-03-09T08:14:58.264Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwp9ux-6b1dek",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044138/character-gallery/wjon2zjptyqdn08pba3u.png",
+      "fileName": "ChatGPT Image 4 Mar 2026 11_51_20.png",
+      "title": "Üniversite",
+      "description": "otopark boş",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "otopark",
+        "üniversite"
+      ],
+      "orderIndex": 16,
+      "createdAt": "2026-03-09T08:15:39.561Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwqd36-11rn4w",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044189/character-gallery/hkubve0b5bpvboaljmap.png",
+      "fileName": "ChatGPT Image 4 Mar 2026 11_41_21.png",
+      "title": "Üniversite",
+      "description": "üniversite otopark2",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "üniversite",
+        "otopark"
+      ],
+      "orderIndex": 17,
+      "createdAt": "2026-03-09T08:16:30.402Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwr429-pdsb8c",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044224/character-gallery/tvpxfjp2vnuybxhxfnzk.png",
+      "fileName": "kantin.png",
+      "title": "Üniversite",
+      "description": "Üniversite kantin",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "Üniversite",
+        "kantin"
+      ],
+      "orderIndex": 18,
+      "createdAt": "2026-03-09T08:17:05.361Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwrqr9-c9r03i",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044253/character-gallery/npdmcso19bjjalc2tngr.png",
+      "fileName": "kantin2.png",
+      "title": "Üniversite",
+      "description": "Üniversite kantin2",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "Üniversite",
+        "kantin"
+      ],
+      "orderIndex": 19,
+      "createdAt": "2026-03-09T08:17:34.773Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwshx0-ojhe2m",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044289/character-gallery/ajwpqarmrgpugmdzxxyp.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 10_42_54.png",
+      "title": "Üniversite",
+      "description": "npc",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "npc"
+      ],
+      "orderIndex": 20,
+      "createdAt": "2026-03-09T08:18:09.973Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwt1md-y7fm8a",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044314/character-gallery/phkzesxfunv9n98f23kg.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 10_45_40.png",
+      "title": "Üniversite",
+      "description": "npc",
+      "positivePrompt": "-",
+      "negativePrompt": "-",
+      "tags": [
+        "Üniversite",
+        "npc"
+      ],
+      "orderIndex": 21,
+      "createdAt": "2026-03-09T08:18:35.509Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiwtkmp-q89iu7",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773044339/character-gallery/wd8nvq3fgh2eoy8hifnx.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 10_47_45.png",
+      "title": "Üniversite",
+      "description": "Üniversite npc",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Üniversite",
+        "npc"
+      ],
+      "orderIndex": 22,
+      "createdAt": "2026-03-09T08:19:00.145Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmiy2mqp-xpwvx6",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046441/character-gallery/e220ybrg3d8mfklyngrd.png",
+      "fileName": "ağaç ev eski hali.png",
+      "title": "Ağaç ev",
+      "description": "ağaç ev eski hali",
+      "positivePrompt": "anime film background / interior background art; clean thin lineart; soft painterly shading; cel + gradient mix; subtle brush texture; cinematic soft window light; no photorealism; no 3D render look; wide shot; 2-point perspective; 16:9. a old tree house on the dry old tree in the forest. no leaf on the tree. near a lake.",
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev",
+        "eski hali",
+        "orman"
+      ],
+      "orderIndex": 23,
+      "createdAt": "2026-03-09T08:54:02.401Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-03-09T09:00:40.702Z"
+    },
+    {
+      "id": "img-mmiy3jvf-gn2r0s",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046484/character-gallery/ooqstdcts3hwqcfhxhxz.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 14_03_47.png",
+      "title": "Ağaç ev",
+      "description": "ağaç ev ormanın içinden",
+      "positivePrompt": "anime film background / interior background art; clean thin lineart; soft painterly shading; cel + gradient mix; subtle brush texture; cinematic soft window light; no photorealism; no 3D render look; wide shot; 2-point perspective; 16:9. a old tree house on the dry old tree in the forest. no leaf on the tree. near a lake.",
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev"
+      ],
+      "orderIndex": 24,
+      "createdAt": "2026-03-09T08:54:45.339Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-03-09T09:01:22.135Z"
+    },
+    {
+      "id": "img-mmiy4jcp-7tpapi",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046529/character-gallery/lspphwhfkq9mwkmgzrfw.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 14_09_38.png",
+      "title": "Ağaç ev",
+      "description": "ağaç ev gün batımı",
+      "positivePrompt": "anime film background / interior background art; clean thin lineart; soft painterly shading; cel + gradient mix; subtle brush texture; cinematic soft window light; no photorealism; no 3D render look; wide shot; 2-point perspective; 16:9. a old tree house on the dry old tree in the forest. no leaf on the tree. near a lake.",
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev",
+        "gün batımı"
+      ],
+      "orderIndex": 25,
+      "createdAt": "2026-03-09T08:55:31.321Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-03-09T09:01:37.043Z"
+    },
+    {
+      "id": "img-mmiy5yw6-15qp1v",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046596/character-gallery/vft4hst0reqgk9c0vg6x.png",
+      "fileName": "ağaç ev iç.png",
+      "title": "Ağaç ev",
+      "description": "Ağaç ev içi",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev"
+      ],
+      "orderIndex": 27,
+      "createdAt": "2026-03-09T08:56:38.118Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-03-09T09:01:52.007Z"
+    },
+    {
+      "id": "img-mmiy6v55-g7ri6s",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046638/character-gallery/sbkkljrj1fhjaftrgcep.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 09_56_09.png",
+      "title": "Ağaç ev",
+      "description": "Ağaç ev yıpranmış",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev"
+      ],
+      "orderIndex": 28,
+      "createdAt": "2026-03-09T08:57:19.913Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-03-09T09:02:00.144Z"
+    },
+    {
+      "id": "img-mmiy7kld-yey5pv",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046671/character-gallery/qs1q3ang9vi3i68sziad.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 09_57_22.png",
+      "title": "Ağaç ev",
+      "description": "ağaç ev yıpranmış gece",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev"
+      ],
+      "orderIndex": 29,
+      "createdAt": "2026-03-09T08:57:52.897Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-03-09T09:02:20.316Z"
+    },
+    {
+      "id": "img-mmiy8jlx-yu7msz",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046717/character-gallery/cznqzrxxqc2u695tcw5j.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 10_12_29.png",
+      "title": "Ağaç ev",
+      "description": "Ağaç ev içi",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev"
+      ],
+      "orderIndex": 30,
+      "createdAt": "2026-03-09T08:58:38.277Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-03-09T09:02:36.574Z"
+    },
+    {
+      "id": "img-mmiyhh78-tzyr31",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773047133/character-gallery/pash2iwq7xotdamortjo.png",
+      "fileName": "ChatGPT Image 27 Şub 2026 13_42_34.png",
       "title": "Orman",
-      "description": "Orman, patika, gece",
+      "description": "gal gün batımı",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "göl",
+        "gün batımı",
+        "orman"
+      ],
+      "orderIndex": 30,
+      "createdAt": "2026-03-09T09:05:35.060Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmj2dm79-9wzk0j",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773053672/character-gallery/m97zpvxspnqy1bpxzfam.png",
+      "fileName": "orman1.png",
+      "title": "Orman",
+      "description": "Orman gündüz patika yol",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "orman",
         "patika",
-        "gece"
-      ],
-      "orderIndex": 32,
-      "createdAt": "2026-03-09T10:55:29.592Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mmj2flo4-kyk2mm",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773053764/character-gallery/kocajp8psvlm1qnlnbky.png",
-      "fileName": "orman ve göl.png",
-      "title": "Orman",
-      "description": "göl kıyısı gündüz",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "orman",
-        "göl",
+        "dere",
         "gündüz"
       ],
-      "orderIndex": 33,
-      "createdAt": "2026-03-09T10:56:06.004Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mmj2gji5-f17hnv",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773053808/character-gallery/zpkmck1hyyvq4m788gi1.png",
-      "fileName": "ChatGPT Image 27 Şub 2026 13_45_41.png",
-      "title": "Orman",
-      "description": "orman gündüz, ağaçlık",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "orman",
-        "gündüz",
-        "ağaçlık"
-      ],
-      "orderIndex": 34,
-      "createdAt": "2026-03-09T10:56:49.853Z",
+      "orderIndex": 31,
+      "createdAt": "2026-03-09T10:54:33.381Z",
       "createdByUserId": "merycim"
     },
     {
@@ -1039,28 +1280,46 @@
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mmokjqnp-pp1gn2",
+      "id": "img-mmokhsk4-lh5ua1",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773386522/character-gallery/ycmsffotqiagz7g2qrlh.jpg",
-      "fileName": "Ryan salon.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773386431/character-gallery/eyvskvjxylmzprmlryea.jpg",
+      "fileName": "ryan oda gece.jpg",
       "title": "Ryan ev",
       "description": "chatgpt",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "Ryan",
-        "salon",
-        "gündüz"
+        "oda",
+        "gece"
       ],
       "orderIndex": 31,
-      "createdAt": "2026-03-13T07:22:03.061Z",
+      "createdAt": "2026-03-13T07:20:32.212Z",
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mmokkd7l-akgh3s",
+      "id": "img-mmokic2k-7sm5ee",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773386551/character-gallery/atgngp4ujobkzr4jkq5k.jpg",
-      "fileName": "Ryan tavan.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773386456/character-gallery/qwwfw1iuyzgcivr1qrhp.jpg",
+      "fileName": "Ryan oda gündüz.jpg",
+      "title": "Ryan ev",
+      "description": "chatgpt",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Ryan",
+        "oda",
+        "gündüz"
+      ],
+      "orderIndex": 32,
+      "createdAt": "2026-03-13T07:20:57.500Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mmokixqb-uohlye",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773386484/character-gallery/bg0dmhzj9i753wccnyoz.jpg",
+      "fileName": "Ryan salon gece.jpg",
       "title": "Ryan ev",
       "description": "chatgpt",
       "positivePrompt": null,
@@ -1068,10 +1327,10 @@
       "tags": [
         "Ryan",
         "salon",
-        "tavan"
+        "gece"
       ],
-      "orderIndex": 32,
-      "createdAt": "2026-03-13T07:22:32.289Z",
+      "orderIndex": 33,
+      "createdAt": "2026-03-13T07:21:25.571Z",
       "createdByUserId": "merycim"
     }
   ],
