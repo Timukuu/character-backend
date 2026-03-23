@@ -1273,6 +1273,24 @@
       "orderIndex": 26,
       "createdAt": "2026-03-23T13:01:05.507Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn37389l-uw6e9e",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270909/character-gallery/hgw7ls1yakni4ki2y1as.png",
+      "fileName": "karakter3.png",
+      "title": "Üniversite",
+      "description": "karakter NPC",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "karakter",
+        "NPC",
+        "üniversite"
+      ],
+      "orderIndex": 27,
+      "createdAt": "2026-03-23T13:01:50.361Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
