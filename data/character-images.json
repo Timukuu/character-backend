@@ -1245,5 +1245,24 @@
       "createdByUserId": "merycim"
     }
   ],
-  "mmixwou6-bd17qq": []
+  "mmixwou6-bd17qq": [
+    {
+      "id": "img-mn384fm7-z90a9o",
+      "characterId": "mmixwou6-bd17qq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774272645/character-gallery/l3wfyh75vy958mdyddrg.png",
+      "fileName": "tilki ceketli.png",
+      "title": "Tilki",
+      "description": "Tilki",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tilki",
+        "mont",
+        "yaralı"
+      ],
+      "orderIndex": 0,
+      "createdAt": "2026-03-23T13:30:46.159Z",
+      "createdByUserId": "merycim"
+    }
+  ]
 }
