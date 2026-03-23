@@ -1073,6 +1073,24 @@
       "orderIndex": 15,
       "createdAt": "2026-03-23T12:46:53.767Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36ksyj-x506fp",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270049/character-gallery/hvue3tvljm2lhxt2smmb.jpg",
+      "fileName": "ağaç ev sağlam gündüz.jpg",
+      "title": "Orman",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Ağaç ev",
+        "sağlam",
+        "gündüz"
+      ],
+      "orderIndex": 16,
+      "createdAt": "2026-03-23T12:47:30.715Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
