@@ -1057,39 +1057,116 @@
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mn36k0g7-piqvb2",
+      "id": "img-mn36dim8-ox0if0",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270013/character-gallery/yb82tja6r3atbsop3o7a.jpg",
-      "fileName": "ağaç ev sağlam gece .jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269709/character-gallery/mswakxm9ll73ytkwu7ud.jpg",
+      "fileName": "ağaç ev eski gece.jpg",
       "title": "Orman",
-      "description": "Ağaç ev sağlam gece",
+      "description": "ağaç ev eski gece",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
-        "Ağaç ev",
-        "sağlam",
+        "ağaç ev",
+        "eski",
         "gece"
       ],
       "orderIndex": 15,
-      "createdAt": "2026-03-23T12:46:53.767Z",
+      "createdAt": "2026-03-23T12:41:50.720Z",
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mn36ksyj-x506fp",
+      "id": "img-mn36eo42-96ckth",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270049/character-gallery/hvue3tvljm2lhxt2smmb.jpg",
-      "fileName": "ağaç ev sağlam gündüz.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269763/character-gallery/camxcxxg5ptqolylryxe.jpg",
+      "fileName": "ağaç ev eski gün batımı yapraklı.jpg",
       "title": "Orman",
-      "description": "",
+      "description": "ağaç ev eski gün batımı",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev",
+        "eski",
+        "gün batımı",
+        "orman"
+      ],
+      "orderIndex": 16,
+      "createdAt": "2026-03-23T12:42:44.498Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36ftet-4gitmm",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269817/character-gallery/a9tmn7wtqr8faxcrf81d.jpg",
+      "fileName": "ağaç ev eski gündüz yapraklı.jpg",
+      "title": "Orman",
+      "description": "ağaç ev eski yapraklı",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev",
+        "eski",
+        "gündüz",
+        "orman",
+        "yapraklı"
+      ],
+      "orderIndex": 17,
+      "createdAt": "2026-03-23T12:43:38.021Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36h2lc-gva1pj",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269875/character-gallery/ggy7affiq8v7oxdz5bmz.jpg",
+      "fileName": "ağaç ev eski hali .jpg",
+      "title": "Orman",
+      "description": "ağaç ev eski hali",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev",
+        "eski hali",
+        "çocukluk",
+        "orman"
+      ],
+      "orderIndex": 18,
+      "createdAt": "2026-03-23T12:44:36.576Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36hz2s-9ims2j",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269917/character-gallery/fvhjodf9jv8n8aziytiy.jpg",
+      "fileName": "ağaç ev iç gece 2.jpg",
+      "title": "Orman",
+      "description": "Ağaç ev içi gece",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "Ağaç ev",
-        "sağlam",
-        "gündüz"
+        "içi",
+        "gece"
       ],
-      "orderIndex": 16,
-      "createdAt": "2026-03-23T12:47:30.715Z",
+      "orderIndex": 19,
+      "createdAt": "2026-03-23T12:45:18.676Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-03-23T12:47:53.711Z"
+    },
+    {
+      "id": "img-mn36iylr-mhwu7e",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269963/character-gallery/vbzzfwz2unkndfx7rmew.jpg",
+      "fileName": "ağaç ev iç gece.jpg",
+      "title": "Orman",
+      "description": "Ağaç ev içi karanlık",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev",
+        "içi",
+        "orman"
+      ],
+      "orderIndex": 20,
+      "createdAt": "2026-03-23T12:46:04.719Z",
       "createdByUserId": "merycim"
     }
   ],
