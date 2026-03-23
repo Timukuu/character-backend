@@ -1209,6 +1209,23 @@
       "orderIndex": 23,
       "createdAt": "2026-03-23T13:04:30.643Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn377n9f-ebejog",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774271113/character-gallery/wsuj3fy7njgcmnvbifqs.jpg",
+      "fileName": "Tiffany kapı.jpg",
+      "title": "Tiffany",
+      "description": "Tiffany evin kapısı",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tiffany ev",
+        "kapı"
+      ],
+      "orderIndex": 24,
+      "createdAt": "2026-03-23T13:05:16.419Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
