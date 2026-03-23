@@ -1131,6 +1131,24 @@
       "orderIndex": 18,
       "createdAt": "2026-03-23T12:44:36.576Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36hz2s-9ims2j",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269917/character-gallery/fvhjodf9jv8n8aziytiy.jpg",
+      "fileName": "ağaç ev iç gece 2.jpg",
+      "title": "Ağaç ev içi gece",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Ağaç ev",
+        "içi",
+        "gece"
+      ],
+      "orderIndex": 19,
+      "createdAt": "2026-03-23T12:45:18.676Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
