@@ -1226,6 +1226,23 @@
       "orderIndex": 24,
       "createdAt": "2026-03-23T13:05:16.419Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn37c0nt-nncvym",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774271319/character-gallery/da7s4h0e2ccmvlsdkg46.jpg",
+      "fileName": "Tiffany salon.jpg",
+      "title": "Tiffany",
+      "description": "Tiffany ev salon",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tiffany ev",
+        "salon"
+      ],
+      "orderIndex": 25,
+      "createdAt": "2026-03-23T13:08:40.409Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
