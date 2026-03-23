@@ -76,12 +76,12 @@
     },
     {
       "id": "mmixwou6-bd17qq",
-      "firstName": "Obje",
+      "firstName": "Obje ve karakter",
       "lastName": "Tasarımları",
       "traits": "objeler",
       "zodiac": "",
       "age": null,
-      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1773046167/character-gallery/ijgeyznfsgt3gyevs1ub.png",
+      "imageUrl": null,
       "createdAt": "2026-03-09T08:49:28.004Z"
     }
   ]
