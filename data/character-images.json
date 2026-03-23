@@ -1342,11 +1342,13 @@
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
-        "sandviç"
+        "sandviç",
+        "yemek"
       ],
       "orderIndex": 5,
       "createdAt": "2026-03-23T13:57:50.231Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-03-23T13:59:55.978Z"
     },
     {
       "id": "img-mn3943d5-ojb1i6",
