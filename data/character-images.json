@@ -1125,6 +1125,24 @@
       "orderIndex": 18,
       "createdAt": "2026-03-23T12:51:58.484Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36rbrv-ocosg6",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270353/character-gallery/gsrxq4snap0iggcij6sw.jpg",
+      "fileName": "orman kurdele.jpg",
+      "title": "Orman",
+      "description": "orman kurdele",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "orman",
+        "kurdele",
+        "ağaç"
+      ],
+      "orderIndex": 19,
+      "createdAt": "2026-03-23T12:52:35.035Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
