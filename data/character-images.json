@@ -1263,6 +1263,22 @@
       "orderIndex": 0,
       "createdAt": "2026-03-23T13:30:46.159Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn3859wu-h098oz",
+      "characterId": "mmixwou6-bd17qq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774272684/character-gallery/jbbyhvnlrkkwtbaogwuh.png",
+      "fileName": "Tilki göle eğilen.png",
+      "title": "Tilki",
+      "description": "Tilki göle eğilen",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tilki"
+      ],
+      "orderIndex": 1,
+      "createdAt": "2026-03-23T13:31:25.422Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
