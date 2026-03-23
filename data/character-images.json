@@ -1296,6 +1296,23 @@
       "orderIndex": 2,
       "createdAt": "2026-03-23T13:33:18.450Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn388u0u-nuu8f4",
+      "characterId": "mmixwou6-bd17qq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774272849/character-gallery/uvaxv1bwzxejdpsl3ltb.png",
+      "fileName": "tilki yaralı2.png",
+      "title": "Tilki",
+      "description": "Tilki yaralı",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tilki",
+        "yaralı"
+      ],
+      "orderIndex": 3,
+      "createdAt": "2026-03-23T13:34:11.454Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
