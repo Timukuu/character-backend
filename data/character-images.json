@@ -1185,6 +1185,24 @@
       "orderIndex": 21,
       "createdAt": "2026-03-23T12:50:11.490Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36otgj-29l3cj",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270237/character-gallery/hz5szymy8lemyh1cogvv.jpg",
+      "fileName": "orman gece1.jpg",
+      "title": "Orman",
+      "description": "orman gece",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "orman",
+        "gece",
+        "yol"
+      ],
+      "orderIndex": 22,
+      "createdAt": "2026-03-23T12:50:37.987Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
