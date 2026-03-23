@@ -1092,6 +1092,26 @@
       "orderIndex": 16,
       "createdAt": "2026-03-23T12:42:44.498Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36ftet-4gitmm",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269817/character-gallery/a9tmn7wtqr8faxcrf81d.jpg",
+      "fileName": "ağaç ev eski gündüz yapraklı.jpg",
+      "title": "Orman",
+      "description": "ağaç ev eski yapraklı",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev",
+        "eski",
+        "gündüz",
+        "orman",
+        "yapraklı"
+      ],
+      "orderIndex": 17,
+      "createdAt": "2026-03-23T12:43:38.021Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
