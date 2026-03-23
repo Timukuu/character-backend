@@ -166,26 +166,6 @@
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-misin80d-p25lli",
-      "characterId": "mipl0jjt-eg7z3x",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1764918060/character-gallery/zmgnijdgoh6rvbr7pyeo.png",
-      "fileName": "00001-1604218144.png",
-      "title": "Luna Eyes - hoseki",
-      "description": "Luna'nın gözleri için seçtim.",
-      "positivePrompt": "masterpiece, anime, portrait, soft lighting, best quality, masterpiece, ultra detailed face,ultra detailed body, ultra detailed eyes, soft lighting, head shot, extreme close up, big smile, looking at viewer, fair skin, animated eyes, blue sky, 1 girl,  white hair, yellow eyes, long hair,",
-      "negativePrompt": "worst quality,",
-      "tags": [
-        "Luna eyes",
-        "yellow eyes",
-        "detailed eyes",
-        ""
-      ],
-      "orderIndex": 8,
-      "createdAt": "2025-12-05T07:01:01.645Z",
-      "createdByUserId": "merycim",
-      "updatedAt": "2025-12-05T07:04:01.896Z"
-    },
-    {
       "id": "img-miy60orp-jfpdo1",
       "characterId": "mipl0jjt-eg7z3x",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1765259650/character-gallery/auddzmcpbjntejcuifcv.png",
