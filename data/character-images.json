@@ -1037,6 +1037,24 @@
       "orderIndex": 33,
       "createdAt": "2026-03-13T07:21:25.571Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36cgx1-93vunl",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269660/character-gallery/h3qtmz5z76z4voou5isu.jpg",
+      "fileName": "ağaç ev eski gece yapraklı.jpg",
+      "title": "Orman",
+      "description": "ağaç ev eski",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev",
+        "orman",
+        "eski"
+      ],
+      "orderIndex": 14,
+      "createdAt": "2026-03-23T12:41:01.861Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
