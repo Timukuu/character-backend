@@ -1057,192 +1057,96 @@
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mn36dim8-ox0if0",
+      "id": "img-mn36k0g7-piqvb2",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269709/character-gallery/mswakxm9ll73ytkwu7ud.jpg",
-      "fileName": "ağaç ev eski gece.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270013/character-gallery/yb82tja6r3atbsop3o7a.jpg",
+      "fileName": "ağaç ev sağlam gece .jpg",
       "title": "Orman",
-      "description": "ağaç ev eski gece",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "ağaç ev",
-        "eski",
-        "gece"
-      ],
-      "orderIndex": 15,
-      "createdAt": "2026-03-23T12:41:50.720Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mn36eo42-96ckth",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269763/character-gallery/camxcxxg5ptqolylryxe.jpg",
-      "fileName": "ağaç ev eski gün batımı yapraklı.jpg",
-      "title": "Orman",
-      "description": "ağaç ev eski gün batımı",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "ağaç ev",
-        "eski",
-        "gün batımı",
-        "orman"
-      ],
-      "orderIndex": 16,
-      "createdAt": "2026-03-23T12:42:44.498Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mn36ftet-4gitmm",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269817/character-gallery/a9tmn7wtqr8faxcrf81d.jpg",
-      "fileName": "ağaç ev eski gündüz yapraklı.jpg",
-      "title": "Orman",
-      "description": "ağaç ev eski yapraklı",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "ağaç ev",
-        "eski",
-        "gündüz",
-        "orman",
-        "yapraklı"
-      ],
-      "orderIndex": 17,
-      "createdAt": "2026-03-23T12:43:38.021Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mn36h2lc-gva1pj",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269875/character-gallery/ggy7affiq8v7oxdz5bmz.jpg",
-      "fileName": "ağaç ev eski hali .jpg",
-      "title": "Orman",
-      "description": "ağaç ev eski hali",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "ağaç ev",
-        "eski hali",
-        "çocukluk",
-        "orman"
-      ],
-      "orderIndex": 18,
-      "createdAt": "2026-03-23T12:44:36.576Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mn36hz2s-9ims2j",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269917/character-gallery/fvhjodf9jv8n8aziytiy.jpg",
-      "fileName": "ağaç ev iç gece 2.jpg",
-      "title": "Orman",
-      "description": "Ağaç ev içi gece",
+      "description": "Ağaç ev sağlam gece",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "Ağaç ev",
-        "içi",
+        "sağlam",
         "gece"
       ],
-      "orderIndex": 19,
-      "createdAt": "2026-03-23T12:45:18.676Z",
-      "createdByUserId": "merycim",
-      "updatedAt": "2026-03-23T12:47:53.711Z"
-    },
-    {
-      "id": "img-mn36iylr-mhwu7e",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269963/character-gallery/vbzzfwz2unkndfx7rmew.jpg",
-      "fileName": "ağaç ev iç gece.jpg",
-      "title": "Orman",
-      "description": "Ağaç ev içi karanlık",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "ağaç ev",
-        "içi",
-        "orman"
-      ],
-      "orderIndex": 20,
-      "createdAt": "2026-03-23T12:46:04.719Z",
+      "orderIndex": 15,
+      "createdAt": "2026-03-23T12:46:53.767Z",
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mn36o90i-dbp0di",
+      "id": "img-mn36mk23-ybl9lk",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270209/character-gallery/gffm3y12hwj5k8rtldvl.jpg",
-      "fileName": "orman gece 2.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270131/character-gallery/l49fdhxkog4wqcnlcree.jpg",
+      "fileName": "göl gece.jpg",
       "title": "Orman",
-      "description": "Orman gece",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "orman",
-        "gece"
-      ],
-      "orderIndex": 21,
-      "createdAt": "2026-03-23T12:50:11.490Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mn36otgj-29l3cj",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270237/character-gallery/hz5szymy8lemyh1cogvv.jpg",
-      "fileName": "orman gece1.jpg",
-      "title": "Orman",
-      "description": "orman gece",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "orman",
-        "gece",
-        "yol"
-      ],
-      "orderIndex": 22,
-      "createdAt": "2026-03-23T12:50:37.987Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mn36s50e-f3ncgh",
-      "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270392/character-gallery/mct6cskongzkxughmxvv.jpg",
-      "fileName": "orman ve göl .jpg",
-      "title": "Orman",
-      "description": "göl gündüz",
+      "description": "göl gece",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "göl",
-        "orman",
-        "gündüz"
+        "gece",
+        "orman"
       ],
-      "orderIndex": 23,
-      "createdAt": "2026-03-23T12:53:12.926Z",
+      "orderIndex": 16,
+      "createdAt": "2026-03-23T12:48:52.491Z",
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mn36vlc3-nvjruf",
+      "id": "img-mn36pu72-p7yyon",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270553/character-gallery/hdz0qzclsu67twgy8epp.jpg",
-      "fileName": "üniversite giriş.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270284/character-gallery/xhvi0mam58hyccvnp70q.jpg",
+      "fileName": "orman gündüz.jpg",
+      "title": "Orman",
+      "description": "Orman gündüz",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "orman",
+        "gündüz"
+      ],
+      "orderIndex": 17,
+      "createdAt": "2026-03-23T12:51:25.598Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36qjkk-scngyd",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270317/character-gallery/sqp1fdufm6etrf38ewci.jpg",
+      "fileName": "orman gündüz2.jpg",
+      "title": "Orman",
+      "description": "orman gündüz",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "orman",
+        "gündüz"
+      ],
+      "orderIndex": 18,
+      "createdAt": "2026-03-23T12:51:58.484Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36t5h5-1lweuz",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270439/character-gallery/mraxlqgl8br8j76fafko.jpg",
+      "fileName": "boş otopark.jpg",
       "title": "Üniversite",
-      "description": "üniversite giriş",
+      "description": "üniversite otopark",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "üniversite",
-        "giriş"
+        "otopark"
       ],
-      "orderIndex": 24,
-      "createdAt": "2026-03-23T12:55:54.051Z",
+      "orderIndex": 19,
+      "createdAt": "2026-03-23T12:54:00.185Z",
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mn36yqwm-kju9ta",
+      "id": "img-mn36tu5t-0xetdq",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270700/character-gallery/m6rfff2mfy3ej7rlx3sy.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270470/character-gallery/xyjvjxu6gsw9kq6z9gle.jpg",
       "fileName": "otopark.jpg",
       "title": "Üniversite",
       "description": "üniversite otopark",
@@ -1252,61 +1156,91 @@
         "üniversite",
         "otopark"
       ],
-      "orderIndex": 25,
-      "createdAt": "2026-03-23T12:58:21.238Z",
+      "orderIndex": 20,
+      "createdAt": "2026-03-23T12:54:32.177Z",
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mn3729nn-ta7pli",
+      "id": "img-mn36xyxa-uu0vdk",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270864/character-gallery/z6hce7it8iv1dc9dcpaw.png",
-      "fileName": "karakter2.png",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270664/character-gallery/fxbyj8jknb7692hd5siz.jpg",
+      "fileName": "boş otopark.jpg",
       "title": "Üniversite",
-      "description": "karakter NPC",
+      "description": "üniversite otopark",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
-        "karakter",
-        "NPC",
-        "üniversite"
+        "üniversite",
+        "otopark"
       ],
-      "orderIndex": 26,
-      "createdAt": "2026-03-23T13:01:05.507Z",
+      "orderIndex": 21,
+      "createdAt": "2026-03-23T12:57:44.974Z",
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mn37389l-uw6e9e",
+      "id": "img-mn37033b-l3n21f",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270909/character-gallery/hgw7ls1yakni4ki2y1as.png",
-      "fileName": "karakter3.png",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270762/character-gallery/dqhqq2l0wlpoyhzp2agi.jpg",
+      "fileName": "boş otopark.jpg",
       "title": "Üniversite",
-      "description": "karakter NPC",
+      "description": "üniversite otopark",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
-        "karakter",
-        "NPC",
-        "üniversite"
+        "üniversite",
+        "otopark"
       ],
-      "orderIndex": 27,
-      "createdAt": "2026-03-23T13:01:50.361Z",
+      "orderIndex": 22,
+      "createdAt": "2026-03-23T12:59:23.688Z",
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mn3791my-ovan2v",
+      "id": "img-mn376nxv-mdiboi",
       "characterId": "mmiv94rd-q1p6b0",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774271180/character-gallery/rpfurh3u2clarxhvhcwk.jpg",
-      "fileName": "Tiffany salon.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774271069/character-gallery/ij0tckm9r9lxxosdwsgh.jpg",
+      "fileName": "Tiffany ev.jpg",
       "title": "Tiffany",
-      "description": "Tiffany ev salon",
+      "description": "Tiffany ev",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tiffany ev"
+      ],
+      "orderIndex": 23,
+      "createdAt": "2026-03-23T13:04:30.643Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn377n9f-ebejog",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774271113/character-gallery/wsuj3fy7njgcmnvbifqs.jpg",
+      "fileName": "Tiffany kapı.jpg",
+      "title": "Tiffany",
+      "description": "Tiffany evin kapısı",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "Tiffany ev",
-        "salon"
+        "kapı"
       ],
-      "orderIndex": 28,
-      "createdAt": "2026-03-23T13:06:21.706Z",
+      "orderIndex": 24,
+      "createdAt": "2026-03-23T13:05:16.419Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn37a63w-zgevhi",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774271233/character-gallery/wqwwsaq0i1osnwuci3ug.jpg",
+      "fileName": "Tiffany ev.jpg",
+      "title": "Tiffany",
+      "description": "Tiffany ev",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tiffany ev"
+      ],
+      "orderIndex": 25,
+      "createdAt": "2026-03-23T13:07:14.156Z",
       "createdByUserId": "merycim"
     }
   ],
