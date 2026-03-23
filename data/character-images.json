@@ -1247,39 +1247,89 @@
   ],
   "mmixwou6-bd17qq": [
     {
-      "id": "img-mn386e6s-vpnqkh",
+      "id": "img-mn384fm7-z90a9o",
       "characterId": "mmixwou6-bd17qq",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774272736/character-gallery/vv6ncv0iitv3qxkm0abp.png",
-      "fileName": "tilki yaralı ve kirli.png",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774272645/character-gallery/l3wfyh75vy958mdyddrg.png",
+      "fileName": "tilki ceketli.png",
       "title": "Tilki",
-      "description": "Tilki kirli ve yaralı",
+      "description": "Tilki",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "Tilki",
-        "kirli",
+        "mont",
         "yaralı"
       ],
       "orderIndex": 0,
-      "createdAt": "2026-03-23T13:32:17.621Z",
+      "createdAt": "2026-03-23T13:30:46.159Z",
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mn38a0gj-04jnsf",
+      "id": "img-mn3859wu-h098oz",
       "characterId": "mmixwou6-bd17qq",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774272905/character-gallery/i58l7qsgsuvklolwcjqo.png",
-      "fileName": "tilki yürüyen gece.png",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774272684/character-gallery/jbbyhvnlrkkwtbaogwuh.png",
+      "fileName": "Tilki göle eğilen.png",
       "title": "Tilki",
-      "description": "Tilki yürüyen gece",
+      "description": "Tilki göle eğilen",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tilki"
+      ],
+      "orderIndex": 1,
+      "createdAt": "2026-03-23T13:31:25.422Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn387p4i-d5t68q",
+      "characterId": "mmixwou6-bd17qq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774272797/character-gallery/cjqmo0bdg4ual4qczelw.png",
+      "fileName": "tilki yaralı.png",
+      "title": "Tilki",
+      "description": "Tilkİ sargılı",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tilki",
+        "sargılı"
+      ],
+      "orderIndex": 2,
+      "createdAt": "2026-03-23T13:33:18.450Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn388u0u-nuu8f4",
+      "characterId": "mmixwou6-bd17qq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774272849/character-gallery/uvaxv1bwzxejdpsl3ltb.png",
+      "fileName": "tilki yaralı2.png",
+      "title": "Tilki",
+      "description": "Tilki yaralı",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tilki",
+        "yaralı"
+      ],
+      "orderIndex": 3,
+      "createdAt": "2026-03-23T13:34:11.454Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn38b4fk-zt2b72",
+      "characterId": "mmixwou6-bd17qq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774272957/character-gallery/bboi3ttuysfermkfzqy9.png",
+      "fileName": "tilki yürüyen.png",
+      "title": "Tilki",
+      "description": "Tilki yürüyen gündüz",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "Tilki",
         "yürüyen",
-        "gece"
+        "gündüz"
       ],
-      "orderIndex": 1,
-      "createdAt": "2026-03-23T13:35:06.451Z",
+      "orderIndex": 4,
+      "createdAt": "2026-03-23T13:35:58.256Z",
       "createdByUserId": "merycim"
     }
   ]
