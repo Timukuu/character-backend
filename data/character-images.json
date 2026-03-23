@@ -1142,6 +1142,23 @@
       "orderIndex": 19,
       "createdAt": "2026-03-23T12:54:00.185Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36tu5t-0xetdq",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774270470/character-gallery/xyjvjxu6gsw9kq6z9gle.jpg",
+      "fileName": "otopark.jpg",
+      "title": "Üniversite",
+      "description": "üniversite otopark",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "üniversite",
+        "otopark"
+      ],
+      "orderIndex": 20,
+      "createdAt": "2026-03-23T12:54:32.177Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
