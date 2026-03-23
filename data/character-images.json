@@ -1149,6 +1149,24 @@
       "orderIndex": 19,
       "createdAt": "2026-03-23T12:45:18.676Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mn36iylr-mhwu7e",
+      "characterId": "mmiv94rd-q1p6b0",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1774269963/character-gallery/vbzzfwz2unkndfx7rmew.jpg",
+      "fileName": "ağaç ev iç gece.jpg",
+      "title": "Orman",
+      "description": "Ağaç ev içi karanlık",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "ağaç ev",
+        "içi",
+        "orman"
+      ],
+      "orderIndex": 20,
+      "createdAt": "2026-03-23T12:46:04.719Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmixwou6-bd17qq": []
