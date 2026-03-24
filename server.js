@@ -1309,6 +1309,7 @@ app.get("/api/projects/:projectId/todos", async (req, res) => {
     const { projectId } = req.params;
     const allTodos = await loadTodos();
     const projectTodos = allTodos[projectId] || { items: [] };
+    res.set("Cache-Control", "no-store, no-cache, must-revalidate");
     res.json(projectTodos);
   } catch (err) {
     console.error("Todolar yüklenirken hata:", err);
