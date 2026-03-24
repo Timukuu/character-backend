@@ -1,16 +1,5 @@
 {
   "proje-mioy5tos-jelgwb": {
-    "items": [
-      {
-        "id": "todo_1774359150311_88sj00",
-        "title": "deneme",
-        "description": "deneme",
-        "status": "todo",
-        "priority": "medium",
-        "assignee": "timuku",
-        "createdAt": "2026-03-24T13:32:30.309Z",
-        "updatedAt": "2026-03-24T13:32:30.309Z"
-      }
-    ]
+    "items": []
   }
 }
