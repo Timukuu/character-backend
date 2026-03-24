@@ -150,6 +150,16 @@
         "assignee": "merycim",
         "createdAt": "2026-03-24T13:43:29.205Z",
         "updatedAt": "2026-03-24T13:43:29.205Z"
+      },
+      {
+        "id": "todo_1774359835701_3f6jb2",
+        "title": "Nova yüz ifadeleri",
+        "description": "",
+        "status": "in_progress",
+        "priority": "high",
+        "assignee": "merycim",
+        "createdAt": "2026-03-24T13:43:55.701Z",
+        "updatedAt": "2026-03-24T13:43:55.701Z"
       }
     ]
   }
