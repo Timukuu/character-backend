@@ -64,6 +64,7 @@ const CHAT_MESSAGES_FILE = path.join(__dirname, "data", "chat-messages.json");
 // Senaryo verilerini tutmak için dosya yolu
 const SCENARIOS_FILE = path.join(__dirname, "data", "scenarios.json");
 const RELATIONSHIPS_FILE = path.join(__dirname, "data", "relationships.json");
+const TODOS_FILE = path.join(__dirname, "data", "todos.json");
 // Site ayarları (arka plan vb.)
 const SETTINGS_FILE = path.join(__dirname, "data", "settings.json");
 
@@ -1248,6 +1249,93 @@ app.put("/api/projects/:projectId/relationships", async (req, res) => {
   }
 });
 
+// ===== TO DO LİST ENDPOİNT'LERİ =====
+
+async function loadTodos() {
+  try {
+    const data = await fs.readFile(TODOS_FILE, "utf8");
+    return JSON.parse(data);
+  } catch (localErr) {
+    // Local dosya yok, GitHub'dan yüklemeyi dene
+  }
+
+  if (GITHUB_TOKEN) {
+    try {
+      const response = await axios.get(
+        `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/data/todos.json`,
+        {
+          headers: {
+            Authorization: `token ${GITHUB_TOKEN}`,
+            Accept: "application/vnd.github.v3+json"
+          },
+          params: { ref: GITHUB_BRANCH }
+        }
+      );
+      
+      const content = Buffer.from(response.data.content, "base64").toString("utf8");
+      const todos = JSON.parse(content);
+      
+      await fs.mkdir(path.dirname(TODOS_FILE), { recursive: true });
+      await fs.writeFile(TODOS_FILE, content);
+      
+      return todos;
+    } catch (err) {
+      if (err.response?.status !== 404) {
+        console.error("GitHub'dan todolar yüklenirken hata:", err.message);
+      }
+    }
+  }
+
+  return {};
+}
+
+async function saveTodos(todos) {
+  const content = JSON.stringify(todos, null, 2);
+  
+  await fs.mkdir(path.dirname(TODOS_FILE), { recursive: true });
+  await fs.writeFile(TODOS_FILE, content);
+
+  if (GITHUB_TOKEN) {
+    try {
+      await commitToGitHub("data/todos.json", content, `Update todos: ${new Date().toISOString()}`);
+    } catch (err) {
+      console.error("GitHub'a todolar kaydedilemedi, sadece local kaydedildi:", err.message);
+    }
+  }
+}
+
+app.get("/api/projects/:projectId/todos", async (req, res) => {
+  try {
+    const { projectId } = req.params;
+    const allTodos = await loadTodos();
+    const projectTodos = allTodos[projectId] || { items: [] };
+    res.json(projectTodos);
+  } catch (err) {
+    console.error("Todolar yüklenirken hata:", err);
+    res.status(500).json({ error: "Todolar yüklenemedi" });
+  }
+});
+
+app.put("/api/projects/:projectId/todos", async (req, res) => {
+  try {
+    const { projectId } = req.params;
+    const { items } = req.body;
+    
+    if (!Array.isArray(items)) {
+      return res.status(400).json({ error: "items must be an array" });
+    }
+
+    const allTodos = await loadTodos();
+    allTodos[projectId] = { items };
+    await saveTodos(allTodos);
+
+    res.json({ success: true, todos: { items } });
+  } catch (err) {
+    console.error("Todolar kaydedilirken hata:", err);
+    res.status(500).json({ error: "Todolar kaydedilemedi" });
+  }
+});
+
 // ===== SİTE AYARLARI (arka plan vb.) =====
 
 async function loadSettings() {
@@ -1337,6 +1425,7 @@ async function syncFromGitHub() {
     { githubPath: "data/users.json", localPath: USERS_FILE },
     { githubPath: "data/scenarios.json", localPath: SCENARIOS_FILE },
     { githubPath: "data/relationships.json", localPath: RELATIONSHIPS_FILE },
+    { githubPath: "data/todos.json", localPath: TODOS_FILE },
     { githubPath: "data/settings.json", localPath: SETTINGS_FILE },
   ];
 
