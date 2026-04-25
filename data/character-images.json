@@ -1481,6 +1481,20 @@
       "orderIndex": 7,
       "createdAt": "2026-04-25T20:51:33.008Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-moetf0fx-ht2qnx",
+      "characterId": "moeqj01p-3pxcn4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777150321/character-gallery/k9rkoejnnzpbc4c6dnrp.png",
+      "fileName": "IMG_0383.png",
+      "title": "Şişe çevirmece",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [],
+      "orderIndex": 8,
+      "createdAt": "2026-04-25T20:52:01.917Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
