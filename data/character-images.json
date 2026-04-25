@@ -1465,6 +1465,22 @@
       "orderIndex": 7,
       "createdAt": "2026-04-25T20:39:14.386Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-moetee4w-gsp9n5",
+      "characterId": "moeqj01p-3pxcn4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777150292/character-gallery/u0cqqg3wyxh0jxxaa186.png",
+      "fileName": "IMG_0382.png",
+      "title": "Parti",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Parti"
+      ],
+      "orderIndex": 7,
+      "createdAt": "2026-04-25T20:51:33.008Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
