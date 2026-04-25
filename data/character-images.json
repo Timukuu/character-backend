@@ -1362,6 +1362,23 @@
       "orderIndex": 0,
       "createdAt": "2026-04-25T19:39:21.857Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-moesktuz-zoy2hf",
+      "characterId": "moeqj01p-3pxcn4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777148912/character-gallery/shxxf5lz7s0spqpp1kk4.png",
+      "fileName": "IMG_0380.png",
+      "title": "Luna karakter kartı",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Karakter kartı",
+        "Luna"
+      ],
+      "orderIndex": 1,
+      "createdAt": "2026-04-25T20:28:33.707Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
