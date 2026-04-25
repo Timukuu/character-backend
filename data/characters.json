@@ -83,6 +83,16 @@
       "age": null,
       "imageUrl": null,
       "createdAt": "2026-03-09T08:49:28.004Z"
+    },
+    {
+      "id": "moeqj01p-3pxcn4",
+      "firstName": "Concept",
+      "lastName": "Art",
+      "traits": "",
+      "zodiac": "",
+      "age": null,
+      "imageUrl": null,
+      "createdAt": "2026-04-25T19:31:11.529Z"
     }
   ]
 }
