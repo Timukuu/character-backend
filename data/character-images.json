@@ -1348,23 +1348,5 @@
       "createdByUserId": "merycim"
     }
   ],
-  "moeqj01p-3pxcn4": [
-    {
-      "id": "img-moeql95y-5xfknb",
-      "characterId": "moeqj01p-3pxcn4",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777145573/character-gallery/slm4ixfqznvamgtmimgo.png",
-      "fileName": "IMG_0372.png",
-      "title": "Plaj",
-      "description": "Tüm kızlar",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "Concept art",
-        "plaj"
-      ],
-      "orderIndex": 0,
-      "createdAt": "2026-04-25T19:32:54.310Z",
-      "createdByUserId": "merycim"
-    }
-  ]
+  "moeqj01p-3pxcn4": []
 }
