@@ -1448,6 +1448,22 @@
       "orderIndex": 5,
       "createdAt": "2026-04-25T20:35:48.480Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-moesw91e-hl9qos",
+      "characterId": "moeqj01p-3pxcn4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777149445/character-gallery/nf2ztsuqtapdnvkyudc1.png",
+      "fileName": "IMG_0374.png",
+      "title": "Ce.este",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Karakter"
+      ],
+      "orderIndex": 6,
+      "createdAt": "2026-04-25T20:37:26.594Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
