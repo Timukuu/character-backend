@@ -1511,6 +1511,22 @@
       "orderIndex": 9,
       "createdAt": "2026-04-25T21:42:17.262Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-moev8g66-78rog4",
+      "characterId": "moeqj01p-3pxcn4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777153374/character-gallery/m9ark4mjgzvniysyihd6.png",
+      "fileName": "IMG_0390.png",
+      "title": "Giriş pozları",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Giriş pozu"
+      ],
+      "orderIndex": 10,
+      "createdAt": "2026-04-25T21:42:54.942Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
