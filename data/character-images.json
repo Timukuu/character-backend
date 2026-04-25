@@ -1379,6 +1379,23 @@
       "orderIndex": 1,
       "createdAt": "2026-04-25T20:28:33.707Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-moesmg04-e4tzax",
+      "characterId": "moeqj01p-3pxcn4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777148988/character-gallery/jkabghmrprwlgfzk6jv4.png",
+      "fileName": "IMG_0379.png",
+      "title": "Tiffany Karakter Kartı",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Karakter kartı",
+        "Tiffany"
+      ],
+      "orderIndex": 2,
+      "createdAt": "2026-04-25T20:29:49.060Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
