@@ -1419,7 +1419,7 @@
       "characterId": "moeqj01p-3pxcn4",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777149194/character-gallery/zg5ifpwmydj1muvgo6np.png",
       "fileName": "IMG_0376.png",
-      "title": "Raven",
+      "title": "Raven Karakter Kartı",
       "description": "",
       "positivePrompt": null,
       "negativePrompt": null,
@@ -1429,7 +1429,8 @@
       ],
       "orderIndex": 4,
       "createdAt": "2026-04-25T20:33:15.307Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-04-25T20:34:23.892Z"
     }
   ]
 }
