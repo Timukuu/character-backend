@@ -1348,5 +1348,20 @@
       "createdByUserId": "merycim"
     }
   ],
-  "moeqj01p-3pxcn4": []
+  "moeqj01p-3pxcn4": [
+    {
+      "id": "img-moeqtk75-56bq1m",
+      "characterId": "moeqj01p-3pxcn4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777145961/character-gallery/tzriliikvdaqsbnzmed2.png",
+      "fileName": "IMG_0373.png",
+      "title": "Plaj",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [],
+      "orderIndex": 0,
+      "createdAt": "2026-04-25T19:39:21.857Z",
+      "createdByUserId": "merycim"
+    }
+  ]
 }
