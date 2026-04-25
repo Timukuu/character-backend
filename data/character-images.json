@@ -1513,10 +1513,10 @@
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-moev8g66-78rog4",
+      "id": "img-moev95n7-jge6ov",
       "characterId": "moeqj01p-3pxcn4",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777153374/character-gallery/m9ark4mjgzvniysyihd6.png",
-      "fileName": "IMG_0390.png",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777153407/character-gallery/hg5hlsc6agihhywgbbfi.png",
+      "fileName": "IMG_0386.png",
       "title": "Giriş pozları",
       "description": "",
       "positivePrompt": null,
@@ -1525,7 +1525,7 @@
         "Giriş pozu"
       ],
       "orderIndex": 10,
-      "createdAt": "2026-04-25T21:42:54.942Z",
+      "createdAt": "2026-04-25T21:43:27.955Z",
       "createdByUserId": "merycim"
     }
   ]
