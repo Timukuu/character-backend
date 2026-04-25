@@ -1396,6 +1396,23 @@
       "orderIndex": 2,
       "createdAt": "2026-04-25T20:29:49.060Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-moesosgw-6lv2uw",
+      "characterId": "moeqj01p-3pxcn4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777149097/character-gallery/oqv1znlo50a4onvcza83.png",
+      "fileName": "IMG_0377.png",
+      "title": "Nova Karakter Kartı",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Karakter kartı",
+        "Nova"
+      ],
+      "orderIndex": 3,
+      "createdAt": "2026-04-25T20:31:38.528Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
