@@ -1413,6 +1413,23 @@
       "orderIndex": 3,
       "createdAt": "2026-04-25T20:31:38.528Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-moesqv57-w2yh0d",
+      "characterId": "moeqj01p-3pxcn4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777149194/character-gallery/zg5ifpwmydj1muvgo6np.png",
+      "fileName": "IMG_0376.png",
+      "title": "Raven",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Karakter kartı",
+        "Raven"
+      ],
+      "orderIndex": 4,
+      "createdAt": "2026-04-25T20:33:15.307Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
