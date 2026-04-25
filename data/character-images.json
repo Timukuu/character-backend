@@ -1431,6 +1431,23 @@
       "createdAt": "2026-04-25T20:33:15.307Z",
       "createdByUserId": "merycim",
       "updatedAt": "2026-04-25T20:34:23.892Z"
+    },
+    {
+      "id": "img-moesu5c0-1tf2kn",
+      "characterId": "moeqj01p-3pxcn4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777149347/character-gallery/c0pud9vflkzq9q3u11if.png",
+      "fileName": "IMG_0375.png",
+      "title": "Juniper Karakter Kartı",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Karakter kartı",
+        "Juniper"
+      ],
+      "orderIndex": 5,
+      "createdAt": "2026-04-25T20:35:48.480Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
