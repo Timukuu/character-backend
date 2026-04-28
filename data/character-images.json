@@ -1510,7 +1510,9 @@
       ],
       "orderIndex": 9,
       "createdAt": "2026-04-25T21:42:17.262Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "defaultImageId": null,
+      "updatedAt": "2026-04-28T12:46:35.156Z"
     },
     {
       "id": "img-moev95n7-jge6ov",
@@ -1526,7 +1528,9 @@
       ],
       "orderIndex": 10,
       "createdAt": "2026-04-25T21:43:27.955Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "defaultImageId": "img-moev95n7-jge6ov",
+      "updatedAt": "2026-04-28T12:46:35.346Z"
     }
   ]
 }
