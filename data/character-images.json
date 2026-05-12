@@ -487,6 +487,25 @@
       "createdAt": "2026-03-09T08:39:32.311Z",
       "createdByUserId": "merycim",
       "updatedAt": "2026-03-09T08:40:00.722Z"
+    },
+    {
+      "id": "img-mp2dgmnl-hfx3gm",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1778574711/character-gallery/ywsqpfs1dtxivbel6pjp.png",
+      "fileName": "ChatGPT Image 12 May 2026 11_27_07.png",
+      "title": "Luna dışarı giysisi",
+      "description": "",
+      "positivePrompt": "Wearing a fluffy pink fox hoodie (faux fur texture), the hood is up and has a fox face on top with small black bead-like eyes, white inner ears, and a small snout; long fluffy sleeves. White crop top under the hoodie, white layered ruffle mini short with multiple frills. Light gray/white lace-up boots with pink laces, mid-calf height.",
+      "negativePrompt": null,
+      "tags": [
+        "Luna",
+        "hoodie",
+        "günlük",
+        "outfit"
+      ],
+      "orderIndex": 21,
+      "createdAt": "2026-05-12T08:31:51.729Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjr3k4aa-ui5ftb": [
