@@ -731,6 +731,24 @@
       "orderIndex": 3,
       "createdAt": "2025-12-31T08:17:13.696Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mp2chng7-zho5sk",
+      "characterId": "mjsmbcs9-8haoj5",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1778573078/character-gallery/nlmikg4tejvcbvwsujfp.png",
+      "fileName": "00103.png",
+      "title": "Nova uniform",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Nova",
+        "elbise",
+        "üniforma"
+      ],
+      "orderIndex": 3,
+      "createdAt": "2026-05-12T08:04:39.799Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmitsm3z-24tk84": [
