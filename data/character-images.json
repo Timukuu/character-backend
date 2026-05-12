@@ -1587,6 +1587,23 @@
       "orderIndex": 0,
       "createdAt": "2026-05-12T13:37:35.567Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mp2oel8l-ud0uir",
+      "characterId": "mp2obz53-uehai4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1778593091/character-gallery/mzzwnmp7ogojewnfsy11.png",
+      "fileName": "ChatGPT Image May 12, 2026, 04_05_47 PM.png",
+      "title": "Juniper dress",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Juniper",
+        "dress"
+      ],
+      "orderIndex": 1,
+      "createdAt": "2026-05-12T13:38:12.357Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
