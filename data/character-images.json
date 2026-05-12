@@ -1572,37 +1572,20 @@
   ],
   "mp2obz53-uehai4": [
     {
-      "id": "img-mp2odsun-uatloy",
+      "id": "img-mp2ofmgn-turni6",
       "characterId": "mp2obz53-uehai4",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1778593054/character-gallery/zfruucq48czrodcufayz.png",
-      "fileName": "00001-1463482425.png",
-      "title": "Juniper full body",
-      "description": "",
-      "positivePrompt": "masterpiece, standing, white background, best quality, ultra-detailed, highres, standing, hdr, volumetric light, natural shadows , 1girl, green eyes,no hair,bald, big eyes, looking at viewer, full body, perfect nipples, perfect fingers, front view, standing, whole body is visible, one hand open, solo, completely nude, medium breasts, nipples, pussy,medium breasts, simple background, long shot, wide shot, full body, 3/4 front view, character facing slightly left, torso angled, relaxed contrapposto pose",
-      "negativePrompt": "bad hands, missing fingers, hair, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,\nSteps: 30, Sampler: Euler a, Schedule type: Automatic, CFG scale: 7, Seed: 1463482425, Size: 1017x1536, Model hash: 217daae812, Model: JANKUTrainedNoobaiRouwei_v50, Version: v1.10.1",
-      "tags": [
-        "Juniper",
-        "full body"
-      ],
-      "orderIndex": 0,
-      "createdAt": "2026-05-12T13:37:35.567Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mp2oel8l-ud0uir",
-      "characterId": "mp2obz53-uehai4",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1778593091/character-gallery/mzzwnmp7ogojewnfsy11.png",
-      "fileName": "ChatGPT Image May 12, 2026, 04_05_47 PM.png",
-      "title": "Juniper dress",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1778593139/character-gallery/whwzmelq1paese1nrwc1.png",
+      "fileName": "ChatGPT Image May 12, 2026, 04_11_23 PM.png",
+      "title": "Juniper hair",
       "description": "",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "Juniper",
-        "dress"
+        "hair"
       ],
-      "orderIndex": 1,
-      "createdAt": "2026-05-12T13:38:12.357Z",
+      "orderIndex": 0,
+      "createdAt": "2026-05-12T13:39:00.599Z",
       "createdByUserId": "merycim"
     }
   ]
