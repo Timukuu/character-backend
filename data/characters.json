@@ -93,6 +93,16 @@
       "age": null,
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777145525/character-gallery/ie2few0oxuhy43wfdka1.png",
       "createdAt": "2026-04-25T19:31:11.529Z"
+    },
+    {
+      "id": "mp2obz53-uehai4",
+      "firstName": "Juniper",
+      "lastName": "Fox",
+      "traits": "",
+      "zodiac": "Yay",
+      "age": 30,
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1778592972/character-gallery/nxhpsxlva99xxrcvorgx.png",
+      "createdAt": "2026-05-12T13:36:13.762Z"
     }
   ]
 }
