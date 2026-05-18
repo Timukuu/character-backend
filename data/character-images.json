@@ -1638,6 +1638,20 @@
       "orderIndex": 3,
       "createdAt": "2026-05-12T13:48:07.670Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mpb7n385-ic4mu6",
+      "characterId": "mp2obz53-uehai4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779109130/character-gallery/rjjp0azufor5awml4s8g.jpg",
+      "fileName": "Adsız_Resim.jpg",
+      "title": "Juniper bikinili",
+      "description": "vücut+bikini+saç,+yüz",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [],
+      "orderIndex": 4,
+      "createdAt": "2026-05-18T12:58:51.029Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
