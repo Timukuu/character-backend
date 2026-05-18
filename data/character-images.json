@@ -1680,6 +1680,20 @@
       "orderIndex": 6,
       "createdAt": "2026-05-18T13:00:56.420Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mpb7znrp-n38uh7",
+      "characterId": "mp2obz53-uehai4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779109715/character-gallery/jz7b8ru1o2cthpnhnyj3.png",
+      "fileName": "ChatGPT Image 18 May 2026 16_06_41.png",
+      "title": "Juniper topuzlu",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [],
+      "orderIndex": 7,
+      "createdAt": "2026-05-18T13:08:37.525Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
