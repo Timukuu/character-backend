@@ -1652,6 +1652,20 @@
       "orderIndex": 4,
       "createdAt": "2026-05-18T12:58:51.029Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mpb7ntoc-vmgw1d",
+      "characterId": "mp2obz53-uehai4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779109164/character-gallery/ihhu53irbch7jhtxtx0p.jpg",
+      "fileName": "Adsız_Resim (2).jpg",
+      "title": "Juniper çıplak",
+      "description": "vücut+saç+yüz",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [],
+      "orderIndex": 5,
+      "createdAt": "2026-05-18T12:59:25.308Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
