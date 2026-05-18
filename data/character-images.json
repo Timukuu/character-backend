@@ -1654,17 +1654,17 @@
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mpb7ntoc-vmgw1d",
+      "id": "img-mpb7op5d-esk634",
       "characterId": "mp2obz53-uehai4",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779109164/character-gallery/ihhu53irbch7jhtxtx0p.jpg",
-      "fileName": "Adsız_Resim (2).jpg",
-      "title": "Juniper çıplak",
-      "description": "vücut+saç+yüz",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779109205/character-gallery/zdlgpzoxbnggoripfgn0.jpg",
+      "fileName": "Adsız_Resim (1).jpg",
+      "title": "Juniper elbiseli",
+      "description": "Vücut+elbise+saç",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [],
       "orderIndex": 5,
-      "createdAt": "2026-05-18T12:59:25.308Z",
+      "createdAt": "2026-05-18T13:00:06.097Z",
       "createdByUserId": "merycim"
     }
   ]
