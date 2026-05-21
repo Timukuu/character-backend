@@ -1746,6 +1746,23 @@
       "orderIndex": 2,
       "createdAt": "2026-05-21T12:23:33.863Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mpfgr5h1-0u4yfr",
+      "characterId": "mpfgjupq-ul3tmq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366301/character-gallery/fbxumxs9gjxuhi3mtunx.jpg",
+      "fileName": "Celeste leopar.jpg",
+      "title": "celeste leopar elbise",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "celeste",
+        "leoparlı elbise"
+      ],
+      "orderIndex": 3,
+      "createdAt": "2026-05-21T12:25:01.813Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
