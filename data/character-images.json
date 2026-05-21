@@ -1731,6 +1731,23 @@
       "orderIndex": 1,
       "createdAt": "2026-05-21T12:21:55.062Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mpfgo8n9-mzb9ud",
+      "characterId": "mpfgjupq-ul3tmq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366165/character-gallery/iyovewudcoegjfouiuq1.jpg",
+      "fileName": "Celeste parti.jpg",
+      "title": "celeste parti",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "celeste",
+        "parti elbisesi"
+      ],
+      "orderIndex": 2,
+      "createdAt": "2026-05-21T12:22:45.957Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
