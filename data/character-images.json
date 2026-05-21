@@ -1695,5 +1695,25 @@
       "createdAt": "2026-05-18T13:08:37.525Z",
       "createdByUserId": "merycim"
     }
+  ],
+  "mpfgjupq-ul3tmq": [
+    {
+      "id": "img-mpfgkryi-zdhc71",
+      "characterId": "mpfgjupq-ul3tmq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366003/character-gallery/hlevvahutjubgpeugoqi.jpg",
+      "fileName": "Celeste nude.jpg",
+      "title": "Celeste Nude",
+      "description": "psd bitmiş hali. drive da yüklü.",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "celeste",
+        "nude",
+        ""
+      ],
+      "orderIndex": 0,
+      "createdAt": "2026-05-21T12:20:04.363Z",
+      "createdByUserId": "merycim"
+    }
   ]
 }
