@@ -1724,11 +1724,13 @@
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
-        "dosyaları driveda hazır"
+        "celeste",
+        "parti"
       ],
       "orderIndex": 1,
       "createdAt": "2026-05-21T12:21:15.852Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-05-21T12:25:37.605Z"
     },
     {
       "id": "img-mpfgp9lz-pwanfz",
