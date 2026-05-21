@@ -1698,55 +1698,53 @@
   ],
   "mpfgjupq-ul3tmq": [
     {
-      "id": "img-mpfgkryi-zdhc71",
+      "id": "img-mpfgljhw-c45q90",
       "characterId": "mpfgjupq-ul3tmq",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366003/character-gallery/hlevvahutjubgpeugoqi.jpg",
-      "fileName": "Celeste nude.jpg",
-      "title": "Celeste Nude",
-      "description": "psd bitmiş hali. drive da yüklü.",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "celeste",
-        "nude",
-        ""
-      ],
-      "orderIndex": 0,
-      "createdAt": "2026-05-21T12:20:04.363Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mpfgn5dh-vkj6tw",
-      "characterId": "mpfgjupq-ul3tmq",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366114/character-gallery/dn8qvgpmb01ao0qn3bfx.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366039/character-gallery/hxv7tljmh8cojugs8ojy.jpg",
       "fileName": "Celeste bikinili.jpg",
-      "title": "celeste bikini",
-      "description": "dosyaları driveda hazır",
+      "title": "Celeste bikinili",
+      "description": "dosyaları drive da hazır.",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "celeste",
         "bikini"
       ],
-      "orderIndex": 1,
-      "createdAt": "2026-05-21T12:21:55.062Z",
+      "orderIndex": 0,
+      "createdAt": "2026-05-21T12:20:40.052Z",
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mpfgo8n9-mzb9ud",
+      "id": "img-mpfgmb4c-t7w9qr",
       "characterId": "mpfgjupq-ul3tmq",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366165/character-gallery/iyovewudcoegjfouiuq1.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366075/character-gallery/j7w30nrmjemudy4zqt9j.jpg",
       "fileName": "Celeste parti.jpg",
-      "title": "celeste parti",
+      "title": "Celeste parti",
       "description": "",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
+        "dosyaları driveda hazır"
+      ],
+      "orderIndex": 1,
+      "createdAt": "2026-05-21T12:21:15.852Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mpfgp9lz-pwanfz",
+      "characterId": "mpfgjupq-ul3tmq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366211/character-gallery/a1iuzyqcrgdnrx5h7z2g.jpg",
+      "fileName": "Celeste leopar.jpg",
+      "title": "celeste leopar",
+      "description": "celeste, leoparlı elbise",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
         "celeste",
-        "parti elbisesi"
+        "leoparlı elbise"
       ],
       "orderIndex": 2,
-      "createdAt": "2026-05-21T12:22:45.957Z",
+      "createdAt": "2026-05-21T12:23:33.863Z",
       "createdByUserId": "merycim"
     }
   ]
