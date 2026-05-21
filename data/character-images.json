@@ -1765,6 +1765,23 @@
       "orderIndex": 3,
       "createdAt": "2026-05-21T12:25:01.813Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mpfgye7j-pfoq7a",
+      "characterId": "mpfgjupq-ul3tmq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366639/character-gallery/bjrb4ej3lnwa0gbszekz.jpg",
+      "fileName": "Celeste nude.jpg",
+      "title": "celeste nude",
+      "description": "driveda yüklü",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "celeste",
+        "nude"
+      ],
+      "orderIndex": 4,
+      "createdAt": "2026-05-21T12:30:39.727Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
