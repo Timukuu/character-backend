@@ -103,6 +103,16 @@
       "age": 30,
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1778592972/character-gallery/nxhpsxlva99xxrcvorgx.png",
       "createdAt": "2026-05-12T13:36:13.762Z"
+    },
+    {
+      "id": "mpfgjupq-ul3tmq",
+      "firstName": "Celeste",
+      "lastName": "Fox",
+      "traits": "Kural tanımaz, eğlenceli, zıpır, biraz saf, komik",
+      "zodiac": "ikizler",
+      "age": 18,
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779365963/character-gallery/lxg0f8jwliytjeokfel6.png",
+      "createdAt": "2026-05-21T12:19:24.067Z"
     }
   ]
 }
