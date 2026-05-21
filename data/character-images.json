@@ -1698,21 +1698,20 @@
   ],
   "mpfgjupq-ul3tmq": [
     {
-      "id": "img-mpfgkryi-zdhc71",
+      "id": "img-mpfgljhw-c45q90",
       "characterId": "mpfgjupq-ul3tmq",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366003/character-gallery/hlevvahutjubgpeugoqi.jpg",
-      "fileName": "Celeste nude.jpg",
-      "title": "Celeste Nude",
-      "description": "psd bitmiş hali. drive da yüklü.",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366039/character-gallery/hxv7tljmh8cojugs8ojy.jpg",
+      "fileName": "Celeste bikinili.jpg",
+      "title": "Celeste bikinili",
+      "description": "dosyaları drive da hazır.",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "celeste",
-        "nude",
-        ""
+        "bikini"
       ],
       "orderIndex": 0,
-      "createdAt": "2026-05-21T12:20:04.363Z",
+      "createdAt": "2026-05-21T12:20:40.052Z",
       "createdByUserId": "merycim"
     }
   ]
