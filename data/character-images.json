@@ -1698,36 +1698,38 @@
   ],
   "mpfgjupq-ul3tmq": [
     {
-      "id": "img-mpfgljhw-c45q90",
+      "id": "img-mpfgkryi-zdhc71",
       "characterId": "mpfgjupq-ul3tmq",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366039/character-gallery/hxv7tljmh8cojugs8ojy.jpg",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366003/character-gallery/hlevvahutjubgpeugoqi.jpg",
+      "fileName": "Celeste nude.jpg",
+      "title": "Celeste Nude",
+      "description": "psd bitmiş hali. drive da yüklü.",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "celeste",
+        "nude",
+        ""
+      ],
+      "orderIndex": 0,
+      "createdAt": "2026-05-21T12:20:04.363Z",
+      "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mpfgn5dh-vkj6tw",
+      "characterId": "mpfgjupq-ul3tmq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366114/character-gallery/dn8qvgpmb01ao0qn3bfx.jpg",
       "fileName": "Celeste bikinili.jpg",
-      "title": "Celeste bikinili",
-      "description": "dosyaları drive da hazır.",
+      "title": "celeste bikini",
+      "description": "dosyaları driveda hazır",
       "positivePrompt": null,
       "negativePrompt": null,
       "tags": [
         "celeste",
         "bikini"
       ],
-      "orderIndex": 0,
-      "createdAt": "2026-05-21T12:20:40.052Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mpfgmb4c-t7w9qr",
-      "characterId": "mpfgjupq-ul3tmq",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366075/character-gallery/j7w30nrmjemudy4zqt9j.jpg",
-      "fileName": "Celeste parti.jpg",
-      "title": "Celeste parti",
-      "description": "",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "dosyaları driveda hazır"
-      ],
       "orderIndex": 1,
-      "createdAt": "2026-05-21T12:21:15.852Z",
+      "createdAt": "2026-05-21T12:21:55.062Z",
       "createdByUserId": "merycim"
     }
   ]
