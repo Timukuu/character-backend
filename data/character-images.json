@@ -768,6 +768,23 @@
       "orderIndex": 3,
       "createdAt": "2026-05-12T08:04:39.799Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mph432it-6cfbs4",
+      "characterId": "mjsmbcs9-8haoj5",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779465954/character-gallery/px7opzfitwsinlfzovz6.png",
+      "fileName": "IMG_0451.png",
+      "title": "Nova bikinili",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Nova",
+        "bikini"
+      ],
+      "orderIndex": 4,
+      "createdAt": "2026-05-22T16:05:55.205Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mmitsm3z-24tk84": [
