@@ -1657,34 +1657,6 @@
       "createdByUserId": "merycim"
     },
     {
-      "id": "img-mpb7n385-ic4mu6",
-      "characterId": "mp2obz53-uehai4",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779109130/character-gallery/rjjp0azufor5awml4s8g.jpg",
-      "fileName": "Adsız_Resim.jpg",
-      "title": "Juniper bikinili",
-      "description": "vücut+bikini+saç,+yüz",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [],
-      "orderIndex": 4,
-      "createdAt": "2026-05-18T12:58:51.029Z",
-      "createdByUserId": "merycim"
-    },
-    {
-      "id": "img-mpb7op5d-esk634",
-      "characterId": "mp2obz53-uehai4",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779109205/character-gallery/zdlgpzoxbnggoripfgn0.jpg",
-      "fileName": "Adsız_Resim (1).jpg",
-      "title": "Juniper elbiseli",
-      "description": "Vücut+elbise+saç",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [],
-      "orderIndex": 5,
-      "createdAt": "2026-05-18T13:00:06.097Z",
-      "createdByUserId": "merycim"
-    },
-    {
       "id": "img-mpb7znrp-n38uh7",
       "characterId": "mp2obz53-uehai4",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779109715/character-gallery/jz7b8ru1o2cthpnhnyj3.png",
