@@ -103,6 +103,16 @@
       "age": 18,
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779365963/character-gallery/lxg0f8jwliytjeokfel6.png",
       "createdAt": "2026-05-21T12:19:24.067Z"
+    },
+    {
+      "id": "mqun3z93-v35mkt",
+      "firstName": "Junniper",
+      "lastName": "fox",
+      "traits": "Özgürlüğüne rahatına düşkün, olgun, bağlanmayı sevmez.",
+      "zodiac": "yay",
+      "age": 30,
+      "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1782460754/character-gallery/pranp1biqhsdhuyyownz.png",
+      "createdAt": "2026-06-26T07:59:15.095Z"
     }
   ]
 }
