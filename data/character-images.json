@@ -1656,23 +1656,6 @@
   ],
   "mpfgjupq-ul3tmq": [
     {
-      "id": "img-mpfgljhw-c45q90",
-      "characterId": "mpfgjupq-ul3tmq",
-      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366039/character-gallery/hxv7tljmh8cojugs8ojy.jpg",
-      "fileName": "Celeste bikinili.jpg",
-      "title": "Celeste bikinili",
-      "description": "dosyaları drive da hazır.",
-      "positivePrompt": null,
-      "negativePrompt": null,
-      "tags": [
-        "celeste",
-        "bikini"
-      ],
-      "orderIndex": 0,
-      "createdAt": "2026-05-21T12:20:40.052Z",
-      "createdByUserId": "merycim"
-    },
-    {
       "id": "img-mpfgmb4c-t7w9qr",
       "characterId": "mpfgjupq-ul3tmq",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1779366075/character-gallery/j7w30nrmjemudy4zqt9j.jpg",
