@@ -1776,6 +1776,23 @@
       "orderIndex": 1,
       "createdAt": "2026-06-26T08:03:34.468Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mquncl1q-lr6h74",
+      "characterId": "mqun3z93-v35mkt",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1782461153/character-gallery/qcdvnypijiec2hshaq5e.jpg",
+      "fileName": "Juniper_Vücut-2.jpg",
+      "title": "Juniper bikinili",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Juniper",
+        "bikini"
+      ],
+      "orderIndex": 2,
+      "createdAt": "2026-06-26T08:05:54.446Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
