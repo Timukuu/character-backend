@@ -1758,6 +1758,24 @@
       "orderIndex": 0,
       "createdAt": "2026-06-26T07:59:54.591Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mqun9l1g-njxq7s",
+      "characterId": "mqun3z93-v35mkt",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1782461013/character-gallery/zmysyscnsbeure0sshtx.jpg",
+      "fileName": "Juniper_Vücut.jpg",
+      "title": "Juniper nude",
+      "description": "kısa saçlı",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Juniper",
+        "Nude",
+        "short hair"
+      ],
+      "orderIndex": 1,
+      "createdAt": "2026-06-26T08:03:34.468Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
