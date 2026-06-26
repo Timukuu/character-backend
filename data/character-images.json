@@ -1793,6 +1793,24 @@
       "orderIndex": 2,
       "createdAt": "2026-06-26T08:05:54.446Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mquneywr-lxwkwu",
+      "characterId": "mqun3z93-v35mkt",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1782461265/character-gallery/v5qhayx4pvkoxppk9bed.jpg",
+      "fileName": "Juniper_Vücut-3.jpg",
+      "title": "Juniper elbiseli",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Juniper",
+        "dress",
+        "short hair"
+      ],
+      "orderIndex": 3,
+      "createdAt": "2026-06-26T08:07:45.723Z",
+      "createdByUserId": "merycim"
     }
   ]
 }
