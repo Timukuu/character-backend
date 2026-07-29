@@ -1521,6 +1521,23 @@
       "createdByUserId": "merycim"
     },
     {
+      "id": "img-moetee4w-gsp9n5",
+      "characterId": "moeqj01p-3pxcn4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777150292/character-gallery/u0cqqg3wyxh0jxxaa186.png",
+      "fileName": "IMG_0382.png",
+      "title": "Parti",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Parti"
+      ],
+      "orderIndex": 7,
+      "createdAt": "2026-04-25T20:51:33.008Z",
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-07-29T13:58:05.512Z"
+    },
+    {
       "id": "img-moetf0fx-ht2qnx",
       "characterId": "moeqj01p-3pxcn4",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1777150321/character-gallery/k9rkoejnnzpbc4c6dnrp.png",
@@ -1569,6 +1586,20 @@
       "createdByUserId": "merycim",
       "defaultImageId": "img-moev95n7-jge6ov",
       "updatedAt": "2026-04-28T12:46:35.346Z"
+    },
+    {
+      "id": "img-ms65hle9-rdxvlf",
+      "characterId": "moeqj01p-3pxcn4",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1785333530/character-gallery/cdgk2x0nykwcypom2lb5.png",
+      "fileName": "ChatGPT Image 29 Tem 2026 16_57_37.png",
+      "title": "parti",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [],
+      "orderIndex": 11,
+      "createdAt": "2026-07-29T13:58:51.537Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mp2obz53-uehai4": [
