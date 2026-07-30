@@ -540,18 +540,19 @@
       "characterId": "mipl0jjt-eg7z3x",
       "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1785413815/character-gallery/ubgyponnyqb8ceylqc8o.png",
       "fileName": "00012-1425630811.png",
-      "title": "Luna searching pose",
+      "title": "Luna observing pose",
       "description": "",
       "positivePrompt": "masterpiece,  white background, best quality, ultra-detailed, highres,  hdr, volumetric light, natural shadows , 1girl, white cream hair, (bonewhite hair:1.7), long hair, straight hair, big eyes, closed eyes, looking at viewer, full body,  perfect fingers, front view, whole body is visible, solo, completely nude, medium breasts, simple background, long shot, wide shot, distant view, full body view, fair skin, wideshot, bending forward, looking down,",
       "negativePrompt": "blue hair, bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,",
       "tags": [
         "Luna poses",
-        "Luna searching pose",
-        "searching"
+        "Luna observing pose",
+        "observing"
       ],
       "orderIndex": 24,
       "createdAt": "2026-07-30T12:16:56.314Z",
-      "createdByUserId": "merycim"
+      "createdByUserId": "merycim",
+      "updatedAt": "2026-07-30T12:39:44.407Z"
     }
   ],
   "mjr3k4aa-ui5ftb": [
