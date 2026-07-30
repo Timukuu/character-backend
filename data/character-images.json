@@ -502,6 +502,24 @@
       "orderIndex": 22,
       "createdAt": "2026-07-30T08:34:48.200Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-ms7by7nj-m1rrgp",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1785404849/character-gallery/qodpaitm3yimismjokhr.png",
+      "fileName": "00004-1425630811.png",
+      "title": "Luna sitting pose",
+      "description": "",
+      "positivePrompt": "masterpiece,  white background, best quality, ultra-detailed, highres,  hdr, volumetric light, natural shadows , 1girl, white cream hair, (bonewhite hair:1.7), long hair, straight hair, big eyes, closed eyes, looking at viewer, full body,  perfect fingers, front view, whole body is visible, solo, completely nude, medium breasts, simple background, long shot, wide shot, distant view, full body view, fair skin, wideshot,(back view:1.5), sitting on the ground, legs crossed, viewed from behind, relaxed posture, slightly leaning forward, looking ahead, full body, detailed clothing folds, cinematic lighting",
+      "negativePrompt": "blue hair, bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,",
+      "tags": [
+        "Luna",
+        "sitting",
+        "Luna poses"
+      ],
+      "orderIndex": 22,
+      "createdAt": "2026-07-30T09:47:30.751Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjr3k4aa-ui5ftb": [
