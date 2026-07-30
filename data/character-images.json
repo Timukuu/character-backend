@@ -506,6 +506,24 @@
       "orderIndex": 21,
       "createdAt": "2026-05-12T08:31:51.729Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-ms79cphk-ejhgt7",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1785400487/character-gallery/aj93kobwvr25sfq2vbbr.png",
+      "fileName": "00001-1425630811.png",
+      "title": "Luna sleeping pose",
+      "description": "",
+      "positivePrompt": "masterpiece, sleeping, lie down, white background, best quality, ultra-detailed, highres,  hdr, volumetric light, natural shadows , 1girl,closed eyes, white cream hair, (bonewhite hair:1.7), long hair, straight hair, hair between eyes, big eyes, looking at viewer, full body, nipples, perfect fingers, front view, whole body is visible, solo, completely nude, medium breasts, simple background, long shot, wide shot, distant view, full body view, fair skin, wideshot",
+      "negativePrompt": "blue hair, bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,",
+      "tags": [
+        "Luna",
+        "Luna poses",
+        "sleeping"
+      ],
+      "orderIndex": 22,
+      "createdAt": "2026-07-30T08:34:48.200Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjr3k4aa-ui5ftb": [
