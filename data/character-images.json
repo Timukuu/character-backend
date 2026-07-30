@@ -585,6 +585,23 @@
       "orderIndex": 26,
       "createdAt": "2026-07-30T12:46:28.480Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-ms7io1gh-eevcs3",
+      "characterId": "mipl0jjt-eg7z3x",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1785416132/character-gallery/sjhgsmkn1vgao1fabdsi.png",
+      "fileName": "00017-1425630811.png",
+      "title": "Main stage pose",
+      "description": "",
+      "positivePrompt": "masterpiece,  white background, best quality, ultra-detailed, highres,  hdr, volumetric light, natural shadows , 1girl, white cream hair, (bonewhite hair:1.7), long hair, straight hair, big eyes, yellow eyes, looking at viewer, full body,  perfect fingers, front view, whole body is visible, solo, completely nude, medium breasts, simple background, pussy, sitting, open legs, straight ahead, looking viewer,",
+      "negativePrompt": "blue hair, bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, jpeg artifacts, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, duplicate, watermark, text, signature, error, cropped, out of frame, out of focus, tilted horizon, unnatural colors, color banding, oversaturated, underexposed, overexposed, grain, noise, low contrast,",
+      "tags": [
+        "Luna",
+        "sitting"
+      ],
+      "orderIndex": 27,
+      "createdAt": "2026-07-30T12:55:33.473Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjr3k4aa-ui5ftb": [
