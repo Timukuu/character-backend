@@ -113,6 +113,16 @@
       "age": 30,
       "imageUrl": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1782461202/character-gallery/wmmgbbiy0lmz0v8wmfxj.png",
       "createdAt": "2026-06-26T07:59:15.095Z"
+    },
+    {
+      "id": "ms7ki28i-hlkhp1",
+      "firstName": "sketches",
+      "lastName": "sketches",
+      "traits": "",
+      "zodiac": "",
+      "age": null,
+      "imageUrl": null,
+      "createdAt": "2026-07-30T13:46:53.930Z"
     }
   ]
 }
