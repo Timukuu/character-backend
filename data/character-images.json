@@ -1920,7 +1920,26 @@
       "createdByUserId": "merycim"
     }
   ],
-  "mpfgjupq-ul3tmq": [],
+  "mpfgjupq-ul3tmq": [
+    {
+      "id": "img-msfo55kq-p96c26",
+      "characterId": "mpfgjupq-ul3tmq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1785909058/character-gallery/v54gq33vpdxaq58bu1eq.png",
+      "fileName": "Ekran Resmi 2026-08-05 08.50.40.png",
+      "title": "Celeste ceketli",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "celeste",
+        "jacket",
+        ""
+      ],
+      "orderIndex": 0,
+      "createdAt": "2026-08-05T05:50:59.450Z",
+      "createdByUserId": "merycim"
+    }
+  ],
   "mqun3z93-v35mkt": [
     {
       "id": "img-mqun9l1g-njxq7s",
