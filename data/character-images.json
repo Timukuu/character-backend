@@ -1991,6 +1991,20 @@
       "orderIndex": 3,
       "createdAt": "2026-08-05T06:01:03.392Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-msfojoju-cdrljc",
+      "characterId": "mpfgjupq-ul3tmq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1785909736/character-gallery/rjkmqycpqw7mh8puep5o.png",
+      "fileName": "00016-4148570650.png",
+      "title": "celeste hair",
+      "description": "",
+      "positivePrompt": "solo, hips to the shoulders, (brunette skin:1.7), viewed from the front, the composition is symmetrical, standing,medium breasts, symmetric hair, long hair, curly hair, crazy hair, braids, hair beads, (light yellow hair:1.7),golden eyes, detailed hair, looking at viewer, ),smile, hair,masterpiece, hands front of the legs,simple background, white bikini, fine",
+      "negativePrompt": "blue, yellow hair, cutted hair, bad hands, missing fingers, extra fingers, lowres, worst quality, normal quality, blurry, bad perspective, deformed fingers, bad anatomy, deformed, distorted, disfigured, extra limbs, mutated, poorly drawn, blue hair, fair skin",
+      "tags": [],
+      "orderIndex": 4,
+      "createdAt": "2026-08-05T06:02:17.226Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mqun3z93-v35mkt": [
