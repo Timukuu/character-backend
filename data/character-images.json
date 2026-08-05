@@ -1938,6 +1938,24 @@
       "orderIndex": 0,
       "createdAt": "2026-08-05T05:50:59.450Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-msfo6rxg-y49ny7",
+      "characterId": "mpfgjupq-ul3tmq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1785909134/character-gallery/tmlnh09v3jaw15wa4qit.png",
+      "fileName": "Ekran Resmi 2026-08-05 08.51.15.png",
+      "title": "Celeste bikinili",
+      "description": "Celeste bikinili",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "celeste",
+        "bikini",
+        "swimwear"
+      ],
+      "orderIndex": 1,
+      "createdAt": "2026-08-05T05:52:15.076Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mqun3z93-v35mkt": [
