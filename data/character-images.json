@@ -2005,6 +2005,26 @@
       "orderIndex": 4,
       "createdAt": "2026-08-05T06:02:17.226Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-msg2pxb9-iub684",
+      "characterId": "mpfgjupq-ul3tmq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1785933542/character-gallery/fc8gmzmz8w0hrndb8ibd.jpg",
+      "fileName": "Celeste_Günlük.jpg",
+      "title": "Celeste daily outfit",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "celeste",
+        "outfit",
+        "daily",
+        "günlük",
+        ""
+      ],
+      "orderIndex": 5,
+      "createdAt": "2026-08-05T12:39:03.141Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mqun3z93-v35mkt": [
