@@ -1956,6 +1956,23 @@
       "orderIndex": 1,
       "createdAt": "2026-08-05T05:52:15.076Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-msfobwtw-yzplab",
+      "characterId": "mpfgjupq-ul3tmq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1785909374/character-gallery/gihob82yl3b4uap0hmva.png",
+      "fileName": "Ekran Resmi 2026-08-05 08.55.45.png",
+      "title": "Celeste nude",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "celeste",
+        "nude"
+      ],
+      "orderIndex": 2,
+      "createdAt": "2026-08-05T05:56:14.708Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mqun3z93-v35mkt": [
