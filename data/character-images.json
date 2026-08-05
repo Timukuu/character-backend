@@ -2025,6 +2025,25 @@
       "orderIndex": 5,
       "createdAt": "2026-08-05T12:39:03.141Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-msg4oc20-jn93vn",
+      "characterId": "mpfgjupq-ul3tmq",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1785936826/character-gallery/qfgzaph4iducnfca3osh.jpg",
+      "fileName": "Celeste_Parti.jpg",
+      "title": "Celeste party dress",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "celeste",
+        "party",
+        "outfit",
+        ""
+      ],
+      "orderIndex": 6,
+      "createdAt": "2026-08-05T13:33:48.168Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mqun3z93-v35mkt": [
