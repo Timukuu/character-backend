@@ -961,6 +961,23 @@
       "orderIndex": 10,
       "createdAt": "2026-08-06T14:03:25.653Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-mshl7ksf-rx55ti",
+      "characterId": "mjr3k4aa-ui5ftb",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1786025065/character-gallery/rhnivp0mzxsmwmdqwuyc.jpg",
+      "fileName": "Tiff parti elbise.jpg",
+      "title": "Tiff party dress",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tiffany",
+        "party dress"
+      ],
+      "orderIndex": 11,
+      "createdAt": "2026-08-06T14:04:25.983Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjsmbcs9-8haoj5": [
