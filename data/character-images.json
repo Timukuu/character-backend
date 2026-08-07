@@ -981,6 +981,24 @@
       "orderIndex": 11,
       "createdAt": "2026-08-07T14:09:22.561Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-msj0uuau-1ximzj",
+      "characterId": "mjr3k4aa-ui5ftb",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1786111811/character-gallery/j4db75bw66yj5eh0wzj4.jpg",
+      "fileName": "Tiff parti (1).jpg",
+      "title": "Tiffany party dress",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tiffany",
+        "outfit",
+        "party dress"
+      ],
+      "orderIndex": 12,
+      "createdAt": "2026-08-07T14:10:11.814Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjsmbcs9-8haoj5": [
