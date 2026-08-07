@@ -961,6 +961,26 @@
       "orderIndex": 10,
       "createdAt": "2026-08-06T14:03:25.653Z",
       "createdByUserId": "merycim"
+    },
+    {
+      "id": "img-msj0tsap-kflssv",
+      "characterId": "mjr3k4aa-ui5ftb",
+      "url": "https://res.cloudinary.com/dcmhzatg6/image/upload/v1786111761/character-gallery/dtrftduwkbnpzkqieacm.jpg",
+      "fileName": "Tiff günlük (1).jpg",
+      "title": "Tiffany günlük outfit",
+      "description": "",
+      "positivePrompt": null,
+      "negativePrompt": null,
+      "tags": [
+        "Tiffany",
+        "outfit",
+        "Tiffany outfit",
+        "daily",
+        "günlük"
+      ],
+      "orderIndex": 11,
+      "createdAt": "2026-08-07T14:09:22.561Z",
+      "createdByUserId": "merycim"
     }
   ],
   "mjsmbcs9-8haoj5": [
